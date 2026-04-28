@@ -1,5 +1,4 @@
 **B U O N G I O R N O**
-**B U O N A S E R A**
 
 Il modo migliore per leggere questi appunti è non sperare in una qualche forma di coerenza stilistica.
 L'idea generae è che ogni riga costituisce una nozione atomica Zettelkasten-like, più righe sono unite in blocchi preceduti da header di primo livello.
