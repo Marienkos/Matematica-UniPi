@@ -1,5 +1,5 @@
-# B U O N G I O R N O
-# B U O N A S E R A
+**B U O N G I O R N O**
+**B U O N A S E R A**
 
 Il modo migliore per leggere questi appunti è non sperare in una qualche forma di coerenza stilistica.
 L'idea generae è che ogni riga costituisce una nozione atomica Zettelkasten-like, più righe sono unite in blocchi preceduti da header di primo livello.
@@ -7,4 +7,4 @@ I file esistono solo per una maggiore comprensione e categorizzazione, fungendo 
 
 Non ho veramente un'idea di cosa io stia facendo, spero solo di starlo facendo bene :)
 
-# B U O N A N O T T E
+**B U O N A N O T T E**
