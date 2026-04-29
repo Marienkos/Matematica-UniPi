@@ -24,7 +24,7 @@ Un maggiorante è detto massimo se appartiene ad A.
 L'estremo superiore di A è $+\infty$ se non esistono maggioranti, altrimenti è il minimo maggiorante.
 
 # Esistenza di inf e sup
-TESI: In sottoinsiemi reali A inf e sup esistono sempre.
+In sottoinsiemi reali A inf e sup esistono sempre.
 
 DIMOSTRAZIONE
 - Se non ci sono maggioranti, allora il sup esiste.
