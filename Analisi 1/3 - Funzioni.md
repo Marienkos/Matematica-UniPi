@@ -12,12 +12,12 @@ Date due funzioni $f : A \rightarrow B$ e $g : B \rightarrow C$, si definisce $(
 # Proprietà
 Una funzione $f : A \rightarrow B$ è:
 - iniettiva se $a_1 \neq a_2 \implies f(a_1) \neq f(a_2)$
-- surgettiva se $\forall b \in B \; \exists a \in A \; b = f(a)$
+- surgettiva se $\forall b \in B$   $\exists a \in A$   $b = f(a)$
 - bigettiva se iniettiva e surgettiva
 - pari se $f(x) = f(-x)$
 - dispari se $f(-x) = -f(x)$
-- periodica se $\exists p \; f(x+p) = f(x)$
-- monotona se $x > y \implies f(x) \; \{>, \geq, <, \leq\} \; f(y)$
+- periodica se $\exists p$   $f(x+p) = f(x)$
+- monotona se $x > y \implies f(x)$   $\{>, \geq, <, \leq\}$   $f(y)$
 
 # Inverse
 Data una funzione $f : A \rightarrow B$, una funzione $g : B \rightarrow A$ è detta:
