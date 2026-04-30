@@ -1,4 +1,4 @@
-# Tabellina delle successioni (4 - Limiti)
+# Tabella dei limiti
 - $a^{\frac 1 n} \to 1$
 - $a^n \to$
 	- $+\infty$ se $a > 1$
@@ -6,7 +6,7 @@
 	- 0 se $0 \leq a < 1$
 - $n^{\frac 1 n} \to 1$
 
-# Limiti notevoli (4 - Limiti)
+# Limiti notevoli
 Padri:
 - $\lim\limits_{x \to 0} \frac{{\sin x}}{x} = 1$
 - $\lim\limits_{x \to +\infty} (1+\frac{1}{x})^x = e$
@@ -21,4 +21,4 @@ Nipoti:
 - $\lim\limits_{x \to 0} \frac{{a^x-1}}{x} = \log a$
 - $\lim\limits_{x \to 0^+} x\log x=0$
 
-# Sviluppini (5 - Taylor)
+# Sviluppini
