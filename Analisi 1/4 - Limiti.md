@@ -50,14 +50,6 @@ Siano $a_{n} \to l_{1} \in \overline{\mathbb{R}}$ e $b_{n} \to l_{2} \in \overli
 - $a_{n} b_{n} = l_{1} l_{2}$
 - $\frac{a_{n}}{b_{n}} = \frac{l_{1}}{l_{2}}$
 
-# Tabellina dei limiti
-- $a^{\frac 1 n} \to 1$
-- $a^n \to$
-	- $+\infty$ se $a > 1$
-	- $1$ se $a = 1$
-	- 0 se $0 \leq a < 1$
-- $n^{\frac 1 n} \to 1$
-
 # Criteri radice e/o rapporto
 Sia $a_{n}$ una successione definitivamente $\geq 0$ tale che $(a_{n})^{\frac 1 n} \to l \in \overline{\mathbb{R}}^+$
 - $l>1 \implies a_{n} \to +\infty$
@@ -102,21 +94,6 @@ Una funzione $f : D \to \mathbb{R}$ con $D \subseteq \mathbb{R}$ si dice:
 Tutte le funzioni ottenute da quelle elementari mediante operazioni algebriche e/o composizioni sono continue nel loro dominio di definizione.
 
 DIMOSTRAZIONE: Definizione di limite e continuità.
-
-# Limiti notevoli
-Padri:
-- $\lim\limits_{x \to 0} \frac{{\sin x}}{x} = 1$
-- $\lim\limits_{x \to +\infty} (1+\frac{1}{x})^x = e$
-
-Figli:
-- $\lim\limits_{x \to 0} \frac{{1-\cos x}}{x^{2}} = \frac{1}{2}$
-- $\lim\limits_{x \to 0} \frac{{e^x-1}}{x} = 1$
-- $\lim\limits_{x \to 0} \frac{{\log(1+x)}}{x} = 1$
-
-Nipoti:
-- $\lim\limits_{x \to 0} \frac{{\arctan x}}{x} = \lim\limits_{x \to 0} \frac{{\tan x}}{x} = \lim\limits_{x \to 0} \frac{{\arcsin x}}{x} = 1$
-- $\lim\limits_{x \to 0} \frac{{a^x-1}}{x} = \log a$
-- $\lim\limits_{x \to 0^+} x\log x=0$
 
 # Criterio successioni - funzioni
 Sia $D \subseteq \mathbb{R}$ con $\sup D = +\infty$. Sia $a_{n}$ una successione e $f:D\to \mathbb{R}$ una funzione per cui vale:
