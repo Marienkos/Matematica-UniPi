@@ -17,11 +17,11 @@ Dati $A \subseteq \mathbb R$ e $B \subseteq \mathbb R$ non vuoti, A sta a sinist
 In tal caso $\exists c \in \mathbb R$   $a \leq c$   $\forall a \in A$   $\land c \leq b$   $\forall b \in B$
 
 # Maggioranti e minoranti
-Un maggiorante di A è maggiore di ogni elemento di A.
+Un maggiorante di A è maggiore di ogni elemento di A. Al contrario per il minorante.
 
-Un maggiorante è detto massimo se appartiene ad A.
+Un maggiorante è detto massimo se appartiene ad A. Il minorante è detto minimo.
 
-L'estremo superiore di A è $+\infty$ se non esistono maggioranti, altrimenti è il minimo maggiorante.
+L'estremo superiore di A, anche detto $\sup A$, è $+\infty$ se non esistono maggioranti, altrimenti è il minimo maggiorante. Al contrario per l'estremo inferiore, anche detto $\inf A$.
 
 # Esistenza di inf e sup
 In sottoinsiemi reali A inf e sup esistono sempre.
