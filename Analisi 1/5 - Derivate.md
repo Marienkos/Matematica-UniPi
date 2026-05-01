@@ -15,6 +15,8 @@ Inoltre per $x \to 0$ vale $f(x) = o(x^a) \implies f(x^b) = o(x^{ab})$
 
 La definizione si può inoltre estendere alle successioni per $n \to +\infty$
 
+Se per $x \to 0$ vale $f(x) = ax^b + o(x^b)$, allora $ax^b$ è la parte principale e $b$ l'ordine di infinitesimo.
+
 # Derivata
 Sia $f : D \to \mathbb{R}$ con $D \subseteq \mathbb{R}$ e $x_{0}$ interno a $D$, ossia tale che $\exists r>0$   $(x_{0}-r,x_{0}+r) \subseteq D$
 
@@ -76,5 +78,17 @@ Siano $f(x) = P_{n}(x) + o(x^n)$ e $g(x) = Q_{n}(x) + o(x^n)$. Allora valgono:
 - $f(ax^b) = P_{n}(ax^b)+o(x^{bn})$ con $b>0$
 - $g(f(x)) = Q_{n}(P_{n}(x)) + o(x^n)$
 
-# Parte principale
-Se per $x \to 0$ vale $f(x) = ax^b + o(x^b)$, allora $ax^b$ è la parte principale e $b$ l'ordine di infinitesimo.
+# Taylor - Lagrange
+Sia $\delta>0$ e $f : (-\delta,\delta) \to \mathbb{R}$ una funzione. Sia $n \in \mathbb{N}$. Supponiamo:
+- $f$ derivabile almeno $n+1$ volte in $(-\delta,\delta)$
+Allora $\forall x \in (-\delta,\delta)$   $\exists c \in [0,x]$   $f(x) = \sum\limits_{k=0}^{n} \frac{f^{(k)}(0)}{k!}x^k + \frac{f^{(n+1)}(c)}{(n+1)!}x^{n+1}$
+
+# Classi di regolarità
+Sia $D \subseteq \mathbb{R}$ un insieme convesso aperto e $k \in \mathbb{N}$. Sia $f$ una funzione tale che:
+- $f$ derivabile almeno $k$ volte in $D$
+- le prime $k$ derivate di $f$ sono continue
+Allora si dice che $f \in C^k(D)$
+
+Si dice che $f \in C^\infty(D)$ se $f \in C^k(D)$ per ogni $k$.
+
+Si dice che $f \in C^\omega(D)$, ossia è analitica, se $f \in C^\infty(D)$ e $f$ coincide con la sua serie di Taylor in $D$.

@@ -16,6 +16,8 @@ Dati $A \subseteq \mathbb R$ e $B \subseteq \mathbb R$ non vuoti, A sta a sinist
 
 In tal caso $\exists c \in \mathbb R$   $a \leq c$   $\forall a \in A$   $\land c \leq b$   $\forall b \in B$
 
+In $\mathbb{R}$ sono detti insiemi connessi e/o convessi $\emptyset$, i punti, gli intervalli con o senza estremi, le semirette e $\mathbb{R}$ stesso.
+
 # Maggioranti e minoranti
 Un maggiorante di A è maggiore di ogni elemento di A. Al contrario per il minorante.
 
