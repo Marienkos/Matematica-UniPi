@@ -51,13 +51,13 @@ Siano $a_{n} \to l_{1} \in \overline{\mathbb{R}}$ e $b_{n} \to l_{2} \in \overli
 - $\frac{a_{n}}{b_{n}} = \frac{l_{1}}{l_{2}}$
 
 # Criteri radice e/o rapporto
-Sia $a_{n}$ una successione definitivamente $\geq 0$ tale che $(a_{n})^{\frac 1 n} \to l \in \overline{\mathbb{R}}^+$
+Sia $a_{n}$ una successione definitivamente $\geq 0$ tale che $\sqrt[n]{a_{n}} \to l \in \overline{\mathbb{R}}^+$
 - $l>1 \implies a_{n} \to +\infty$
 - $l<1 \implies a_{n} \to 0$
 
 Sia $a_n$ una successione definitivamente $>0$ tale che $\frac{a_{n+1}}{a_{n}}\to l \in \overline{\mathbb{R}}^+$. Valgono le implicazioni precedenti.
 
-Sia $a_{n}$ una successione definitivamente $>0$. Vale $\frac{a_{n+1}}{a_{n}} \to l \in \overline{\mathbb{R}}^+ \implies (a_{n})^{\frac 1 n} \to l$
+Sia $a_{n}$ una successione definitivamente $>0$. Vale $\frac{a_{n+1}}{a_{n}} \to l \in \overline{\mathbb{R}}^+ \implies \sqrt[n]{a_{n}} \to l$
 
 DIMOSTRAZIONE: Definitivamente + induzione.
 
