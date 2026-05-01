@@ -8,7 +8,7 @@ Per estensione in questi appunti si utilizzerà sui predicati $P(x)$ definiti su
 - definitivamente a sinistra se   $\exists k \in \mathbb{R}$   $\forall x \in D \cap (-\infty,k]$   $P(x)$
 
 # Successione
-Funzione $f : \mathbb N \to \mathbb R$ definita definitivamente
+Funzione $f : \mathbb N \to \mathbb R$ definita definitivamente.
 
 # Limite di una successione
 Data una successione $a_n$, il limite $\lim\limits_{n \to \infty} a_n$ è:
