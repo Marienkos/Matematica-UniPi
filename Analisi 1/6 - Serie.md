@@ -116,7 +116,8 @@ Allora $a_{n} \to l$
 DIMOSTRAZIONE: Definitivamente comune a entrambe.
 
 # Lemma di Abel
-Date $a_{n}$ e $b_{n}$, con $0\leq m <n$ vale $\sum\limits_{k=m}^{n} a_{k+1}(b_{k+1}-b_{k}) = a_{n+1}b_{n+1}-a_{n}b_{m} - \sum\limits_{k=m}^{n} b_{k}(a_{k+1}-a_{k})$
+Siano $a_{n}$ e $b_{n}$ successioni e $0\leq m <n$.
+Vale $\sum\limits_{k=m}^{n} a_{k+1}(b_{k+1}-b_{k}) = a_{n+1}b_{n+1}-a_{n}b_{m} - \sum\limits_{k=m}^{n} b_{k}(a_{k+1}-a_{k})$
 
 DIMOSTRAZIONE: Espansione e telescopicità della serie.
 
