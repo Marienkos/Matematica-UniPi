@@ -114,3 +114,17 @@ Se $a_{n}$ ha due sottosuccessioni che
 Allora $a_{n} \to l$
 
 DIMOSTRAZIONE: Definitivamente comune a entrambe.
+
+# Lemma di Abel
+Date $a_{n}$ e $b_{n}$, con $0\leq m <n$ vale $\sum\limits_{k=m}^{n} a_{k+1}(b_{k+1}-b_{k}) = a_{n+1}b_{n+1}-a_{n}b_{m} - \sum\limits_{k=m}^{n} b_{k}(a_{k+1}-a_{k})$
+
+DIMOSTRAZIONE: Espansione e telescopicità della serie.
+
+# Criterio di Dirichlet
+Sia $\sum\limits_{n=1}^{\infty} a_nb_{n}$ tale che:
+- le somme parziali di $a_{n}$ sono limitate
+- $b_{n}$ debolmente decrescente
+- $b_{n}\to {0}$
+Allora la serie converge.
+
+DIMOSTRAZIONE: Lemma di Abel
