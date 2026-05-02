@@ -51,3 +51,8 @@ Tangente iperbolica: $f(x) = \tanh x$
 - dispari
 - strettamente crescente e bigettiva ovunque
 - invertibile con la settortangente iperbolica
+
+# Funzioni utili
+Delta di Dirac (o, come la chiamo io, delta i-j): $f(x) = \delta_{i,j}$
+- $f(x) = 1$ se $i = j$
+- $f(x) = 0$ se $i \neq j$
