@@ -7,6 +7,8 @@ Una funzione è un sottoinsieme del prodotto cartesiano tale che per ogni $a \in
 
 Due funzioni sono uguali se lo sono in ogni punto.
 
+Se una funzione è nulla in tutto il suo insieme di definizione, allora si dice che è identicamente nulla e si scrive $f(x) \equiv 0$.
+
 Date due funzioni $f : A \rightarrow B$ e $g : B \rightarrow C$, si definisce $(g \circ f)(a) = g(f(a))$.
 
 # Proprietà
