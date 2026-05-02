@@ -25,6 +25,7 @@ Le grandezze possono essere:
 - vettoriali, ossia vettori dotati di modulo, direzione e verso
 - tensoriali
 
+# Proprietà dei vettori
 I vettori fisici seguono le leggi dei vettori matematici su spazi vettoriali, pertanto godono di tutte le usuali proprietà.
 
 Siano $\vec{a}$ e $\vec{b}$ due vettori e $\theta$ l'angolo tra essi. Allora $\vec{a}\times \vec{b}$ è detto prodotto vettoriale. Valgono:
