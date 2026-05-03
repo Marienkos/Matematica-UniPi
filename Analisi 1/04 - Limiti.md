@@ -50,7 +50,7 @@ Siano $a_{n} \to l_{1} \in \overline{\mathbb{R}}$ e $b_{n} \to l_{2} \in \overli
 - $a_{n} b_{n} = l_{1} l_{2}$
 - $\frac{a_{n}}{b_{n}} = \frac{l_{1}}{l_{2}}$
 
-# Criteri radice e/o rapporto
+# Criterio della radice e/o rapporto
 Sia $a_{n}$ una successione definitivamente $\geq 0$ tale che $\sqrt[n]{a_{n}} \to l \in \overline{\mathbb{R}}^+$
 - $l>1 \implies a_{n} \to +\infty$
 - $l<1 \implies a_{n} \to 0$
