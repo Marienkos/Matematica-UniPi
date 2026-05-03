@@ -83,9 +83,9 @@ Si dice che $\lim\limits_{x \to -\infty} f(x)$ è:
 - $l \in \mathbb{R}$ se   $\forall \varepsilon>0$   $|f(x)-l|\leq\varepsilon$   definitivamente a sinistra
 
 Si dice che $\lim\limits_{x \to x_{0}} f(x)$ è:
-- $+\infty$ se   $\forall M \in \mathbb{R}$   $\exists \delta>0$   $\forall x \in (D \cap [x_{0}-\delta,x_{0}+\delta]\setminus \{ x_{0} \})$   $f(x) \geq M$
-- $-\infty$ se   $\forall M \in \mathbb{R}$   $\exists \delta>0$   $\forall x \in (D \cap [x_{0}-\delta,x_{0}+\delta]\setminus \{ x_{0} \})$   $f(x) \leq M$
-- $l \in \mathbb{R}$ se   $\forall \varepsilon>0$   $\exists \delta>0$   $\forall x \in (D \cap [x_{0}-\delta,x_{0}+\delta]\setminus \{ x_{0} \})$   $|f(x)-l|\leq\varepsilon$
+- $+\infty$ se   $\forall M \in \mathbb{R}$   $\exists \delta>0$   $\forall x \in I_{x_{0},\delta}$   $f(x) \geq M$
+- $-\infty$ se   $\forall M \in \mathbb{R}$   $\exists \delta>0$   $\forall x \in I_{x_{0},\delta}$   $f(x) \leq M$
+- $l \in \mathbb{R}$ se   $\forall \varepsilon>0$   $\exists \delta>0$   $\forall x \in I_{x_{0},\delta}$   $|f(x)-l|\leq\varepsilon$
 
 # Continuità
 Una funzione $f : D \to \mathbb{R}$ con $D \subseteq \mathbb{R}$ si dice:
