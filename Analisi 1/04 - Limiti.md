@@ -61,9 +61,10 @@ Sia $a_{n}$ una successione definitivamente $>0$. Vale $\frac{a_{n+1}}{a_{n}} \t
 
 DIMOSTRAZIONE: Definitivamente + induzione.
 
-# Punto di accumulazione
-Dati $x_{0}$ e $D \subseteq \mathbb{R}$, $x_{0}$ si dice punto di accumulazione di $D$ se:
-- $\forall \delta>0$   $(D \cap [x_{0}-\delta,x_{0}+\delta]\setminus \{ x_{0} \})\neq \emptyset$
+# Intorno
+Dati $x_{0}, \delta$ e $D \subseteq \mathbb{R}$, si dice intorno di $x_{0}$ in $D$ l'insieme $D \cap [x_{0}-\delta,x_{0}+\delta]\setminus \{ x_{0} \}$ e si indica con $I_{x_{0},\delta}$
+
+Dati $x_{0}$ e $D \subseteq \mathbb{R}$, $x_{0}$ si dice punto di accumulazione di $D$ se $\forall \delta>0$   $I_{x_{0},\delta}\neq \emptyset$
 
 # Limite di una funzione
 Data una funzione $f : D \to \mathbb{R}$ con $D \subseteq \mathbb{R}$ non vuoto, si definiscono:
