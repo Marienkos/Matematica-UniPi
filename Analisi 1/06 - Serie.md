@@ -129,3 +129,47 @@ Sia $\sum\limits_{n=1}^{\infty} a_nb_{n}$ tale che:
 Allora la serie converge.
 
 DIMOSTRAZIONE: Lemma di Abel
+
+# Proprietà di riordinamento
+Sia $\sum\limits_{n=0}^{\infty} a_n$ una serie convergente non assolutamente. Allora riordinando i termini si può far assumere alla serie un qualsiasi comportamento.
+
+Sia $\sum\limits_{n=0}^{\infty} a_n$ una serie assolutamente convergente e $\sigma : \mathbb{N} \to \mathbb{N}$ una bigezione. Allora $\sum\limits_{n=0}^{\infty} a_{\sigma(n)} = \sum\limits_{n=0}^{\infty} a_n$
+
+DIMOSTRAZIONE:
+1. Siano $S_{n}$ le somme parziali di $a_{n}$ e $S_{n} \to S_{\infty}$
+2. $\sum\limits_{n=0}^{\infty} a_n$ converge $\implies \exists H_{\varepsilon}$   $\forall n \geq H_{\varepsilon}$   $|S_{n} - S_{\infty}| \leq \frac{1}{2}\varepsilon$
+3. $\sum\limits_{n=0}^{\infty} |a_{n}|$ converge $\implies \exists K_{\varepsilon}$   $\sum\limits_{k=K_{\varepsilon}}^{\infty} |a_{k}| \leq \frac{1}{2}\varepsilon$
+4. Sia $L_{\varepsilon} := \text{max} \{ H_{\varepsilon}, K_{\varepsilon} \}$
+5. $\sigma$ surgettiva $\implies \exists M_{\varepsilon}$   $\forall n\geq M_{\varepsilon}$   $\sigma(\{ 0,\dots,n \}) \supseteq \{ 0,\dots,L_{\varepsilon} \}$
+6. $|\sum\limits_{k=0}^{n} a_{\sigma(k)}-S_{\infty}| \leq \varepsilon$
+	1. Sia $U_{n} := \{ k \in \{ 0,\dots,n \} : \sigma(k) \in \{ 0,\dots,L_{\varepsilon} \} \}$ l'insieme degli utili
+	2. Sia $I_{n} := \{ k \in \{ 0,\dots,n \} : \sigma(k) \geq L_{\varepsilon} + 1 \}$ l'insieme degli inutili
+	3. $|\sum\limits_{k=0}^{n} a_{\sigma(k)} - S_{\infty}| = |\sum\limits_{k \in U_{n}} a_{\sigma(k)} + \sum\limits_{k \in I_{n}} a_{\sigma(k)} - S_{\infty}| \leq |\sum\limits_{k=0}^{L_{\varepsilon}} a_k - S_{\infty}| + \sum\limits_{k = L_{\varepsilon} + 1}^{\infty} |a_{k}| \leq \varepsilon$
+
+# Proprietà di raggruppamento
+Sia $A \subseteq \mathbb{R}$ con $A$ numerabile, allora si può definire $\sum\limits_{a \in A} a$ se $\sum\limits_{a \in A} |a|$ converge.
+
+DIMOSTRAZIONE: Si può vedere come la serie di una successione indipendente dall'ordine, cosa che può esistere solo se converge assolutamente per la proprietà di riordinamento.
+
+Sia $a_{n}$ una successione e $A_{i} \subseteq \mathbb{N}$ una partizione di $\mathbb{N}$.
+Allora $\sum\limits_{n=0}^{\infty} |a_{n}|$ converge $\implies \sum\limits_{n=0}^{\infty} a_n = \sum\limits_{i=0}^{\infty} \left( \sum\limits_{n \in A_{i}} a_n \right)$
+
+DIMOSTRAZIONE: Equivalente alla dimostrazione per l'ordinamento.
+
+# Prodotto di serie
+Siano $a_{n}$, $b_{n}$ e $c_{n}$ tre successioni tali che:
+1. $\sum\limits_{n=0}^{\infty} |a_{n}| = A_{\infty} \in \mathbb{R}$
+2. $\sum\limits_{n=0}^{\infty} b_{n} = B_{\infty} \in \mathbb{R}$
+3. $c_{n} = \sum\limits_{k=0}^{n} a_kb_{n-k}$
+Allora $\sum\limits_{n=0}^{\infty} |c_{n}| = A_{\infty}B_{\infty}$
+
+DIMOSTRAZIONE:
+1. Siano $A_{n}$, $B_{n}$ e $C_{n}$ le somme parziali di $a_{n}$, $b_{n}$ e $c_{n}$
+2. Siano $\hat{A} := \sum\limits_{k=0}^{\infty} |a_{k}|$ e $\hat{B} := \sup \{ |B_{n}| : n \in \mathbb{N} \}$
+3. $C_{n} = \sum\limits_{k=0}^{n} a_kB_{n-k}$, dunque $\sum\limits_{k=0}^{n} |c_{k}| \leq \sum\limits_{k=0}^{n} |a_{k}| |B_{n-k}| \leq \hat{B}\sum\limits_{k=0}^{n} |a_{k}| \implies \sum\limits_{n=0}^{\infty} c_{n}$ converge
+4. $|C_{n} - A_{\infty}B_{\infty}| \leq \varepsilon$
+	1. $\sum\limits_{n=0}^{\infty} a_{n}$ converge $\implies \exists H_{\varepsilon}$   $\forall n \geq H_{\varepsilon}$   $|A_{n} - A_{\infty}| \leq \frac{1}{\hat{B}+1} \frac{1}{4}\varepsilon$
+	2. $\sum\limits_{n=0}^{\infty} |a_{n}|$ converge $\implies \exists K_{\varepsilon}$   $\sum\limits_{k=K_{\varepsilon}}^{\infty} |a_{k}| \leq \frac{1}{2\hat{B}+1} \frac{1}{4}\varepsilon$
+	3. $\sum\limits_{n=0}^{\infty} b_{n}$ converge $\implies \exists L_{\varepsilon}$   $\forall n \geq L_{\varepsilon}$   $|B_{n} - B_{\infty}|\leq \frac{1}{\hat{A}+1} \frac{1}{4}\varepsilon$
+	4. Per $n$ grande basta $n \geq \text{max} \{ K_{\varepsilon} + L_{\varepsilon}, H_{\varepsilon} \}$
+	5. Sviluppo $|C_{n} - A_{\infty}B_{\infty}|$
