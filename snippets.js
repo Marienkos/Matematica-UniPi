@@ -19,8 +19,7 @@ export default [
 	{trigger: "@G", replacement: "\\Gamma", options: "mA"},
 	{trigger: "@d", replacement: "\\delta", options: "mA"},
 	{trigger: "@D", replacement: "\\Delta", options: "mA"},
-	{trigger: "@e", replacement: "\\epsilon", options: "mA"},
-	{trigger: ":e", replacement: "\\varepsilon", options: "mA"},
+	{trigger: "@e", replacement: "\\varepsilon", options: "mA"},
 	{trigger: "@z", replacement: "\\zeta", options: "mA"},
 	{trigger: "@t", replacement: "\\theta", options: "mA"},
 	{trigger: "@T", replacement: "\\Theta", options: "mA"},
@@ -29,6 +28,8 @@ export default [
 	{trigger: "@k", replacement: "\\kappa", options: "mA"},
 	{trigger: "@l", replacement: "\\lambda", options: "mA"},
 	{trigger: "@L", replacement: "\\Lambda", options: "mA"},
+	{trigger: "@p", replacement: "\\psi", options: "mA"},
+	{trigger: "@f", replacement: "\\varphi", options: "mA"},
 	{trigger: "@s", replacement: "\\sigma", options: "mA"},
 	{trigger: "@S", replacement: "\\Sigma", options: "mA"},
 	{trigger: "@u", replacement: "\\upsilon", options: "mA"},
@@ -50,6 +51,7 @@ export default [
 	{trigger: "sts", replacement: "_\\text{$0}", options: "mA"},
 	{trigger: "sq", replacement: "\\sqrt{ $0 }$1", options: "mA"},
 	{trigger: "//", replacement: "\\frac{$0}{$1}$2", options: "mA"},
+	{trigger: "bnn", replacement: "\\binom{$0}{$1}$2", options: "mA"},
 	{trigger: "ee", replacement: "e^{ $0 }$1", options: "mA"},
     {trigger: "invs", replacement: "^{-1}", options: "mA"},
 
@@ -149,12 +151,22 @@ export default [
 
     // Symbols
     {trigger: "ooo", replacement: "\\infty", options: "mA"},
-	{trigger: "sum", replacement: "\\sum", options: "mA"},
+	{trigger: "sum", replacement: "\\sum\\limits_{${0:k=0}}^{${1:n}} ${2:a_k}", options: "mA"},
 	{trigger: "prod", replacement: "\\prod", options: "mA"},
-	{trigger: "\\sum", replacement: "\\sum_{${0:i}=${1:1}}^{${2:N}} $3", options: "m"},
-	{trigger: "\\prod", replacement: "\\prod_{${0:i}=${1:1}}^{${2:N}} $3", options: "m"},
-    {trigger: "lim", replacement: "\\lim\\limits_{${0:0}}", options: "mA"},
-    {trigger: "+-", replacement: "\\pm", options: "mA"},
+    {trigger: "Sum", replacement: "\\sum\\limits_{n=${0:0}}^{\\infty} ${1:a_n}", options: "mA"},
+	{trigger: "lim", replacement: "\\lim\\limits_{${0:x} \\to ${1:+\\infty}} ${2:f(x)}", options: "mA"},
+	{trigger: "lmsp", replacement: "\\limsup\\limits_{${0:n} \\to ${1:+\\infty}} ${2:a_n}", options: "mA"},
+	{trigger: "lmnf", replacement: "\\liminf\\limits_{${0:n} \\to ${1:+\\infty}} ${2:a_n}", options: "mA"},
+	{trigger: "mxlm", replacement: "\\text{maxlim } ${0:a_n}", options: "mA"},
+	{trigger: "mnlm", replacement: "\\text{minlim } ${0:a_n}", options: "mA"},
+	{trigger: "int", replacement: "\\text{Int}(${0:A})", options: "mA"},
+	{trigger: "clos", replacement: "\\text{Clos}(${0:A})", options: "mA"},
+	{trigger: "par", replacement: "\\partial ${0:A}", options: "mA"},
+	{trigger: "isol", replacement: "\\text{Isol}(${0:A})", options: "mA"},
+	{trigger: "inf", replacement: "\\inf", options: "mA"},
+	{trigger: "sup", replacement: "\\sup", options: "mA"},
+	
+	{trigger: "+-", replacement: "\\pm", options: "mA"},
 	{trigger: "-+", replacement: "\\mp", options: "mA"},
     {trigger: "...", replacement: "\\dots", options: "mA"},
     {trigger: "nabl", replacement: "\\nabla", options: "mA"},
@@ -162,7 +174,7 @@ export default [
 	// {trigger: "del", replacement: "\\nabla", options: "mA"},
 	{trigger: "xx", replacement: "\\times", options: "mA"},
     {trigger: "**", replacement: "\\cdot", options: "mA"},
-    {trigger: "para", replacement: "\\parallel", options: "mA"},
+    {trigger: "pll", replacement: "\\parallel", options: "mA"},
 
 	{trigger: "===", replacement: "\\equiv", options: "mA"},
     {trigger: "!=", replacement: "\\neq", options: "mA"},
@@ -185,8 +197,8 @@ export default [
 	{trigger: "orr", replacement: "\\cup", options: "mA"},
 	{trigger: "inn", replacement: "\\in", options: "mA"},
 	{trigger: "notin", replacement: "\\not\\in", options: "mA"},
-    {trigger: "\\\\\\", replacement: "\\setminus", options: "mA"},
-    {trigger: "sub=", replacement: "\\subseteq", options: "mA"},
+    {trigger: "dff", replacement: "\\setminus", options: "mA"},
+    {trigger: "sub", replacement: "\\subseteq", options: "mA"},
     {trigger: "sup=", replacement: "\\supseteq", options: "mA"},
 	{trigger: "eset", replacement: "\\emptyset", options: "mA"},
 	{trigger: "set", replacement: "\\{ $0 \\}$1", options: "mA"},
@@ -263,28 +275,6 @@ export default [
 	{trigger: "C", replacement: "\\cancel{ ${VISUAL} }", options: "mA"},
 	{trigger: "K", replacement: "\\cancelto{ $0 }{ ${VISUAL} }", options: "mA"},
 	{trigger: "S", replacement: "\\sqrt{ ${VISUAL} }", options: "mA"},
-
-
-    // Physics
-	{trigger: "kbt", replacement: "k_{B}T", options: "mA"},
-	{trigger: "msun", replacement: "M_{\\odot}", options: "mA"},
-
-    // Quantum mechanics
-    {trigger: "dag", replacement: "^{\\dagger}", options: "mA"},
-	{trigger: "o+", replacement: "\\oplus ", options: "mA"},
-	{trigger: "ox", replacement: "\\otimes ", options: "mA"},
-    {trigger: "bra", replacement: "\\bra{$0} $1", options: "mA"},
-	{trigger: "ket", replacement: "\\ket{$0} $1", options: "mA"},
-	{trigger: "brk", replacement: "\\braket{ $0 | $1 } $2", options: "mA"},
-    {trigger: "outer", replacement: "\\ket{${0:\\psi}} \\bra{${0:\\psi}} $1", options: "mA"},
-
-    // Chemistry
-	{trigger: "pu", replacement: "\\pu{ $0 }", options: "mA"},
-	{trigger: "cee", replacement: "\\ce{ $0 }", options: "mA"},
-	{trigger: "he4", replacement: "{}^{4}_{2}He ", options: "mA"},
-	{trigger: "he3", replacement: "{}^{3}_{2}He ", options: "mA"},
-	{trigger: "iso", replacement: "{}^{${0:4}}_{${1:2}}${2:He}", options: "mA"},
-
 
     // Environments
     // Here the regex syntax [pbBvV]mat is used to match pmat, bmat, Bmat, vmat, Vmat
