@@ -9,7 +9,7 @@ Valgono, per definizione:
 
 Si nota che l'integrale indica geometricamente l'area con segno del sottografico.
 
-# Integrale di Darboux
+# Integrale di Darboux (inclusiva)
 Sia $f(x) = \lambda$ in tutto $[a,b]$. Allora $\int_{a}^{b} f(x) \, dx = \lambda(b-a)$
 
 La funzione caratteristica di un intervallo è la funzione che vale 1 nell'intervallo, 0 fuori.
@@ -27,7 +27,7 @@ Valgono:
 
 Sia $f : [a,b] \to \mathbb{R}$ limitata, si definiscono:
 - integrale superiore $I^+(f) = \inf \left\{  \int_{a}^{b} \psi(x) \, dx : \psi \text{ step function}, \psi(x) \geq f(x) \, \forall x \in [a,b]  \right\}$
-- integrale inferiore $I^-(f) = \inf \left\{  \int_{a}^{b} \psi(x) \, dx : \psi \text{ step function}, \psi(x) \leq f(x) \, \forall x \in [a,b]  \right\}$
+- integrale inferiore $I^-(f) = \sup \left\{  \int_{a}^{b} \psi(x) \, dx : \psi \text{ step function}, \psi(x) \leq f(x) \, \forall x \in [a,b]  \right\}$
 
 Vale $I^+(f) \leq I^-(f)$
 
@@ -56,6 +56,46 @@ DIMOSTRAZIONE (Monotone):
 2. Per crescenza $\varphi(x) \leq f(x) \leq \psi(x)$   $\forall x \in [a,b]$
 3. $\int_{a}^{b} (\psi(x)-\varphi(x)) \, dx = \sum\limits_{i=1}^{n} \left( \frac{{b-a}}{n} \right)(f(x_{i})-f(x_{i-1})) = \frac{{b-a}}{n}(f(b)-f(a))$
 4. Fissato $\varepsilon$, con $n$ grande l'integrale diventa $\leq \varepsilon$
+
+# Integrale di Darboux (ortodossa)
+Sia $f : \mathbb{R}\to \mathbb{R}$ limitata e nulla fuori da un intervallo $[a,b]$. Sia $x_{0}<\dots<x_{n}$ una partizione $P$.
+
+Si definiscono:
+- $S_{DO}^+(f,P) := \sum\limits_{i=1}^{n} (x_{i}-x_{i-1})\sup \{ f(t) : t \in [x_{i-1},x_{i}] \}$
+- $S_{DO}^-(f,P) := \sum\limits_{i=1}^{n} (x_{i}-x_{i-1})\inf \{ f(t) : t \in [x_{i-1},x_{i}] \}$
+- $I_{DO}^+(f) := \inf \{ S_{DO}^+(f,P) : P \text{ partizione} \}$
+- $I_{DO}^-(f) := \sup \{ S_{DO}^-(f,P) : P \text{ partizione} \}$
+
+# Integrale di Riemann
+Si dice diametro di una partizione $P$ il numero $\text{diam}(P) := \text{max}\{ x_{i}-x_{i-1} : i = 1,\dots,n \}$.
+
+Si dice partizione taggata e si indica con $(P,T)$ una partizione e una scelta di punti $T=(t_{1},\dots,t_{n})$ con $t_{i} \in [x_{i-1},x_{i}]$.
+
+Data $(P,T)$ si dice somma di Riemann $S_{R}(P,T) := \sum\limits_{i=1}^{n} (x_{i}-x_{i-1})f(t_{i})$.
+
+Si dice $f$ integrabile secondo Riemann se:
+- $\exists I \in \mathbb{R}$   $\forall\varepsilon >0$   $\exists\delta>0$   $\forall(P,T)$   $\text{diam}(P)\leq\delta \implies |I-S_{R}(P,T)| \leq \varepsilon$
+
+Sia $f : \mathbb{R} \to \mathbb{R}$ limitata e non nulla in un intervallo $[a,b]$. Allora le definizioni sono equivalenti.
+
+DIMOSTRAZIONE (Darboux inclusiva $\iff$ Darboux ortodossa):
+1. $S_{DI}^+(f) \leq S_{DO}^+(f)$ facendo inf
+2. $S_{DO}^+(f) \leq S_{DI}^+(f)$ con osservazioni su partizione e altezze
+
+DIMOSTRAZIONE (Riemann $\implies$ Darboux ortodossa):
+1. Sia $I$ l'integrale di Riemann, serve $\forall \varepsilon>0$   $\exists P$   $S_{DO}^+(f,P) \leq I + \varepsilon$   $S_{DO}^-(f) \geq I - \varepsilon$
+2. Per $P$ con $\text{diam}(P) \leq \delta$, vale $\forall T$   $I-\varepsilon \leq S_{R}(P,T) \leq I+\varepsilon$
+3. Scegliendo opportuni $t_{i}$ si raggiunge la tesi
+
+DIMOSTRAZIONE (Darboux inclusiva $\implies$ Riemann):
+1. $\forall\varepsilon>0$   $\exists\varphi(x) \leq f(x) \leq \psi(x)$   $\int \psi(x) \, dx \leq I+\frac{1}{2}\varepsilon$   $\int \varphi(x) \, dx\geq I - \frac{1}{2}\varepsilon$
+2. Assumiamo wlog $\varphi$ e $\psi$ limitate in $[-M,M]$ e definite sulla stessa partizione $Q$
+3. Consideriamo $\delta \leq \text{diam}(Q)$ e $\delta = \frac{1}{(m+1)(M+1)} \frac{1}{4}\varepsilon$
+4. Siano gli intervalli $[x_{i-1},x_{i}]$ detti:
+	- interni ($\in Int$) se totalmente compresi in un intervallo di $Q$
+	- a cavallo ($\in Cav$) se parzialmente compresi in due intervalli di $Q$
+5. $S_{R}(P,T) := \sum\limits_{i=1}^{n} (x_{i}-x_{i-1})f(t_{i}) = \sum\limits_{i \in Int} (x_{i}-x_{i-1})f(t_{i}) + \sum\limits_{i \in Cav} (x_{i}-x_{i-1})f(t_{i})$
+6. Allora $S_{R}(P,T) \leq \int \psi(x) \, dx - \sum\limits_{i \in Cav} \int_{x_{i-1}}^{x_{i}} \psi(x) \, dx + (m+1)\delta M \leq I+\varepsilon$
 
 # Proprietà delle funzioni integrabili
 Siano $f,g : [a,b] \to \mathbb{R}$ integrabili e $\lambda \in \mathbb{R}$. Allora:
@@ -86,12 +126,12 @@ DIMOSTRAZIONE: Integrale con estremi uguali.
 $|f(x)| \leq M$   $\forall x \in[a,b] \implies F$ è $M$-Lipschitziana
 
 DIMOSTRAZIONE:
-1. $|F(x_{2})-F(x_{1})|$
-2. $=|\int_{x_{1}}^{x_{2}} f(x) \, dx| \impliedby$ additività rispetto alla zona d'integrazione
-3. $\leq \int_{x_{1}}^{x_{2}} |f(x)| \, dx \impliedby$ proprietà del valore assoluto
-4. $\leq \int_{x_{1}}^{x_{2}} M \, dx \impliedby$ monotonia dell'integrale
-5. $= M(x_{2}-x_{1}) \impliedby$ caso banale
-6. $= M|x_{2}-x_{1}| \impliedby x_{2}\geq x_{1}$
+1. Sia $I =|F(x_{2})-F(x_{1})|$
+2. $I=|\int_{x_{1}}^{x_{2}} f(x) \, dx| \impliedby$ additività rispetto alla zona d'integrazione
+3. $I\leq \int_{x_{1}}^{x_{2}} |f(x)| \, dx \impliedby$ proprietà del valore assoluto
+4. $I\leq \int_{x_{1}}^{x_{2}} M \, dx \impliedby$ monotonia dell'integrale
+5. $I= M(x_{2}-x_{1}) \impliedby$ caso banale
+6. $I= M|x_{2}-x_{1}| \impliedby x_{2}\geq x_{1}$
 
 $\int_{c}^{d} f(x) \, dx = F(d) - F(c)$
 
@@ -184,3 +224,20 @@ Se nella funzione integranda compaiono funzioni trigonometriche si possono usare
 - $t = \tan \frac{x}{2}$
 - $\sin x = \frac{2t}{1+t^{2}}$
 - $\cos x = \frac{{1-t^{2}}}{1+t^2}$
+
+# Simmetrie
+Se $f$ è pari, allora $\int_{-a}^{a} f(x) \, dx=2\int_{0}^{a} f(x) \, dx$
+
+DIMOSTRAZIONE:
+1. Sia $I =\int_{-a}^{a} f(x) \, dx$
+2. $I=F(a) - F(-a) \impliedby$ primitiva di $f$ in $[-a,a]$
+3. $I = 2F(a) \impliedby$ la primitiva di una funzione pari è dispari
+4. $I = 2(F(a) - F(0)) \impliedby F(0) = 0 \impliedby$ ogni funzione dispari è nulla all'origine
+5. $I = 2\int_{0}^{a} f(x) \, dx \impliedby$ primitiva di $f$ in $[0,a]$
+
+Se $f$ è dispari, allora $\int_{-a}^{a} f(x) \, dx = 0$
+
+DIMOSTRAZIONE:
+1. Sia $I = \int_{-a}^{a} f(x) \, dx$
+2. $I = F(a) - F(-a) \impliedby$ primitiva di $f$ in $[-a,a]$
+3. $I = F(a) - F(a) = 0 \impliedby$ la primitiva di una funzione dispari è pari
