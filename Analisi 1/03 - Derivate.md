@@ -24,9 +24,9 @@ Valgono:
 # Derivata
 Sia $f : D \to \mathbb{R}$ con $D \subseteq \mathbb{R}$ e $x_{0}$ interno a $D$, ossia tale che $\exists r>0$   $(x_{0}-r,x_{0}+r) \subseteq D$
 
-Si definisce rapporto incrementale $\frac{{f(x_{0}+h) -f(x_{0})}}{h}$ con $h \in (-r,r) \setminus \{ 0 \}$
+Si definisce rapporto incrementale $r_{x_{0}+h}^{x_{0}}f=\frac{\Delta_{x_{0}+h}^{x_{0}}f}{h}$ con $h \in (-r,r) \setminus \{ 0 \}$
 
-$f$ si dice derivabile in $x_{0}$ se esiste $\lim\limits_{h \to 0} \frac{{f(x_{0}+h) - f(x_{0})}}{h} \in \mathbb{R}$, detto derivata di $f$ in $x_{0}$ o $f'(x_{0})$
+$f$ si dice derivabile in $x_{0}$ se esiste $\lim\limits_{h \to 0}r_{x_{0}+h}^{x_{0}} \in \mathbb{R}$, detto derivata di $f$ in $x_{0}$ o $f'(x_{0})$
 
 $f$ si dice differenziabile in $x_{0}$ se esiste $\alpha\in \mathbb{R}$ tale che $f(x_{0}+h) = f(x_{0}) + \alpha h + o(h)$ per $h\to {0}$
 
