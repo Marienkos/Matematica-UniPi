@@ -75,6 +75,7 @@ Una funzione $f : A \rightarrow B$ è:
 - periodica se $\exists p$   $f(x+p) = f(x)$
 - monotona se $x > y \implies f(x)$   $\{>, \geq, <, \leq\}$   $f(y)$
 
+In questi appunti si userà la notazione $\Delta_{a}^b f = f(a)-f(b)$.
 # Inversa
 Data una funzione $f : A \rightarrow B$, una funzione $g : B \rightarrow A$ è detta:
 - inversa sinistra di $f$ se $g \circ f = id$

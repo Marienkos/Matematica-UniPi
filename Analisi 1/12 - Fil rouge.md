@@ -21,14 +21,14 @@ DIMOSTRAZIONE:
 Siano $f,g : [a,b] \to \mathbb{R}$ tali che:
 1. $f$ e $g$ continue in $[a,b]$
 2. $f$ e $g$ derivabili in $(a,b)$
-Allora $\exists c \in (a,b)$   $(f(b) - f(a))g'(c) = (g(b)-g(a))f'(c)$
+Allora $\exists c \in (a,b)$   $\Delta_{b,a} f g'(c) = \Delta_{b,a} g f'(c)$
 
 Inoltre se $g'(x) \neq 0$ in tutto $(a,b)$, allora:
 1. $g(b) \neq g(a)$
-2. $\frac{{f(b)-f(a)}}{g(b)-g(a)} = \frac{f'(c)}{g'(c)}$
+2. $\frac{\Delta_{b,a} f}{\Delta_{b,a} g} = \frac{f'(c)}{g'(c)}$
 
 DIMOSTRAZIONE:
-1. Considero $\varphi(x) := (f(b)-f(a))g(x) - (g(b)-g(a))f(x)$
+1. Considero $\varphi(x) := \Delta_{b,a} f g(x) - \Delta_{b,a} g f(x)$
 2. $\varphi(a) = \varphi(b)$ per sostituzione $\implies \varphi : [a,b] \to \mathbb{R}$ verifica le ipotesi di Rolle
 3. $\exists c \in (a,b)$   $\varphi'(c) = 0 \implies$ prima tesi
 4. Se $g$ non verifica le ipotesi di Rolle vale la seconda tesi
@@ -37,7 +37,7 @@ DIMOSTRAZIONE:
 Sia $f : [a,b] \to \mathbb{R}$ tale che:
 1. $f$ continua in $[a,b]$
 2. $f$ derivabile in $(a,b)$
-Allora $\exists c \in (a,b)$   $f(b)-f(a) = f'(c)(b-a)$
+Allora $\exists c \in (a,b)$   $\Delta f_{b,a} = f'(c)(b-a)$
 
 DIMOSTRAZIONE: Cauchy con $g(x) = x$.
 
@@ -64,7 +64,7 @@ DIMOSTRAZIONE:
 	1. Se il limsup a destra è $+\infty$ è banale, altrimenti è $L \in \mathbb{R}$
 	2. Per caratterizzazione, $\forall \varepsilon>0$   $\exists \delta \in (0,r)$   $\forall x \in (x_{0},x_{0}+\delta)$   $\frac{f'(x)}{g'(x)}\leq L+\varepsilon$
 	3. Si estendono $f$ e $g$ a $\hat{f}$ e $\hat{g}$ definite come sopra
-	4. $\frac{f(x)}{g(x)} = \frac{\hat{f}(x)}{\hat{g}(x)} = \frac{{\hat{f}(x)-\hat{f}(x_{0})}}{\hat{g}(x)-\hat{g}(x_{0})} =\frac{f'(c)}{g'(c)} \leq L + \varepsilon$ per Cauchy in $[x_{0},x]$
+	4. $\frac{f(x)}{g(x)} = \frac{\hat{f}(x)}{\hat{g}(x)} = \frac{\Delta_{x}^{x_{0}} \hat{f}}{\Delta_{x}^{x_{0}} \hat{g}} =\frac{f'(c)}{g'(c)} \leq L + \varepsilon$ per Cauchy in $[x_{0},x]$
 	5. $\limsup\limits_{x \to x_{0}^+} \frac{f(x)}{g(x)} \leq L+\varepsilon$   $\forall \varepsilon > 0 \implies \limsup\limits_{x \to x_{0}^+} \frac{f(x)}{g(x)} \leq L$
 
 Vale anche per limiti nella forma $\frac{*}{\infty}$
@@ -72,8 +72,8 @@ Vale anche per limiti nella forma $\frac{*}{\infty}$
 DIMOSTRAZIONE:
 1. Sia come prima $\frac{f'(x)}{g'(x)} \leq L+\varepsilon$
 2. $\frac{f(x)}{g(x)} = \frac{{f(x)-f(x_{0}+\delta) + f(x_{0}+\delta)}}{g(x)}$
-3. $\frac{{f(x)-f(x_{0}+\delta)}}{g(x)-g(x_{0}+\delta)} = \frac{f'(c)}{g'(c)} \leq L + \varepsilon \implies f(x) - f(x_{0}+\delta) \leq (L+\varepsilon)(g(x)-g(x_{0}+\delta))$
-4. $\frac{f(x)}{g(x)} \leq \frac{{(L+\varepsilon)(g(x)-g(x_{0}+\delta))+f(x_{0}+\delta)}}{g(x)} \leq L+\varepsilon + \frac{{-(L+\varepsilon)g(x_{0}+\delta)+f(x_{0}+\delta)}}{g(x)} \to L+\varepsilon$
+3. $\frac{\Delta_x^{x_{0}+\delta} f}{\Delta_x^{x_{0}+\delta} g} = \frac{f'(c)}{g'(c)} \leq L + \varepsilon \implies \Delta_x^{x_{0}+\delta} f \leq (L+\varepsilon) \Delta_x^{x_{0}+\delta} g$
+4. $\frac{f(x)}{g(x)} \leq \frac{{(L+\varepsilon)\Delta_{x}^{x_{0}+\delta} g+f(x_{0}+\delta)}}{g(x)} \leq L+\varepsilon + \frac{{-(L+\varepsilon)g(x_{0}+\delta)+f(x_{0}+\delta)}}{g(x)} \to L+\varepsilon$
 5. Si fa il limsup a entrambi i membri
 
 # Dimostrazione comune di Taylor
@@ -112,21 +112,21 @@ DIMOSTRAZIONE: Cauchy (o anche Rolle).
 Siano $a_{n}$ e $b_{n}$ due successioni tali che:
 1. $a_{n} \to 0$ e $b_{n} \to 0$
 2. $b_{n}$ strettamente decrescente
-Allora $\liminf\limits_{n \to +\infty} \frac{{a_{n+1}-a_{n}}}{b_{n+1}-b_{n}} \leq \liminf\limits_{n \to +\infty} \frac{a_n}{b_{n}} \leq \limsup\limits_{n \to +\infty} \frac{a_n}{b_{n}} \leq \limsup\limits_{n \to +\infty} \frac{{a_{n+1}-a_{n}}}{b_{n+1}-b_{n}}$
+Allora $\liminf\limits_{n \to +\infty} \frac{\Delta_{n+1}^{n} a}{\Delta_{n+1}^{n} b} \leq \liminf\limits_{n \to +\infty} \frac{a_n}{b_{n}} \leq \limsup\limits_{n \to +\infty} \frac{a_n}{b_{n}} \leq \limsup\limits_{n \to +\infty} \frac{\Delta_{n+1}^{n} a}{\Delta_{n+1}^{n} b}$
 
 DIMOSTRAZIONE:
-1. Assumiamo $\limsup\limits_{n \to +\infty} \frac{{a_{n+1}-a_{n}}}{b_{n+1}-b_{n}} = L \in \mathbb{R}$
-2. Per caratterizzazione $\forall\varepsilon>0$   $\frac{{a_{n+1}-a_{n}}}{b_{n+1}-b_{n}} \leq L+\varepsilon$ definitivamente
-3. $a_{n}-a_{n+1} \leq (L+\varepsilon)(b_{n}-b_{n+1})$
-4. $a_{n}-a_{m} = \sum\limits_{k=n}^{m-1} (a_{k}-a_{k+1}) \leq (L+\varepsilon)\sum\limits_{k=n}^{m-1} (b_{k}-b_{k+1}) = (L+\varepsilon)(b_{n}-b_{m})$
-5. $\frac{{a_{n} - a_{m}}}{b_{n} - b_{m}} \leq L + \varepsilon$
+1. Assumiamo $\limsup\limits_{n \to +\infty} \frac{\Delta_{n+1}^{n} a}{\Delta_{n+1}^{n} b} = L \in \mathbb{R}$
+2. Per caratterizzazione $\forall\varepsilon>0$   $\frac{\Delta_{n+1}^{n} a}{\Delta_{n+1}^{n} b} \leq L+\varepsilon$ definitivamente
+3. $\Delta_{n}^{n+1} a \leq (L+\varepsilon)\Delta_{n}^{n+1} b$
+4. $\Delta_{n}^{m} a = \sum\limits_{k=n}^{m-1} \Delta_{k}^{k+1} a \leq (L+\varepsilon)\sum\limits_{k=n}^{m-1} \Delta_{k}^{k+1} b = (L+\varepsilon)\Delta_{n}^{m} b$
+5. $\frac{\Delta_{n}^{m} a}{\Delta_{n}^{m} b} \leq L + \varepsilon$
 6. Per $m \to +\infty$ si ha $\frac{a_{n}}{b_{n}} \leq L+\varepsilon \implies \limsup\limits_{n \to +\infty} \frac{a_n}{b_{n}} \leq L+\varepsilon$
 
 Vale anche per limiti nella forma $\frac{*}{\infty}$
 
 DIMOSTRAZIONE:
-1. Come prima $\frac{{a_{n+1}-a_{n}}}{b_{n+1}-b_{n}}\leq L + \varepsilon$ definitivamente
+1. Come prima $\frac{\Delta_{n+1}^{n} a}{\Delta_{n+1}^{n} b}\leq L + \varepsilon$ definitivamente
 2. $\frac{a_{n}}{b_{n}} = \frac{{a_{n}-a_{n_{0}}+a_{n_{0}}}}{b_{n}}$
-3. $a_{n}-a_{n_{0}} = \sum\limits_{k=n_{0}}^{n-1} (a_{k+1}-a_{k}) \leq (L+\varepsilon)\sum\limits_{k=n_{0}}^{n-1} (b_{k+1}-b_{k}) = (L+\varepsilon)(b_{n}-b_{n_{0}})$
-4. $\frac{a_{n}}{b_{n}} = \frac{{a_{n}-a_{n_{0}}+a_{n_{0}}}}{b_{n}} \leq \frac{{(L+\varepsilon)(b_{n}-b_{n_{0}})+a_{n_{0}}}}{b_{n}} = L+\varepsilon + \frac{{a_{n_{0}}-(L+\varepsilon)b_{n_{0}}}}{b_{n}} \to L+\varepsilon$
+3. $\Delta_{n}^{n_{0}} a = \sum\limits_{k=n_{0}}^{n-1} \Delta_{k+1}^{k} a \leq (L+\varepsilon)\sum\limits_{k=n_{0}}^{n-1} \Delta_{k+1}^{k} b = (L+\varepsilon)\Delta_{n}^{n_{0}} b$
+4. $\frac{a_{n}}{b_{n}} = \frac{{a_{n}-a_{n_{0}}+a_{n_{0}}}}{b_{n}} \leq \frac{{(L+\varepsilon)\Delta_{n}^{n_{0}} b+a_{n_{0}}}}{b_{n}} = L+\varepsilon + \frac{{a_{n_{0}}-(L+\varepsilon)b_{n_{0}}}}{b_{n}} \to L+\varepsilon$
 5. Si fa il limsup a entrambi i membri
