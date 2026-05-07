@@ -195,6 +195,7 @@ export default [
 
 	{trigger: "and", replacement: "\\cap", options: "mA"},
 	{trigger: "orr", replacement: "\\cup", options: "mA"},
+	{trigger: "Orr", replacement: "\\bigcup\\limits_{${0:i \\in I}} ${1:u_{i}}", options: "mA"},
 	{trigger: "inn", replacement: "\\in", options: "mA"},
 	{trigger: "notin", replacement: "\\not\\in", options: "mA"},
     {trigger: "dff", replacement: "\\setminus", options: "mA"},
@@ -211,6 +212,10 @@ export default [
     {trigger: "ER", replacement: "\\overline{\\mathbb{R}}", options: "mA"},
 	{trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
 	{trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},
+	{trigger: "KK", replacement: "\\mathbb{K}", options: "mA"},
+	{trigger: "AA", replacement: "\\mathscr{A}", options: "mA"},
+	{trigger: "BB", replacement: "\\mathscr{B}", options: "mA"},
+
 
     // Handle spaces and backslashes
 
