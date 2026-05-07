@@ -165,6 +165,8 @@ export default [
 	{trigger: "isol", replacement: "\\text{Isol}(${0:A})", options: "mA"},
 	{trigger: "inf", replacement: "\\inf", options: "mA"},
 	{trigger: "sup", replacement: "\\sup", options: "mA"},
+	{trigger: "dff", replacement: "\\Delta_{${0:a}}^{${1:b}} ${2:f}", options: "mA"},
+	{trigger: "inc", replacement: "r_{${0:a}}^{${1:b}} ${2:f}", options: "mA"},
 	
 	{trigger: "+-", replacement: "\\pm", options: "mA"},
 	{trigger: "-+", replacement: "\\mp", options: "mA"},
@@ -198,7 +200,7 @@ export default [
 	{trigger: "Orr", replacement: "\\bigcup\\limits_{${0:i \\in I}} ${1:u_{i}}", options: "mA"},
 	{trigger: "inn", replacement: "\\in", options: "mA"},
 	{trigger: "notin", replacement: "\\not\\in", options: "mA"},
-    {trigger: "dff", replacement: "\\setminus", options: "mA"},
+    {trigger: "cut", replacement: "\\setminus", options: "mA"},
     {trigger: "sub", replacement: "\\subseteq", options: "mA"},
     {trigger: "sup=", replacement: "\\supseteq", options: "mA"},
 	{trigger: "eset", replacement: "\\emptyset", options: "mA"},
