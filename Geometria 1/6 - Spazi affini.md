@@ -65,3 +65,14 @@ DIMOSTRAZIONE: Passaggio alla differenza.
 Le seguenti due proposizioni sono equivalenti:
 - $\underline{w}_{1},\dots,\underline{w}_{k} \in \mathscr{A}_{n}(\mathbb{K})$ affinemente indipendenti
 - $\hat{w}_{1}=\binom{\underline{w}_{1}}{1},\dots,\hat{w}_{k}=\binom{\underline{w}_{k}}{1}$ linearmente indipendenti
+
+Se $\dim E = n$ ci sono al più $n+1$ punti affinemente indipendenti.
+
+Siano $\mathscr{A}_{n}(\mathbb{K})$ e $P_{1},\dots,P_{n+1}$ sono affinemente indipendenti $\iff$ $\dim \text{Aff}\{ P_{1},\dots,P_{n+1} \} = n$.
+
+# Insieme delle traslazioni
+$\text{GL}_{n}(\mathbb{K}) \subseteq \mathscr{A}_{n}(\mathbb{K})$ e l'insieme delle traslazioni $T_{n}$ è un sottogruppo normale di $\mathscr{A}_{n}(\mathbb{K})$.
+
+DIMOSTRAZIONE:
+1. $T_{n}$ sottogruppo: $g \circ f \in T_{n}$ e $f^{-1} \in T_{n}$
+2. $T_{n}$ normale: $(g^{-1}\circ f \circ g)(x) = g^{-1}f(Ax+b) = A^{-1}(Ax+b+t)-A^{-1}b = x + A^{-1}t \in T_{n}$
