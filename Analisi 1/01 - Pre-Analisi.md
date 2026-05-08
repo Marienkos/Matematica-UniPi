@@ -14,11 +14,6 @@ Sia $P(n)$ un predicato su $\mathbb N$. Se valgono:
 2. $P(n) \implies P(n+1)$
 Allora $\forall n>n_0$   $P(n)$ e si dice che vale per induzione.
 
-# Disuguaglianza di Bernoulli
-Vale $(1+x)^n \geq 1+nx$
-
-DIMOSTRAZIONE: Induzione.
-
 # Insiemi
 Gli insiemi possono essere presentati:
 - per elenco: A = {2, 4, 6, ...}
