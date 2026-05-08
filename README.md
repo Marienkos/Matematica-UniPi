@@ -6,6 +6,8 @@ L'idea generale è che ogni riga costituisce una nozione atomica Zettelkasten-li
 
 I file esistono solo per una maggiore comprensione e categorizzazione, fungendo da macro-temi.
 
+Dentro la relativa cartella di ogni corso è presente il file _Struttura.md dove è inserita la lista dei capitoli e la corrispondenza con eventuali lezioni o risorse disponibili.
+
 Il file snippet.js è una lista di comode scorciatoie del plugin Latex-Suite per Obsidian.
 
 # Dunque...
