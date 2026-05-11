@@ -96,3 +96,16 @@ Allora si dice che $f \in C^k(D)$
 Si dice che $f \in C^\infty(D)$ se $f \in C^k(D)$ per ogni $k$.
 
 Si dice che $f \in C^\omega(D)$, ossia è analitica, se $f \in C^\infty(D)$ e $f$ coincide con la sua serie di Taylor in $D$.
+
+# Raccordo $C^\infty$
+$\exists f : \mathbb{R} \to \mathbb{R} \in C^\infty$ tale che:
+1. $f(x) = 0$   $\forall x \leq 0$
+2. $f(x) > 0$   $\forall x > 0$
+
+Ne segue: $f^{(k)}(0) = 0$   $\forall k \geq 0$, ossia $f(x) = o(x^n)$.
+
+$\exists f : \mathbb{R} \to \mathbb{R} \in C^\infty$ tale che:
+1. $f(x) = 0$   $\forall x \leq 0$
+2. $f(x) = 1$   $\forall x \geq 1$
+3. $0 < f(x) < 1$   $\forall x \in (0,1)$
+4. $f$ strettamente crescente

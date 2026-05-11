@@ -241,3 +241,17 @@ DIMOSTRAZIONE:
 1. Sia $I = \int_{-a}^{a} f(x) \, dx$
 2. $I = F(a) - F(-a) \impliedby$ primitiva di $f$ in $[-a,a]$
 3. $I = F(a) - F(a) = 0 \impliedby$ la primitiva di una funzione dispari è pari
+
+# Raccordo $C^\infty$
+Sia $f : [a,b] \to \mathbb{R}$ integrabile. Allora $\exists g : \mathbb{R} \to \mathbb{R} \in C^\infty$ tale che $\forall\varepsilon>0$   $\int_{a}^{b} |f(x)-g(x)| \, dx \leq \varepsilon$.
+
+DIMOSTRAZIONE:
+1. Caso banale: $f$ caratteristica di un intervallo
+	1. $f([a,b])=\lambda$ nulla altrove
+	2. Basta raccordare agli estremi
+	3. Stimo l'integrale della differenza con $|\lambda|(\text{ampiezza})$
+2. Caso semibanale: $f$ step function $\implies$ combinazione di casi banali
+3. Caso generale:
+	1. Data $f$ integrabile, trovo $\varphi$ step function tale che $\int_{a}^{b} |f(x)-\varphi(x)| \, dx \leq \frac{1}{2}\varepsilon$
+	2. Per il caso semibanale $\exists g \in C^\infty$ tale che $\int_{a}^{b} |\varphi(x)-g(x)| \, dx \leq \frac{1}{2}\varepsilon$
+	3. Disuguaglianza triangolare
