@@ -84,6 +84,23 @@ Sia $f : C \to \mathbb{R}$ convessa, $x_{0} \in \text{Int}(C)$ e $m \in [f'_{-}(
 
 DIMOSTRAZIONE: Rapporto incrementale.
 
+# Osservazioni su intersezioni convesse
+Siano $f$ e $g$ due funzioni convesse. Allora $m(x):=\max \{ f(x),g(x) \}$ è convesso.
+
+DIMOSTRAZIONE: $m(\lambda x + (1-\lambda)y)$
+1. $= f(\lambda x + (1-\lambda)y) \impliedby$ wlog
+2. $\leq \lambda f(x) + (1-\lambda)f(y) \impliedby$ convessità di $f$
+3. $\leq \lambda m(x) + (1-\lambda)m(y) \impliedby f \leq m \land \lambda,1-\lambda\geq 0$
+
+Sia $\{ f_{i}(x) \}_{i\in I}$ una famiglia di funzioni convesse. Allora $S(x):= \sup \{ f_{i}(x) : i \in I\}$ è convesso.
+
+DIMOSTRAZIONE: $\forall i \in I$   $f_{i}(\lambda x + (1-\lambda )y) \leq \lambda S(x) + (1-\lambda)S(y)$ e faccio il sup.
+
+In $\mathbb{R}^2$ valgono:
+1. $f$ convessa $\iff$ sopragrafico convesso
+2. Il sopragrafico dell'intersezione è l'intersezione dei sopragrafici
+3. L'intersezione di convessi è convessa
+
 # Disuguaglianza di Jensen
 Sia $C \subseteq \mathbb{R}$ convesso e $f : C \to \mathbb{R}$ convessa. Sia $n\geq 2$ intero. Siano $x_{1},\dots,x_{n} \in C$. Siano $\lambda_{1},\dots,\lambda_{n}$ numeri $\geq 0$ tali che $\lambda_{1}+\dots+\lambda_{n} = 1$. Allora $f(\lambda_{1}x_{1}+\dots+\lambda_{n}x_{n}) \leq \lambda_{1}f(x_{1})+\dots+\lambda_{n}f(x_{n})$
 
@@ -202,3 +219,9 @@ DIMOSTRAZIONE:
 1. Considero $x_{n} \to x_{0}$
 2. Se $\exists x_{n_{k}}\to x_{0}$ su cui $f(x_{n_{k}})\neq f(x_{0})$ il conto col rapporto incrementale torna
 3. Se $\exists x_{n_{k}}\to x_{0}$ su cui $f(x_{n_{k}})=f(x_{0})$ sempre, $f'(x_{0})=0$ e $r_{x_{n_{k}}}^{x_{0}} (g\circ f) \to 0$
+# Proprietà di Darboux delle derivate
+Sia $f : (x_{0}-r,x_{0}+r)\to \mathbb{R}$ derivabile ovunque. Allora $\liminf\limits_{x \to x_{0}} f'(x)\leq f'(x_{0})\leq \limsup\limits_{x \to x_{0}} f'(x)$
+
+DIMOSTRAZIONE:
+1. Per Lagrange $r_{x_{0}+h}^{x_{0}} f = f'(c(h))$ con $x_{0} \leq c(h) \leq x_{0}+h$
+2. Faccio liminf e limsup a destra e sinistra

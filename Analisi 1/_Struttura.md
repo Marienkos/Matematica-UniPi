@@ -15,7 +15,7 @@ Di seguito è riportata la struttura degli appunti accostando i capitoli e le ap
 | 11  | Topologia dei reali        | 95-96, 101-104            |
 | 12  | Fil rouge                  | 97-100                    |
 | 13  | Moduli di continuità       | 105-110, 121              |
-| 14  | Convessità                 | 111-116, 122              |
+| 14  | Convessità                 | 111-116, 122, 126         |
 | A   | Elenco delle funzioni      | Pre-Analisi, 31           |
 | B   | Elenco dei limiti          | Limiti, Derivate          |
 | C   | Elenco delle serie         | Serie, Integrali impropri |
