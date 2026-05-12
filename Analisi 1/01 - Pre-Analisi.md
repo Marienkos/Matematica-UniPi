@@ -12,7 +12,7 @@ $\neg(\forall x$   $P(x))$ è come dire $\exists x$   $\neg P(x)$ e viceversa.
 Sia $P(n)$ un predicato su $\mathbb N$. Se valgono:
 1. $P(n_0)$
 2. $P(n) \implies P(n+1)$
-Allora $\forall n>n_0$   $P(n)$ e si dice che vale per induzione.
+Allora $\forall n>n_0$ vale $P(n)$ per induzione.
 
 # Insiemi
 Gli insiemi possono essere presentati:
