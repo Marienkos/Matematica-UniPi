@@ -65,6 +65,7 @@ export default [
     // Linear algebra
     {trigger: /([^\\])(det)/, replacement: "[[0]]\\[[1]]", options: "rmA"},
     {trigger: "trace", replacement: "\\mathrm{Tr}", options: "mA"},
+	{trigger: "2mq", replacement: "\\left(\\begin{array}{cc}${0:a} &${1:b} \\\\${2:c} &${3:d}\\end{array}\\right)", options: "mA"},
 
     // More operations
 	{trigger: "([a-zA-Z])hat", replacement: "\\hat{[[0]]}", options: "rmA"},
@@ -215,8 +216,9 @@ export default [
 	{trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
 	{trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},
 	{trigger: "KK", replacement: "\\mathbb{K}", options: "mA"},
-	{trigger: "AA", replacement: "\\mathscr{A}", options: "mA"},
+	{trigger: "AA", replacement: "\\mathscr{A}_n(\\mathbb{K})", options: "mA"},
 	{trigger: "BB", replacement: "\\mathscr{B}", options: "mA"},
+	{trigger: "MM", replacement: "\\mathscr{M}_{m,n}(\\mathbb{K})", options: "mA"},
 
 
     // Handle spaces and backslashes
@@ -363,6 +365,7 @@ export default [
 		output = `\\begin{pmatrix}\n${output}\n\\end{pmatrix}`;
 		return output;
 	}, options: "mA", description: "N x N identity matrix"},
+
 	{
 		trigger: /(?<=(?:\n|^)[ \t]*>*)(?<marker>\d+[.)]|[-*+])(?<whitespace>[ \t]+)(?<text>.*)dm/,
 		replacement: (m) => {
