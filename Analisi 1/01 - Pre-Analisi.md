@@ -86,7 +86,7 @@ DIMOSTRAZIONE
 - Se non ci sono maggioranti, allora il sup esiste.
 - Se ci sono maggioranti, chiamiamo B il loro insieme. B sta a destra di A, dunque per l'assioma di continuità esiste un c minimo di B, ossia il sup di A.
 
-# Numeri reali (Dedekind)
+# Numeri reali (sezioni di Dedekind)
 Si dice semiretta sinistra un sottoinsieme $A \subseteq \mathbb{Q}$ tale che:
 1. $A$ ammette almeno un maggiorante
 2. $a \in A \land b \leq a \implies b \in A$
@@ -96,10 +96,28 @@ Si definisce l'insieme dei numeri reali $\mathbb{R} := \{ \text{semirette sinist
 
 Si definiscono le operazioni $+,* : \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ di somma e prodotto.
 
-Si verifica che la definizione di Dedekind è equivalente a quella assiomatica, in particolare:
+Si verifica che la definizione a sezioni di Dedekind è equivalente a quella assiomatica, in particolare:
 - $\mathbb{R}$ è un campo rispetto alle operazioni
 - si può definire l'ordinamento come l'inclusione insiemistica di semirette
 - l'assioma di continuità deriva dall'osservazione che il sup è il reale dell'unione
+
+# Esistenza e unicità dei reali
+$\mathbb{R}$ esiste.
+
+DIMOSTRAZIONE: Sezioni di Dedekind e verifiche.
+
+La tupla $(\mathbb{R}, \leq)$ è unica a meno di isomorfismi.
+
+DIMOSTRAZIONE:
+1. L'ipotesi si può scrivere come: se $\exists(\hat{\mathbb{R}},\hat{\leq})$ con le stesse proprietà, allora $\exists\varphi : \mathbb{R} \to \hat{\mathbb{R}}$ tale che:
+	1. $\varphi$ bigettiva
+	2. $\varphi$ isomorfismo di campi
+	3. $x \leq y \implies \varphi(x) \hat{\leq} \varphi(y)$
+2. Si definiscono $\varphi(0)=\hat{0}$ e $\varphi(1)=\hat{1}$
+3. Si considerano $\mathbb{N},\mathbb{Z},\mathbb{Q} \subseteq \mathbb{R}$
+4. Si pone $\varphi(n)=\hat{n}$
+5. Si estende $\varphi$ all'immagine di $\mathbb{Z}$ e $\mathbb{Q}$
+6. Si mostra che $\varphi$ manda semirette sinistre di $\mathbb{Q}$ in semirette sinistre di $\hat{\mathbb{Q}}$
 
 # Funzione
 Una funzione $f : A \rightarrow B$ è un insieme di partenza, uno di arrivo e una legge che associa a ogni elemento di $A$ un unico elemento di $B$, indicato con $f(a)$.
@@ -124,6 +142,7 @@ Una funzione $f : A \rightarrow B$ è:
 - monotona se $x > y \implies f(x)$   $\{>, \geq, <, \leq\}$   $f(y)$
 
 In questi appunti si userà la notazione $\Delta_{a}^b f = f(a)-f(b)$.
+
 # Inversa
 Data una funzione $f : A \rightarrow B$, una funzione $g : B \rightarrow A$ è detta:
 - inversa sinistra di $f$ se $g \circ f = id$
@@ -133,3 +152,12 @@ Data una funzione $f : A \rightarrow B$, una funzione $g : B \rightarrow A$ è d
 Per ogni funzione valgono:
 - invertibile a sinistra $\iff$ iniettiva
 - invertibile a destra $\iff$ surgettiva
+
+# Funzione razionale
+Partendo dall'anello dei polinomi $\mathbb{R}[x]$ si può estendere a campo su cui si può definire una relazione d'ordine $\frac{P_{1}(x)}{Q_{1}(x)}\geq \frac{P_{2}(x)}{Q_{2}(x)} \iff$ la disuguaglianza vale per $x$ abbastanza grandi.
+
+La relazione d'ordine è compatibile con le operazioni.
+
+In $\mathbb{R}[x]$ non vale l'assioma di continuità ed equivalenti.
+
+DIMOSTRAZIONE: Si verifica che niente sta tra le costanti e i monomi di primo grado.
