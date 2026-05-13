@@ -12,7 +12,7 @@ $\neg(\forall x$   $P(x))$ è come dire $\exists x$   $\neg P(x)$ e viceversa.
 Sia $P(n)$ un predicato su $\mathbb N$. Se valgono:
 1. $P(n_0)$
 2. $P(n) \implies P(n+1)$
-Allora $\forall n>n_0$ vale $P(n)$ per induzione.
+Allora $\forall n>n_0$   $P(n)$ e si dice che vale per induzione.
 
 # Insiemi
 Gli insiemi possono essere presentati:
@@ -21,16 +21,55 @@ Gli insiemi possono essere presentati:
 
 Le operazioni possibili sono: unione, intersezione, differenza, prodotto cartesiano.
 
-# Numeri reali
-Unica quaterna $(\mathbb R, +, *, \geq)$ a meno di isomorfismi, dove $\mathbb R$ è un insieme coi seguenti tipi di assiomi: algebrici, ordinamento, continuità.
+# Numeri naturali
+I numeri naturali sono l'unica tupla $(\mathbb{N},0,s)$ a meno di isomorfismi, dove:
+- $\mathbb{N}$ è un insieme
+- $0 \in \mathbb{N}$
+- $s : \mathbb{N} \to \mathbb{N}$ tale che:
+	1. $s$ iniettiva
+	2. $s(\mathbb{N})=\mathbb{N} \setminus \{ 0 \}$
+	3. $\forall A \subseteq \mathbb{N}$ se $0 \in A$ e $\forall n \in \mathbb{N}$   $n \in A \implies s(n) \in A$, allora $A = \mathbb{N}$
 
-Algebricamente $(\mathbb R, +, *)$ è un campo con almeno due elementi.
+La somma è definita come $+ : \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ tale che:
+1. $a + 0 = a$
+2. $a + s(n) = s(a+n)$
 
-$\geq$ è un ordinamento totale, gode cioè di totalità, riflessività, transitività e antisimmetricità. Inoltre somma e prodotto positivo non alterano il verso.
+Il prodotto è definito come $* : \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ tale che:
+1. $a*0 = 0$
+2. $a * s(n) = a*n+a$
+
+# Numeri interi relativi
+Dato $\mathbb{N} \times \mathbb{N}$, si considera la relazione $(n_{1},m_{1}) \sim (n_{2},m_{2}) \iff n_{1}+m_{2}=n_{2}+m_{1}$.
+
+Si dimostra che la relazione di cui sopra è una relazione di equivalenza.
+
+L'insieme dei numeri interi relativi è $\mathbb{Z} := \frac{{\mathbb{N}\times \mathbb{N}}}{\sim}$.
+
+La somma è definita come $+ : \mathbb{Z} \times \mathbb{Z} \to \mathbb{Z}$ data da $(a_{1},b_{1})+(a_{2},b_{2})=(a_{1}+a_{2},b_{1}+b_{2})$.
+
+Il prodotto è definito come $* : \mathbb{Z} \times \mathbb{Z} \to \mathbb{Z}$ dato da $(a_{1},b_{1}) * (a_{2},b_{2}) =  (a_{1}a_{2}+b_{1}b_{2},a_{1}b_{2} + a_{2}b_{1})$.
+
+# Numeri razionali
+Data $(a,b) \in\mathbb{Z} \times \mathbb{Z}$ con $b \neq 0$, si considera la relazione $(a,b) \sim (\hat{a},\hat{b}) \iff a\hat{b} = \hat{a}b$.
+
+Si dimostra che la relazione di cui sopra è una relazione di equivalenza.
+
+L'insieme dei numeri razionali è $\mathbb{Q} := \frac{{\mathbb{Z} \times \mathbb{Z}}}{\sim}$.
+
+La somma è definita come $+ : \mathbb{Q} \times \mathbb{Q} \to \mathbb{Q}$ data da $(a,b)+(c,d)=(ad+bc,bd)$.
+
+Il prodotto è definito come $* : \mathbb{Q} \times \mathbb{Q} \to \mathbb{Q}$ dato da $(a,b)*(c,d)=(ac,bd)$.
+
+# Numeri reali (definizione assiomatica)
+I numeri reali sono l'unica tupla $(\mathbb R, +, *, \geq)$ a meno di isomorfismi, dove:
+- $+,* : \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ sono rispettivamente somma e prodotto
+- (Assiomi algebrici) $\mathbb R$ è un campo rispetto alle due operazioni con almeno due elementi
+- (Assiomi di ordinamento) $\geq$ è un ordinamento totale e le due operazioni non alterano il verso
+- Vale l'assioma di continuità
 
 Dati $A \subseteq \mathbb R$ e $B \subseteq \mathbb R$ non vuoti, A sta a sinistra di B se $\forall a \in A$   $\forall b \in B$   $a \leq b$
 
-In tal caso $\exists c \in \mathbb R$   $a \leq c$   $\forall a \in A$   $\land c \leq b$   $\forall b \in B$
+- (Assioma di continuità) Se A sta a sinistra di B, allora $\exists c \in \mathbb R$   $a \leq c$   $\forall a \in A$   $\land c \leq b$   $\forall b \in B$
 
 In $\mathbb{R}$ sono detti insiemi connessi e/o convessi $\emptyset$, i punti, gli intervalli con o senza estremi, le semirette e $\mathbb{R}$ stesso.
 
@@ -41,12 +80,26 @@ Un maggiorante è detto massimo se appartiene ad A. Il minorante è detto minimo
 
 L'estremo superiore di A, anche detto $\sup A$, è $+\infty$ se non esistono maggioranti, altrimenti è il minimo maggiorante. Al contrario per l'estremo inferiore, anche detto $\inf A$.
 
-# Esistenza di inf e sup
-In sottoinsiemi reali A inf e sup esistono sempre.
+Sia $A \subseteq \mathbb{R}$. Allora inf e sup esistono sempre.
 
 DIMOSTRAZIONE
 - Se non ci sono maggioranti, allora il sup esiste.
 - Se ci sono maggioranti, chiamiamo B il loro insieme. B sta a destra di A, dunque per l'assioma di continuità esiste un c minimo di B, ossia il sup di A.
+
+# Numeri reali (Dedekind)
+Si dice semiretta sinistra un sottoinsieme $A \subseteq \mathbb{Q}$ tale che:
+1. $A$ ammette almeno un maggiorante
+2. $a \in A \land b \leq a \implies b \in A$
+3. $A$ non ammette massimo
+
+Si definisce l'insieme dei numeri reali $\mathbb{R} := \{ \text{semirette sinistre di } \mathbb{Q} \}$.
+
+Si definiscono le operazioni $+,* : \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ di somma e prodotto.
+
+Si verifica che la definizione di Dedekind è equivalente a quella assiomatica, in particolare:
+- $\mathbb{R}$ è un campo rispetto alle operazioni
+- si può definire l'ordinamento come l'inclusione insiemistica di semirette
+- l'assioma di continuità deriva dall'osservazione che il sup è il reale dell'unione
 
 # Funzione
 Una funzione $f : A \rightarrow B$ è un insieme di partenza, uno di arrivo e una legge che associa a ogni elemento di $A$ un unico elemento di $B$, indicato con $f(a)$.
