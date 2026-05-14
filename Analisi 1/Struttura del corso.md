@@ -16,7 +16,7 @@ Le lezioni sono prese dall'archivio didattico del professor Gobbino, anno 2025/2
 | 12  | Fil rouge                   | 97-100                    |
 | 13  | Moduli di continuità        | 105-110, 121              |
 | 14  | Convessità                  | 111-116, 122, 126         |
-| A   | Elenco di funzioni          | Pre-Analisi, 31           |
+| A   | Elenco di funzioni          | Pre-Analisi, 31, 130      |
 | B   | Elenco di limiti e sviluppi | Limiti, Derivate          |
 | C   | Elenco di serie e integrali | Serie, Integrali impropri |
-| D   | Complementi dimostrati      | 117-118, 129              |
+| D   | Complementi dimostrati      | 117-118, 129-130          |

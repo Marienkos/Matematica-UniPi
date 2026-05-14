@@ -56,3 +56,9 @@ Tangente iperbolica: $f(x) = \tanh x$
 Delta di Dirac (o, come la chiamo io, delta i-j): $f(x) = \delta_{i,j}$
 - $f(x) = 1$ se $i = j$
 - $f(x) = 0$ se $i \neq j$
+
+# Funzioni strane
+Dato $\mathbb{R}$ spazio vettoriale su $\mathbb{Q}$, esiste una base più che numerabile $\{ v_{1},v_{2},\dots \}$. Allora ogni $x \in \mathbb{R}$ si può scrivere come $x = c_{1}v_{1} + c_{2}v_{2} + \dots$ Considero:
+1. $f_{1}(x)=c_{1}v_{1}$ periodica di $v_{2}$
+2. $f_{2}(x)=x-f_{1}(x)$ periodica di $v_{1}$
+3. $f_1(x)+f_{2}(x)=x$

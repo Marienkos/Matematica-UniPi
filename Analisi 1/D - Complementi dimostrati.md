@@ -50,3 +50,12 @@ DIMOSTRAZIONE (Erdős):
 4. $n = \#A_{n} + \#B_{n}$
 5. Ogni $p_{i}^{a_{i}} \in A_{n}$ ha $a_{i} \leq \log_{p_{i}}n \leq \log_{2}n$, quindi $\# A_{n} \leq (\log_{2}n)^k$
 6. $B_{n}=\bigcup\limits_{j\geq k+1}$elementi divisibili per $p_{i}$, quindi $\# B_{n} \leq \sum\limits_{i\geq k+1} \frac{n}{p_{i}} = n\sum\limits_{i\geq k+1} \frac{1}{p_{i}} \leq \frac{1}{2}$
+
+# Irrazionalità di e
+Sia $e = \sum\limits_{n=0}^{\infty} \frac{1}{n!}$. Tale numero è irrazionale.
+
+DIMOSTRAZIONE:
+1. Supponiamo $e = \frac{a}{b}$ con $a,b \in \mathbb{Z}$, vale $e = \sum\limits_{n=0}^{b} \frac{1}{n!}+\sum\limits_{n\geq b+1} \frac{1}{n!}$
+2. $a(b-1)! = b!\sum\limits_{n=0}^{b} \frac{1}{n!} + b!\sum\limits_{n\geq b+1} \frac{1}{n!} \implies b!\sum\limits_{n\geq b+1} \frac{1}{n!}$ intero
+3. Stimiamo la serie dall'alto con $b!\sum\limits_{n=1}^{\infty} \frac{1}{(b+n)!}=\frac{1}{b} < 1$, ossia $0<b<1$, assurdo
+4. Se $b=1$, abbiamo già dimostrato che $2 < e < 3$, ossia $e \not\in \mathbb{Z}$, assurdo
