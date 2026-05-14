@@ -1,4 +1,4 @@
-Di seguito è riportata la struttura degli appunti accostando i capitoli e le appendici e le lezioni da cui le relative informazioni sono state estrapolate.
+Le lezioni sono prese dall'archivio didattico del professor Gobbino, anno 2025/26 (Matematica).
 
 | ID  | Capitolo                    | Lezioni                   |
 | --- | --------------------------- | ------------------------- |
@@ -19,4 +19,4 @@ Di seguito è riportata la struttura degli appunti accostando i capitoli e le ap
 | A   | Elenco di funzioni          | Pre-Analisi, 31           |
 | B   | Elenco di limiti e sviluppi | Limiti, Derivate          |
 | C   | Elenco di serie e integrali | Serie, Integrali impropri |
-| D   | Complementi dimostrati      | 117-118                   |
+| D   | Complementi dimostrati      | 117-118, 129              |

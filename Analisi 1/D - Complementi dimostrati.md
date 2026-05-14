@@ -39,3 +39,14 @@ DIMOSTRAZIONE:
 2. Uso lo step precedente con $x = t^2 \geq 0$
 3. Elevo alla $n$, integro e moltiplico per $\sqrt{ n }$
 4. $\sqrt{ n }I_{2n+1} \leq \int_{-\sqrt{ n }}^{\sqrt{ n }} e^{-x^{2}} \, dx \leq \sqrt{ n }I_{2n-2}$
+
+# Serie dei reciproci dei primi
+Sia $P=\{ \text{numeri primi} \}$. Allora $\sum\limits_{p \in P}^{\infty} \frac{1}{p}$ diverge.
+
+DIMOSTRAZIONE (Erdős):
+1. Supponiamo converga, allora $\exists k$   $\sum\limits_{i\geq k+1} \frac{1}{p_{i}}\leq \frac{1}{2}$
+2. Sia $A_{n}=\{ i \in {1,\dots,n} : i \text{ ha solo fattori in } \{ p_{1},\dots,p_{k} \} \}$
+3. Sia $B_{n}=\{ i \in {1,\dots,n} : i \text{ ha solo fattori in } \{ p_{k+1},\dots \} \}$
+4. $n = \#A_{n} + \#B_{n}$
+5. Ogni $p_{i}^{a_{i}} \in A_{n}$ ha $a_{i} \leq \log_{p_{i}}n \leq \log_{2}n$, quindi $\# A_{n} \leq (\log_{2}n)^k$
+6. $B_{n}=\bigcup\limits_{j\geq k+1}$elementi divisibili per $p_{i}$, quindi $\# B_{n} \leq \sum\limits_{i\geq k+1} \frac{n}{p_{i}} = n\sum\limits_{i\geq k+1} \frac{1}{p_{i}} \leq \frac{1}{2}$
