@@ -38,7 +38,7 @@ Allora $a_n \to l \in \mathbb R \land c_n \to l \implies b_n \to l$
 DIMOSTRAZIONE: Usando le definizioni di limite valgono tutte le disuguaglianze.
 
 # Numero di Nepero
-La successione $e_n = (1 + \frac 1 n)^n$ ha limite, indicato con $e$. Inoltre $2 < e < 3$.
+La successione $e_n = (1 + \frac 1 n)^n$ ha limite, detto numero di Nepero e indicato con $e$. Inoltre $2 < e < 3$.
 
 DIMOSTRAZIONE: Bernoulli, coefficiente binomiale e induzione.
 
