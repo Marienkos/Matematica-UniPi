@@ -164,19 +164,9 @@
               "icon": "lucide-list",
               "title": "Struttura di 01 - Pre-Analisi"
             }
-          },
-          {
-            "id": "87d5109cada90f81",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
