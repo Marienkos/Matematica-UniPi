@@ -88,6 +88,7 @@ export default [
 	{trigger: "tilde", replacement: "\\tilde{$0}$1", options: "mA"},
 	{trigger: "und", replacement: "\\underline{$0}$1", options: "mA"},
 	{trigger: "vec", replacement: "\\vec{$0}$1", options: "mA"},
+	{trigger: "seg", replacement: "\\overline{$0}$1", options: "mA"},
     {
         trigger: "pmod",
         replacement: "\\pmod{${0:n}}$1",
