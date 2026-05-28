@@ -107,7 +107,7 @@ Si usa la seguente notazione:
 Sia $f : A \to \mathbb{R}$. Se $|f(x)-f(y)|\leq \omega(|x-y|)$ con $\omega : [0,+\infty) \to [0,+\infty)$ allora si dice $f$ $\omega$-continua, si denota con $f \in C^{0,\omega}$ e si parla di modulo di continuità
 
 # Integrabilità
-Sia $f : [a,g] \to \mathbb{R}$ continua. Allora $f$ integrabile in $[a,b]$.
+Sia $f : [a,b] \to \mathbb{R}$ continua. Allora $f$ integrabile in $[a,b]$.
 
 DIMOSTRAZIONE: $f$ UC per Heine - Cantor, definizione con step function.
 
