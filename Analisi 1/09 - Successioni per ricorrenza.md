@@ -17,7 +17,7 @@ Le $k$ soluzioni formano una base di uno spazio vettoriale.
 La procedura risolutiva è la seguente (caso di ordine 2, ma estendibile):
 1. Si passa al polinomio caratteristico, definito da $x_{n} \mapsto x^n$
 2. Si guardano le radici del polinomio:
-	- se sono $\lambda,\mu \in \mathbb{R}$, aTllora $x_{n} = a\lambda^n + b\mu^n$
+	- se sono $\lambda,\mu \in \mathbb{R}$, allora $x_{n} = a\lambda^n + b\mu^n$
 	- se è $\lambda \in \mathbb{R}$ con molteplicità 2, allora $x_{n} = a\lambda^n + bn\lambda^n$
 	- se sono $\rho e^{i\theta}, \rho e^{-i\theta} \in \mathbb{C}$, allora $x_{n}=a\rho^n\cos(\theta n)+b\rho^n\sin(\theta n)$
 3. Si trovano $a$ e $b$ sostituendo i valori iniziali
