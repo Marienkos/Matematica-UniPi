@@ -25,6 +25,8 @@ Le grandezze possono essere:
 - vettoriali, ossia vettori dotati di modulo, direzione e verso
 - tensoriali
 
+L'analisi dimensionale permette di risalire all'unità di misura di una grandezza.
+
 # Proprietà dei vettori
 I vettori fisici seguono le leggi dei vettori matematici su spazi vettoriali, pertanto godono di tutte le usuali proprietà.
 

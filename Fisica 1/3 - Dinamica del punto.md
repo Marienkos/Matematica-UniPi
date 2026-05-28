@@ -11,10 +11,7 @@ Le 4 interazioni fondamentali sono:
 - la nucleare forte
 - la nucleare debole
 
-Le forze godono di:
-1. additività
-2. interazione
-3. sia $\vec{f}$ la forza tra due corpi a distanza $d$, allora $f \sim \frac{1}{r^2}$
+Le forze godono di additività e decrescenza come $\frac{1}{d^2}$. 
 
 # Principi della dinamica Newtoniana
 Si definisce la quantità di moto $\vec{p} = m\vec{v}$.
