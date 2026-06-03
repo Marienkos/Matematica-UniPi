@@ -102,8 +102,8 @@ DIMOSTRAZIONE:
 La procedura risolutiva è la seguente:
 1. Si passa al polinomio caratteristico, definito da $u^{(k)}(t) \mapsto x^k$
 2. Si guardano le $k$ radici del polinomio con molteplicità $m$
-	- ogni radice $\lambda \in \mathbb{R}$ dà $t^{n}e^{\lambda t}$ per ogni $0 < n < m$
-	- ogni coppia $\alpha\pm i\beta \in \mathbb{C}$ dà $t^ne^{\alpha t}\cos(\beta t), t^ne^{\alpha t}\sin(\beta t)$ per ogni $0 < n < m$
+	- ogni radice $\lambda \in \mathbb{R}$ dà $t^{n}e^{\lambda t}$ per ogni $0 \leq n < m$
+	- ogni coppia $\alpha\pm i\beta \in \mathbb{C}$ dà $t^ne^{\alpha t}\cos(\beta t), t^ne^{\alpha t}\sin(\beta t)$ per ogni $0 \leq n < m$
 
 # Equazione lineare non omogenea
 Sia $\bar{u}(t)$ una soluzione qualsiasi dell'equazione non omogenea e $U(t)$ la soluzione generale dell'equazione omogenea. La soluzione generale è del tipo $u(t) = \bar{u}(t) + U(t)$
