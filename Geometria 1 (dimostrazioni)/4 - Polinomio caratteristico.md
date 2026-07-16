@@ -1,4 +1,6 @@
 # Invarianza
+Al cambio di base per similitudine, per Binet il determinante si annulla per l'inverso e rimane il determinante della matrice simile.
+
 # Molteplicità algebrica e geometrica
 # Criterio di diagonalizzabilità
 # Criterio di simultanea diagonalizzabilità
