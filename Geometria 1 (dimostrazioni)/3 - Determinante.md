@@ -19,3 +19,6 @@ La funzione definita come lo sviluppo di Laplace soddisfa le condizioni di multi
 
 # Teorema di Binet
 Siano $A$ e $B$ matrici. Se una delle due è singolare vale ovviamente $\det AB = 0$. Ora consideriamo la funzione $\phi(A)=\frac{\det AB}{\det B}$, che soddisfa le condizioni di multilinearità, alternanza e normalizzazione, dunque per unicità del determinante coincide con esso. Allora $\phi(A)=\det A=\frac{\det AB}{\det B} \implies \det AB = \det A \det B$.
+
+# Rango come massimo ordine di minore non nullo
+Se $k$ colonne sono linearmente dipendenti, ogni minore di ordine $k$ è nullo. Altrimenti la sottomatrice delle colonne ha rango $k$. Ma il rango per righe coincide col rango per colonne, dunque esiste un minore di ordine $k$ non nullo.

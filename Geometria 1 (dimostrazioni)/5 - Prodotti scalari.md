@@ -1,6 +1,9 @@
 # Formula del cambio di base
 Vale che $M_{i,j} = \phi(\underline{v}_{i},\underline{v}_{j})$, di conseguenza $\phi(\underline{v},\underline{w}) = {}^t[\underline{v}]_{\mathscr{B}} M_{\mathscr{B}}(\phi)[\underline{w}]_{\mathscr{B}}$ e il cambio di base avviene per congruenza, ossia coniugio per trasposta anziché per l'inversa.
 
+# Formula della dimensione dell'ortogonale
+Dato l'isomorfismo $\delta : V \to V^{* *}$ si ha $\delta(W^\perp)=\text{Ann}(\alpha_{\phi}(W))$ da cui $\dim W^\perp = n - \dim\alpha_{\phi}(W) = n - (\dim W - \dim(W\cap\text{Ker}\alpha_{\phi}) = \dim V - \dim W + \dim (W \cap V^\perp)$.
+
 # Teorema di Lagrange
 È sempre possibile trovare una base ortogonale utilizzando algoritmi quali l'algoritmo di ortogonalizzazione di Gram - Schmidt.
 
