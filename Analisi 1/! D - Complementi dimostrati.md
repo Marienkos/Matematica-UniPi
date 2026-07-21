@@ -3,6 +3,11 @@ Vale $(1+x)^n \geq 1+nx$
 
 DIMOSTRAZIONE: Induzione.
 
+# Disuguaglianza triangolare
+Valgono $|x+y| \leq |x| + |y|$ e l'amica $||x|-|y||\leq |x-y|$
+
+DIMOSTRAZIONE (Amica): Disuguaglianza triangolare con $x-y$ e $y$.
+
 # Prodotto di Wallis
 $W_{n} := \sum\limits_{k=1}^{n} \frac{2k}{2k-1} \frac{2k}{2k+1} \to \frac{\pi}{2}$
 

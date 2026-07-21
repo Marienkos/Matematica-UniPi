@@ -35,19 +35,22 @@ DIMOSTRAZIONE: Siano $S^a_{n}$ e $S^b_{n}$ le due somme parziali. Hp $\implies$ 
 - $S^a_{n} \to +\infty \implies S^b_{n} \to +\infty$
 - $S^b_{n} \to l\in \mathbb{R} \implies S^a_{n} \to l_{1}\in \mathbb{R}$
 
-# Criterio della radice e/o rapporto
+# Criterio della radice
 Sia $a_{n}\geq 0$ definitivamente e $\sqrt[n]{a_{n}} \to l$
 - $l>1 \implies$ la serie diverge
 - $l<1 \implies$ la serie converge
 
-Sia $a_{n}>0$ definitivamente e $\frac{a_{n+1}}{a_{n}} \to l$. Valgono le implicazioni precedenti.
-
-DIMOSTRAZIONE (Esempio con la radice):
+DIMOSTRAZIONE:
 - $l>1 \implies a_{n} \to +\infty \implies$ manca la condizione necessaria
 - $l<1 \implies a_{n} \to 0$
 	1. $\sqrt[n]{a_{n}} \leq \frac{{l+1}}{2}$ definitivamente, cioè $a_{n} \leq (\frac{{l+1}}{2})^n = b_{n}$
 	2. $b_{n}$ è geometrica con parametro $\in (0,1)$ $\implies \sum\limits_{n=0}^{\infty} b_{n}$ converge
 	3. La serie converge per confronto con $\sum\limits_{n=0}^{\infty} b_{n}$
+
+# Criterio del rapporto
+Sia $a_{n}>0$ definitivamente e $\frac{a_{n+1}}{a_{n}} \to l$. Valgono le implicazioni precedenti.
+
+DIMOSTRAZIONE: Stessa per le successioni.
 
 # Criterio del confronto asintotico
 Siano $a_{n}$ e $b_{n}$ due successioni tali che:

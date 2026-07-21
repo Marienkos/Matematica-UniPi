@@ -1,4 +1,4 @@
-Le lezioni sono prese dall'archivio didattico del professor Gobbino, anno 2025/26.
+ Le lezioni sono prese dall'archivio didattico del professor Gobbino, anno 2025/26.
 
 | ID  | Capitolo                    | Lezioni                   |
 | --- | --------------------------- | ------------------------- |

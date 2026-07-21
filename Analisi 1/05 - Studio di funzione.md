@@ -24,7 +24,10 @@ DIMOSTRAZIONE: Teorema di esistenza degli zeri applicato a $g(x) = f(x) - \lambd
 
 Sia $A \subseteq \mathbb{R}$ non vuoto e connesso e $f : A \to \mathbb{R}$ continua. Allora $f$ assume in $A$ tutti i valori tra $\inf f$ e $\sup f$.
 
-DIMOSTRAZIONE: Caratterizzazione di inf e sup, teorema dei valori intermedi e connessione.
+DIMOSTRAZIONE:
+1. Sia $\inf \leq \lambda \leq \sup$
+2. Per caratterizzazione $\exists a,b \in A$   $f(a) < \lambda < f(b)$
+3. Teorema dei valori intermedi in $[a,b] \subseteq A$ per convessità
 
 # Teorema di Lagrange
 Sia $f : [a,b] \to \mathbb{R}$ tale che:
@@ -50,6 +53,8 @@ Sia $f: (a,b)\to \mathbb{R}$ derivabile ovunque tale che:
 1. $f'(x)\geq 0$   $\forall x \in (a,b)$
 2. $f'(x)$ non è nulla in un intero intervallo (annullamento sporadico)
 Allora $f$ è strettamente crescente in $(a,b)$
+
+DIMOSTRAZIONE: $f$ crescente, se fosse strettamente esisterebbe un tratto in cui $f'(x)=0$
 
 # Teorema di Weierstrass
 Il massimo (max) di una funzione è il massimo valore assunto in un punto, detto punto di massimo. Al contrario si parla di minimo (min) e punto di minimo.

@@ -32,15 +32,39 @@ DIMOSTRAZIONE:
 3. Ponendo $n_2 = \max\{n_0, n_1\}$ vale $b_n \geq M$ da $n_2$
 
 # Confronto a 3
-Siano $a_n$, $b_n$, e $c_n$ tre successioni tali che $a_n \leq b_n \leq c_n$ definitivamente.
-Allora $a_n \to l \in \mathbb R \land c_n \to l \implies b_n \to l$ 
+Siano $a_n$, $b_n$, e $c_n$ tre successioni tali che:
 
-DIMOSTRAZIONE: Usando le definizioni di limite valgono tutte le disuguaglianze.
+1. $a_n \leq b_n \leq c_n$ definitivamente
+2. $a_n \to l \in \mathbb R$
+3. $c_n \to l$
+Allora anche $b_n \to l$.
+
+DIMOSTRAZIONE:
+1. Per (2.) si ha $l-\varepsilon \leq a_{n} \leq l+\varepsilon$ definitivamente da $n_{a}$
+2. Per (3.) si ha $l-\varepsilon \leq c_{n} \leq l + \varepsilon$ definitivamente da $n_{c}$
+3. Per (1.) si ha $a_n \leq b_n \leq c_n$ definitivamente da $n_{b}$
+4. $l-\varepsilon \leq b_{n}\leq l + \varepsilon$ definitivamente da $\max\{ n_{a},n_{b},n_{c} \}$
+
+# Teorema delle successioni monotone
+Sia $a_{n}$ una successione debolmente crescente. Allora $a_{n} \to \sup\{ a_{n} :n \in \mathbb{N} \}$.
+
+DIMOSTRAZIONE:
+- Sia $l = +\infty$
+	1. Considero $M$
+	2. Poiché $\sup = +\infty$, per caratterizzazione $\exists n_{0}\in \mathbb{N}$   $a_{n_{0}}\geq M$
+	3. Per monotonia $a_{n}\geq a_{n_{0}} \geq M$ definitivamente
+- Sia $l \in \mathbb{R}$
+	1. Considero $\varepsilon$
+	2. Per caratterizzazione $\exists n_{0} \in \mathbb{N}$   $a_{n_{0}}\geq l - \varepsilon$
+	3. Per monotonia $a_{n}\geq a_{n_{0}} \geq l - \varepsilon$ definitivamente
+	4. Vale $a_{n} \leq l \leq l+\varepsilon$ in quanto $l$ è un maggiorante
 
 # Numero di Nepero
 La successione $e_n = (1 + \frac 1 n)^n$ ha limite, detto numero di Nepero e indicato con $e$. Inoltre $2 < e < 3$.
 
-DIMOSTRAZIONE: Bernoulli, coefficiente binomiale e induzione.
+DIMOSTRAZIONE:
+1. Per induzione $e_{n}\geq e_{n-1}$, alla fine si usa Bernoulli
+2. $e_{n} = \left( 1 + \frac{1}{n} \right)^n = \sum\limits_{k=0}^{n} \binom{n}{k} \frac{1}{n^k} = 1 + \sum\limits_{k=1}^{n} \binom{n}{k} \frac{1}{n^k} \leq 1 + \sum\limits_{k=1}^{n} \frac{1}{k!} \leq 1 + \sum\limits_{k=1}^{n} \frac{1}{2^{k-1}} = 3 - \frac{1}{2^{n-1}}< 3$ 
 
 # Retta reale estesa
 Si definisce $\overline{\mathbb{R}} = \mathbb{R} \cup \{ +\infty, -\infty \}$
@@ -50,16 +74,37 @@ Siano $a_{n} \to l_{1} \in \overline{\mathbb{R}}$ e $b_{n} \to l_{2} \in \overli
 - $a_{n} b_{n} = l_{1} l_{2}$
 - $\frac{a_{n}}{b_{n}} = \frac{l_{1}}{l_{2}}$
 
-# Criterio della radice e/o rapporto
+# Criterio della radice
 Sia $a_{n}$ una successione definitivamente $\geq 0$ tale che $\sqrt[n]{a_{n}} \to l \in \overline{\mathbb{R}}^+$
 - $l>1 \implies a_{n} \to +\infty$
 - $l<1 \implies a_{n} \to 0$
 
+DIMOSTRAZIONE:
+- Sia $l>1$
+	1. $\sqrt[n]{a_{n}}\geq \frac{{l+1}}{2}$ definitivamente
+	2. $a_{n} \geq (\frac{{l+1}}{2})^n \to +\infty$
+- Sia $l < 1$
+	1. $\sqrt[n]{a_{n}} \leq \frac{{l+1}}{2}$ definitivamente
+	2. $0 \leq a_{n} \leq (\frac{{l+1}}{2})^n \to 0$
+
+# Criterio del rapporto
 Sia $a_n$ una successione definitivamente $>0$ tale che $\frac{a_{n+1}}{a_{n}}\to l \in \overline{\mathbb{R}}^+$. Valgono le implicazioni precedenti.
 
+DIMOSTRAZIONE:
+- Sia $l>1$
+	1. Definitivamente per $n_{0}$ si ha $\frac{a_{n+1}}{a_{n}}\geq \frac{{l+1}}{2}$
+	2. $a_{n_{0}+1}\geq \frac{{l+1}}{2}a_{n_{0}}$
+	3. Per induzione $a_{n_{0}+k}\geq (\frac{{l+1}}{2})^ka_{n_{0}}$
+	4. $a_{n} \geq (\frac{{l+1}}{2})^{n-n_{0}}a_{n_{0}} \to +\infty$
+- Sia $l<1$: come prima $0 \leq a_{n} \leq \left( \frac{{l+1}}{2} \right)^n \left( \frac{2}{l+1} \right)^{n_{0}}a_{n_{0}} \to 0$
+
+# Criterio rapporto $\to$ radice
 Sia $a_{n}$ una successione definitivamente $>0$. Vale $\frac{a_{n+1}}{a_{n}} \to l \in \overline{\mathbb{R}}^+ \implies \sqrt[n]{a_{n}} \to l$
 
-DIMOSTRAZIONE: Definitivamente + induzione.
+DIMOSTRAZIONE:
+1. Definitivamente per $n_{0}$ si ha $l- \frac{\varepsilon}{2} \leq \frac{a_{n+1}}{a_{n}} \leq l+ \frac{\varepsilon}{2}$
+2. Per induzione $\left( l - \frac{\varepsilon}{2} \right)^n\left( l- \frac{\varepsilon}{2} \right)^{-n_{0}}a_{n_{0}} \leq a_{n} \leq \left( l + \frac{\varepsilon}{2} \right)^n\left( l + \frac{\varepsilon}{2} \right)^{-n_{0}}a_{n_{0}}$
+3. Facendo la radice $n$-esima e i limiti si ha $l-\varepsilon \leq \sqrt[n]{a_{n}} \leq l + \varepsilon$
 
 # Intorno
 Dati $x_{0}, \delta$ e $D \subseteq \mathbb{R}$, si dice intorno chiuso di $x_{0}$ in $D$ l'insieme $D \cap [x_{0}-\delta,x_{0}+\delta]\setminus \{ x_{0} \}$ e si indica con $I_{x_{0},\delta}$.
@@ -96,21 +141,21 @@ Tutte le funzioni ottenute da quelle elementari mediante operazioni algebriche e
 
 DIMOSTRAZIONE: Definizione di limite e continuità.
 
-# Criterio successioni - funzioni
+# Criterio successioni $\to$ funzioni
 Sia $D \subseteq \mathbb{R}$ con $\sup D = +\infty$. Sia $a_{n}$ una successione e $f:D\to \mathbb{R}$ una funzione per cui vale:
 - $f(x) = a_{n}$   $\forall x \in D \cap [n,n+1)$
 Allora $\lim\limits_{x \to +\infty} f(x) = \lim\limits_{n \to +\infty} a_{n}$
 
 DIMOSTRAZIONE: Il definitivamente delle successioni è simile al definitivamente delle funzioni.
 
-# Criterio funzioni - successioni
+# Criterio funzioni $\to$ successioni
 Sia $a_{n}$ una successione e $f:D\to \mathbb{R}$ una funzione per cui valgono:
 1. $a_{n} \in D \setminus \{ x_{0} \}$ definitivamente
 2. $a_{n} \to x_{0} \in \overline{\mathbb{R}}$
 3. $\lim\limits_{x \to x_{0}} f(x) = l \in \overline{\mathbb{R}}$
 Allora $f(a_{n}) \to l$
 
-DIMOSTRAZIONE: (3.), poi (2.) e (1.) usando le definizioni.
+DIMOSTRAZIONE: (3.), poi (1.) e (2.) usando le definizioni.
 
 # Sottosuccessione
 Sia $n_{k}$ una in $\mathbb{N}$ tale che $n_{k} \to +\infty$. Una sottosuccessione è l'applicazione $k \mapsto a_{n_{k}}$

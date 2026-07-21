@@ -30,6 +30,10 @@ $f$ si dice derivabile in $x_{0}$ se esiste $\lim\limits_{h \to 0}r_{x_{0}+h}^{x
 
 $f$ si dice differenziabile in $x_{0}$ se esiste $\alpha\in \mathbb{R}$ tale che $f(x_{0}+h) = f(x_{0}) + \alpha h + o(h)$ per $h\to {0}$
 
+Se $f$ è differenziabile, allora $\alpha$ è unico.
+
+DIMOSTRAZIONE: $\exists\alpha_{1},\alpha_{2} \implies f(x_{0}) + \alpha_{1}h + o(h) = f(x_{0}) + \alpha_{2} + o(h) \implies \alpha_{1}-\alpha_{2}=\frac{o(h)}{h} \to 0$
+
 Valgono in $\mathbb{R}$:
 - $f$ derivabile in $x_{0}$ $\iff$ $f$ differenziabile in $x_{0}$
 - $\alpha = f'(x_{0})$
@@ -46,7 +50,7 @@ Valgono, sottintendendo gli argomenti:
 - $\left( \frac{f}{g} \right)' = \frac{{f'g - g'f}}{g^{2}}$
 - $[g(f)]' = g'(f)f$
 
-DIMOSTRAZIONE: Definizione di derivabilità/differenziabilità.
+DIMOSTRAZIONE: Definizione di derivabilità o differenziabilità.
 
 Sia $g$ l'inversa di $f$. Sotto certe ipotesi vale $g'(x) = \frac{1}{f'(g(x))}$
 
