@@ -14,7 +14,7 @@ Il file "snippet.js" è una lista di comode scorciatoie del plugin Latex-Suite p
 Sono di seguito riportate note rilevanti riguardo alle cartelle:
 - Analisi 1: darò l'orale a luglio, devo espandere le dimostrazioni dei file che iniziano con !
 - Aritmetica: darò lo scritto a settembre, manca roba
-- Fisica 1: darò lo scritto a settembre, manca roba
+- Fisica 1: darò lo scritto a settembre, c'è tutto ma quel tutto è ancora poco
 - Geometria 1: ho dato lo scritto prima degli appunti, ci sono solo le dimostrazioni
 
 # Dunque...
