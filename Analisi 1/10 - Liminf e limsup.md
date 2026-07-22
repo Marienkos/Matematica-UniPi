@@ -37,7 +37,11 @@ Il liminf è caratterizzato analogamente.
 
 Sia $a_{n}$ una successione e $m \in \overline{\mathbb{R}}$. Vale $\liminf\limits_{n \to +\infty} a_n = \limsup\limits_{n \to +\infty} a_n = m \iff a_{n} \to m$
 
-DIMOSTRAZIONE: Caratterizzazione.
+DIMOSTRAZIONE:
+- ($\implies$)
+	- Se $m = \pm \infty$  il limite è banale
+	- Se $m \in \mathbb{R}$, per caratterizzazione  $l - \varepsilon \leq a_{n} \leq l + \varepsilon$ per un definitivamente comune
+- ($\impliedby$) Si considera la caratterizzazione nei vari casi
 
 # Presentazione via maggioranti
 Sia $a_{n}$ una successione. Se:
