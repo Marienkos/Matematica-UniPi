@@ -21,7 +21,10 @@ Siano $f$ e $g$ due funzioni e $x_{0}$ il punto del problema. Se:
 3. $\lim\limits_{x \to x_{0}} \frac{f(x)}{g(x)} = l$ con $l\neq 0$ e $l \neq +\infty$
 Allora i due integrali hanno lo stesso comportamento.
 
-DIMOSTRAZIONE: Confronto.
+DIMOSTRAZIONE:
+1. Per $x \to x_{0}$ vale $0 < \frac{l}{2} \leq \frac{f(x)}{g(x)} \leq 2l$, ossia $\frac{1}{2}lg(x) \leq f(x) \leq 2lg(x)$
+2. Se $\int g(x) \, dx$ converge, anche $\int f(x) \, dx$ converge per confronto a destra
+3. Se $\int g(x) \, dx$ diverge, anche $\int f(x) \, dx$ diverge per confronto a sinistra
 
 # Assoluta integrabilità
 $\int_{E} |f(x)| \, dx$ converge $\implies \int_{E} f(x) \, dx$ converge
@@ -36,7 +39,11 @@ Sia $\int_{0}^{+\infty} f(x)g(x) \, dx$ tale che:
 3. $g \to 0$ per $x \to +\infty$
 Allora l'integrale converge.
 
-DIMOSTRAZIONE: Integrazione per parti, assoluta integrabilità.
+DIMOSTRAZIONE:
+1. Integrando per parti $\int_{a}^{A} f(x)g(x) \, dx = [F(x)g(x)]^A_{a} - \int_{a}^{A} F(x)g'(x) \, dx$
+2. $[F(x)g(x)]^A_{a} = F(A)g(A)-F(a)g(a) \to 0$ per le ipotesi
+3. $\int_{a}^{A} |F(x)||g'(x)| \, dx \leq M\int_{a}^{A} |g'(x)| \, dx = -M\int_{a}^{A} g'(x) \, dx = -M(g(A) - g(a)) \to -Mg(a)$
+4. $\int_{a}^{+\infty} F(x)g'(x) \, dx$ assolutamente integrabile
 
 # Confronto serie - integrali
 Siano $M \in \mathbb{N}$ e $f : [M, +\infty) \to \mathbb{R}$ debolmente decrescente.
