@@ -140,9 +140,14 @@ DIMOSTRAZIONE: Additività rispetto alla zona d'integrazione.
 # Teorema della media integrale
 Sia $f : [a,b] \to \mathbb{R}$ continua. Allora $\exists c \in [a,b]$   $\int_{a}^{b} f(x) \, dx = f(c)(b-a)$
 
-DIMOSTRAZIONE:
-- Weierstrass, monotonia dell'integrale e continuità
-- Lagrange applicato a $F$
+DIMOSTRAZIONE (con Weierstrass):
+1. Per Weierstrass $\exists m,M\in[a,b]$   $\forall x \in [a,b$   $m \leq f(x) \leq M$
+2. Per monotonia dell'integrale $\int_{a}^{b} m \, dx \leq \int_{a}^{b} f(x) \, dx \leq \int_{a}^{b} M \, dx$
+3. Per il caso banale $m(b-a) \leq \int_{a}^{b} f(x) \, dx \leq M(b-a)$
+4. Dividendo per $(b-a)$ si ha $m \leq \frac{1}{b-a}\int_{a}^{b} f(x) \, dx \leq M$
+5. Per continuità di $f$, la funzione assume tutti i valori tra $m$ e $M$
+
+DIMOSTRAZIONE (con Lagrange): si può applicare a $F$
 
 # Teorema fondamentale del calcolo integrale
 Sia $f:[a,b] \to \mathbb{R}$ continua e $F$ la sua funzione integrale. Allora in tutto $[a,b]$:

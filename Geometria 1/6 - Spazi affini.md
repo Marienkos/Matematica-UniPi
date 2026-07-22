@@ -1,3 +1,2 @@
-# Unicità della componente lineare
 # Teorema di classificazione delle coniche
 Considerata una qualsiasi equazione a termini quadratici in $x$ e $y$, l'unico modo per portarla in una forma conica standard è mediante una traslazione, veicolata da un'affinità di cui è possibile studiare la componente lineare mediante rango, determinante e altri parametri. Si verifica che le 9 forme coniche standard sono affinemente distinte e univocamente determinate.
