@@ -23,13 +23,16 @@ Valgono:
 3. $\text{Clos}(A) = \text{Int}(A) \cup \partial A$ con unione disgiunta
 4. $\text{Clos}(A) = \text{Isol}(A) \cup D(A)$ con unione disgiunta
 
-DIMOSTRAZIONE: Definizioni.
+~={cyan}DIMOSTRAZIONE=~: Definizioni.
 
 Valgono su intersezioni e unioni finite:
 1. Se $A$ e $B$ sono aperti, allora $A \cap B$ e $A \cup B$ sono aperti
 2. Se $A$ e $B$ sono chiusi, allora $A \cap B$ e $A \cup B$ sono chiusi
 
-DIMOSTRAZIONE: Definizioni.
+~={cyan}DIMOSTRAZIONE=~ ($A \cap B$ aperto):
+1. $A$ aperto $\implies \forall x_{0}\in A$   $\exists r_{A}$   $(x_{0}-r_{A}, x_{0}+r_{A})\subseteq A$
+2. $B$ aperto $\implies \forall x_{0} \in B$   $\exists r_{B}$   $(x_{0}-r_{B},x_{0}+r_{B}) \subseteq B$
+3. Se $x_{0}\in A \cap B$ basta usare $r := \min\{ r_{A},r_{B} \}$ e vale $(x_{0}-r,x_{0}+r) \subseteq A \cap B$ 
 
 Valgono:
 1. L'unione di infiniti aperti è aperta
@@ -43,7 +46,7 @@ Sia $A \subseteq \mathbb{R}$ e $x_{0} \in \mathbb{R}$. Allora:
 4. $x_{0} \in \text{Isol}(A) \iff \forall \{ x_{n} \} \subseteq A$   $[x_{n} \to x_{0} \implies x_{n} = x_{0} \text{ definitivamente}]$
 5. $x_{0} \in D(A) \iff \exists \{ x_{n} \} \subseteq A \setminus \{ x_{0} \}$   $x_{n}\to x_{0}$
 
-DIMOSTRAZIONE: Definizione di limite.
+~={cyan}DIMOSTRAZIONE=~: Definizione di limite.
 
 # Linguaggio topologico relativo
 Sia $A \subseteq B \subseteq \mathbb{R}$. Allora si dice, relativamente a $B$:
@@ -59,16 +62,16 @@ Sia $A \subseteq \mathbb{R}$ e $f : A \to \mathbb{R}$. Sia $x_{0} \in  A$. Allor
 3. (Limiti) $x_{0} \in \text{Isol}(A) \lor [x_{0} \in D(A) \land \lim\limits_{x \to x_{0}} f(x) = f(x_{0})]$
 4. (Aperti) $\forall U \subseteq \mathbb{R}$ aperto con $f(x_{0}) \in U$ vale $x_{0} \in \text{Int}_{A}(f^{-1}(U))$
 
-DIMOSTRAZIONE: Definizioni.
+~={cyan}DIMOSTRAZIONE=~: Definizioni.
 
 Se $f$ e $g$ sono continue, allora $g \circ f$ è continua.
 
-DIMOSTRAZIONE: $x_{n} \to x_{0} \implies f(x_{n}) \to f(x_{0}) \implies g(f(x_{n})) \to g(f(x_{0}))$ per continuità.
+~={cyan}DIMOSTRAZIONE=~: $x_{n} \to x_{0} \implies f(x_{n}) \to f(x_{0}) \implies g(f(x_{n})) \to g(f(x_{0}))$ per continuità.
 
 # Teorema di Bolzano - Weierstrass
 Sia $\{ x_{n} \} \subseteq \mathbb{R}$ una successione limitata. Allora $\exists \{ n_{k} \} \subseteq \mathbb{N}$   $x_{n_{k}}\to L \in \mathbb{R}$
 
-DIMOSTRAZIONE: $L := \limsup\limits_{n \to +\infty} x_{n} \in [-M,M]$ da cui $L \in \mathbb{R}$ e inoltre $L = \text{maxlim } x_{n}$
+~={cyan}DIMOSTRAZIONE=~: $L := \limsup\limits_{n \to +\infty} x_{n} \in [-M,M]$ da cui $L \in \mathbb{R}$ e inoltre $L = \text{maxlim } x_{n}$
 
 # Compattezza
 Si dice ricoprimento aperto una famiglia $\{ u_{i} \}_{i \in I}$ di aperti di $\mathbb{R}$ tale che $A \subseteq \bigcup\limits_{i \in I} u_{i}$
@@ -82,17 +85,23 @@ Sia $A \subseteq \mathbb{R}$, allora $A$ si dice compatto:
 
 Sia $A \subseteq \mathbb{R}$ non vuoto e $L := \sup A \in \mathbb{R} \cup \{ +\infty \}$. Allora $\exists \{ a_{n} \} \subseteq A$   $a_{n} \to L$.
 
-DIMOSTRAZIONE: Per caratterizzazione di sup e cherry picking di successioni.
+~={green}DIMOSTRAZIONE=~:
+- Se $L = +\infty$, si usa la caratterizzazione
+- Se $L < +\infty$
+	1. $a \leq L$   $\forall a \in A$
+	2. $\forall \varepsilon > 0$   $\exists a \in A$   $a \geq L - \varepsilon$
+	3. Uso $\varepsilon = \frac{1}{n}$ e trovo $a_{n}$ tale che $L - \frac{1}{n} \leq a_{n} \leq L$
+	4. Per carabinieri $a_{n} \to L$
 
 Sia $A \subseteq \mathbb{R}$ compatto e non vuoto. Allora ammette max e min.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. $L := \sup A \in \mathbb{R}$ poiché $A$ limitato
 2. $L \in \text{Clos}(A)$ poiché $\forall r>0$   $\exists a \in A$   $L-r \leq a \leq L \leq L+r$ per cui $L \in A$
 
 Sia $A \subseteq \mathbb{R}$ compatto per ricoprimenti e $f: A \to \mathbb{R}$ continua. Allora $f(A)$ è compatto per ricoprimenti.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. $f(A) \subseteq \bigcup\limits_{i \in I} V_{i}$
 2. Pongo $u_{i}:= f^{-1}(V_{i})$ e osservo che sono aperti in $A$ e ricoprono $A$
 3. $A$ è compatto per ricoprimenti, per cui esiste un sottoricoprimento finito
@@ -102,7 +111,13 @@ DIMOSTRAZIONE:
 Sia $A \subseteq \mathbb{R}$ compatto per successioni e $\{ u_{i} \}_{i \in I}$ un ricoprimento aperto di A.
 Allora $\exists r>0$   $\forall x \in A$   $\exists i \in I$   $[x-r,x+r] \subseteq u_{i}$
 
-DIMOSTRAZIONE: Assurdo con cherry picking di successioni ($r = \frac{1}{n}$).
+~={red}DIMOSTRAZIONE=~:
+1. Supponiamo la tesi non vera, dunque $\forall r > 0$   $\exists x \in A$   $\forall i \in I$   $[x-r,x+r] \nsubseteq u_{i}$
+2. Si pone $\varepsilon = \frac{1}{n}$ ma va bene qualsiasi $\varepsilon \to 0$
+3. Data $\{ x_{n} \}$, per ipotesi $\exists x_{n_{k}}\to x_{\infty} \in A$
+4. Sia $i_{\infty} \in I$ tale che $x_{\infty} \in u_{i_{\infty}}$, vale $\exists r_{\infty}>0$   $(x_{\infty}-r_{\infty},x_{\infty}+r_{\infty}) \subseteq u_{i_{\infty}}$
+5. Per $k$ grande $x_{n_{k}} \in \left[ x_{\infty}-\frac{r_{\infty}}{2}, x_{\infty} + \frac{r_{\infty}}{2} \right]$
+6. Vale $\left[ x_{n_{k}} - \frac{r_{\infty}}{2}, x_{n_{k}} + \frac{r_{\infty}}{2} \right] \subseteq u_{i_{\infty}}$ generando assurdo quando $\frac{1}{n_{k}}< \frac{r_{\infty}}{2}$
 
 # Lemma dei distributori ($\varepsilon$-rete)
 Sia $A \subseteq \mathbb{R}$ limitato e $\varepsilon>0$. Allora $\exists \{ x_{1},\dots, x_{n} \} \subseteq A$   $\forall x \in A$   $\exists i \in \{ 1,\dots,n \}$   $|x-x_{i}|\leq \varepsilon$
