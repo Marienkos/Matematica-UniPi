@@ -32,13 +32,13 @@ $f$ si dice differenziabile in $x_{0}$ se esiste $\alpha\in \mathbb{R}$ tale che
 
 Se $f$ è differenziabile, allora $\alpha$ è unico.
 
-DIMOSTRAZIONE: $\exists\alpha_{1},\alpha_{2} \implies f(x_{0}) + \alpha_{1}h + o(h) = f(x_{0}) + \alpha_{2} + o(h) \implies \alpha_{1}-\alpha_{2}=\frac{o(h)}{h} \to 0$
+~={cyan}DIMOSTRAZIONE=~: $\exists\alpha_{1},\alpha_{2} \implies f(x_{0}) + \alpha_{1}h + o(h) = f(x_{0}) + \alpha_{2} + o(h) \implies \alpha_{1}-\alpha_{2}=\frac{o(h)}{h} \to 0$
 
 Valgono in $\mathbb{R}$:
 - $f$ derivabile in $x_{0}$ $\iff$ $f$ differenziabile in $x_{0}$
 - $\alpha = f'(x_{0})$
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 - $(\implies)$ Si usa la definizione di differenziabilità
 - $(\impliedby)$ Si usa la definizione di derivabilità
 
@@ -50,7 +50,7 @@ Valgono, sottintendendo gli argomenti:
 - $\left( \frac{f}{g} \right)' = \frac{{f'g - g'f}}{g^{2}}$
 - $[g(f)]' = g'(f)f$
 
-DIMOSTRAZIONE: Definizione di derivabilità o differenziabilità.
+~={cyan}DIMOSTRAZIONE=~: Definizione di derivabilità o differenziabilità.
 
 Sia $g$ l'inversa di $f$. Sotto certe ipotesi vale $g'(x) = \frac{1}{f'(g(x))}$
 
@@ -63,7 +63,7 @@ Allora $\lim\limits_{x \to x_{0}} \frac{f(x)}{g(x)} = l$
 # Taylor - Peano
 Sia $f$ una funzione definita in un intorno di 0 e $n$ intero positivo. Se esiste un polinomio di grado $\leq n$ tale che $f(x) = P_{n}(x) + o(x^n)$ per $x\to {0}$, allora è unico.
 
-DIMOSTRAZIONE: Se ce ne fossero due distinti, la differenza avrebbe tutti i termini nulli passando al limite, costituendo un assurdo.
+~={red}DIMOSTRAZIONE=~: Se ce ne fossero due distinti, la differenza avrebbe tutti i termini nulli passando al limite, costituendo un assurdo.
 
 Sia $\delta > 0$ e $f : (-\delta,\delta) \to \mathbb{R}$ una funzione. Sia $n \in \mathbb{N}$. Supponiamo:
 1. $f$ derivabile almeno $n-1$ volte in $(-\delta,\delta)$

@@ -10,7 +10,7 @@ Successione nella forma $x_{n+k} = a_{k-1}x_{n+k-1}+\dots+a_{0}x_{n}$
 
 Risolvere l'equazione significa determinare il nucleo di $L : \text{Succ} \to \text{Succ}$, dove $\text{Succ}$ è lo spazio vettoriale delle successioni in $\mathbb{R}$.
 
-DIMOSTRAZIONE: $L$ è un'applicazione lineare.
+~={cyan}DIMOSTRAZIONE=~: $L$ è un'applicazione lineare.
 
 Le $k$ soluzioni formano una base di uno spazio vettoriale.
 
@@ -22,14 +22,14 @@ La procedura risolutiva è la seguente (caso di ordine 2, ma estendibile):
 	- se sono $\rho e^{i\theta}, \rho e^{-i\theta} \in \mathbb{C}$, allora $x_{n}=a\rho^n\cos(\theta n)+b\rho^n\sin(\theta n)$
 3. Si trovano $a$ e $b$ sostituendo i valori iniziali
 
-DIMOSTRAZIONE (Algebrica):
+~={cyan}DIMOSTRAZIONE=~ (Algebrica):
 1. Sia $x_{n+1} = \alpha x_{n+1} + \beta x_{n}$
 2. Sia $p_{n}(t) = \beta x_{n}+x_{n+1}t$ (mod $t^2-\alpha t-\beta$)
 3. $tp_{n}(t) = p_{n+1}t$, da cui $p_{n}t = t^np_{0}(t)=t^n(\beta x_{0}+x_{1}t)$ in modulo
 4. $p_{n}(t) = t^n(\beta x_{0}+x_{1}t) + Q_{n}(t)(t^2-\alpha t-\beta)$
 5. Sostituisco a $t$ le radici $\lambda$ e $\mu$ e ottengo un sistema lineare
 
-DIMOSTRAZIONE (Geometrica):
+~={cyan}DIMOSTRAZIONE=~ (Geometrica):
 1. Pongo $U_{n} = \binom{x_{n+1}}{x_{n}}$ e $M$ la matrice di elementi $(\alpha,\beta,1,0)$
 2. Noto $U_{n+1} = MU_{n}$ da cui $U_{n} = M^nU_{0}$
 3. Gli autovalori di $M$ sono le radici del polinomio caratteristico
@@ -42,7 +42,7 @@ Si può studiare il limite col seguente piano con la monotonia:
 3. Si dimostra $x_{n} \to l$
 4. Si trova $l$
 
-DIMOSTRAZIONE: Lo slogan è: verticale alla funzione, orizzontale alla bisettrice.
+~={cyan}DIMOSTRAZIONE=~: Lo slogan è: verticale alla funzione, orizzontale alla bisettrice.
 
 Il piano precedente non funziona con tutte le successioni: può succedere che esse spiraleggino.
 
@@ -65,6 +65,6 @@ Sia $f : \mathbb{R} \to \mathbb{R}$ una funzione e $\alpha \in \mathbb{R}$ tali 
 3. $|f'(\alpha)|<1$
 Allora $\exists r>0$   $\forall x_{0}\in[\alpha-r,\alpha+r]$   $x_{n+1} = f(x_{n}) \to l$
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Per (3.) esistono $m<1$ e $r>0$ tali che $|f'(x)|\leq m$   $\forall x \in [\alpha-r,\alpha+r]$
 2. Piano con la distanza usando la Lipschitzianità di $f$ in $[\alpha-r,\alpha+r]$

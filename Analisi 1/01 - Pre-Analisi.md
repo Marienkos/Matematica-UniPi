@@ -82,7 +82,7 @@ L'estremo superiore di A, anche detto $\sup A$, è $+\infty$ se non esistono mag
 
 Sia $A \subseteq \mathbb{R}$. Allora inf e sup esistono sempre.
 
-DIMOSTRAZIONE
+~={orange}DIMOSTRAZIONE=~
 - Se non ci sono maggioranti, allora il sup esiste.
 - Se ci sono maggioranti, chiamiamo B il loro insieme. B sta a destra di A, dunque per l'assioma di continuità esiste un c minimo di B, ossia il sup di A.
 
@@ -104,11 +104,11 @@ Si verifica che la definizione a sezioni di Dedekind è equivalente a quella ass
 # Esistenza e unicità dei reali
 $\mathbb{R}$ esiste.
 
-DIMOSTRAZIONE: Sezioni di Dedekind e verifiche.
+~={cyan}DIMOSTRAZIONE=~: Sezioni di Dedekind e verifiche.
 
 La tupla $(\mathbb{R}, \leq)$ è unica a meno di isomorfismi.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. L'ipotesi si può scrivere come: se $\exists(\hat{\mathbb{R}},\hat{\leq})$ con le stesse proprietà, allora $\exists\varphi : \mathbb{R} \to \hat{\mathbb{R}}$ tale che:
 	1. $\varphi$ bigettiva
 	2. $\varphi$ isomorfismo di campi
@@ -160,4 +160,4 @@ La relazione d'ordine è compatibile con le operazioni.
 
 In $\mathbb{R}[x]$ non vale l'assioma di continuità ed equivalenti.
 
-DIMOSTRAZIONE: Si verifica che niente sta tra le costanti e i monomi di primo grado.
+~={cyan}DIMOSTRAZIONE=~: Si verifica che niente sta tra le costanti e i monomi di primo grado.

@@ -61,7 +61,7 @@ Dato il parametro iniziale parametrico, esiste una soglia che divide esistenza g
 # Teorema di esistenza (variabili separabili)
 Siano $f$ e $g$ funzioni continue e $g(u_{0}) = 0$. Allora la procedura porta a una soluzione.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Sia $F$ una primitiva di $f$ e $\Gamma$ una primitiva di $\frac{1}{g}$
 2. $\Gamma$ è invertibile per monotonia. Sia $u(t) = \Gamma^{-1}(F(t)+\Gamma(u_{0})-F(t_{0}))$
 3. Si verifica $u(t_{0}) = \Gamma^{-1}(\Gamma(u_{0})) = u_{0}$
@@ -70,7 +70,7 @@ DIMOSTRAZIONE:
 # Teorema di esistenza e unicità (variabili separabili)
 Siano $f$ e $g$ funzioni continue e $g(u_{0}) = 0$. Allora la procedura porta all'unica soluzione.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Sia $f : [t_{0}-\delta_{0},t_{0}+\delta_{0}] \to \mathbb{R}$ continua $\forall \delta_{0}>0$
 2. Sia $g: [u_{0}-r,u_{0}+r] \to \mathbb{R}$ continua $\forall r>0$
 3. Sia $u : [t_{0}-\delta_{1}, t_{0}+\delta_{1}] \to \mathbb{R}$ di classe $C^1$ e soluzione $\forall t \in [t_{0}-\delta_{1},t_{0}+\delta_{1}]$ con $0<\delta_{1}\leq\delta_{0}$
@@ -88,11 +88,11 @@ Con dati di Cauchy nulli l'unica soluzione è $u(t) \equiv 0$.
 
 Risolvere l'equazione significa determinare il nucleo di $L : C^k([a,b]) \to C^0([a,b])$.
 
-DIMOSTRAZIONE: $L$ è un'applicazione lineare.
+~={cyan}DIMOSTRAZIONE=~: $L$ è un'applicazione lineare.
 
 Le $k$ soluzioni formano una base di uno spazio vettoriale.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Il nucleo di un'applicazione lineare è uno spazio vettoriale
 2. Fissato $t_{0} \in [a,b]$ si definisce $u_{i}(t)$ la soluzione con i dati di Cauchy $u_{i}^{(j)}(t_{0}) = \delta_{i,j+1}$
 3. Tutte le $u_{i}(t)$ sono generatori
@@ -124,4 +124,4 @@ Sia $\dot{u} + a(t)u = b(t)$ e $A'(t) = a(t)$. La soluzione generale è $u(t) = 
 
 Se ho la condizione di Cauchy $u(t_{0}) = u_{0}$, allora è $u(t) = u_{0}e^{-A(t)}+e^{-A(t)}\int_{t_{0}}^{t} e^{A(s)}b(s) \, ds$
 
-DIMOSTRAZIONE: Derivare e sostituire.
+~={cyan}DIMOSTRAZIONE=~: Derivare e sostituire.

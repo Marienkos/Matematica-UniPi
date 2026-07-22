@@ -21,7 +21,7 @@ Siano $f$ e $g$ due funzioni e $x_{0}$ il punto del problema. Se:
 3. $\lim\limits_{x \to x_{0}} \frac{f(x)}{g(x)} = l$ con $l\neq 0$ e $l \neq +\infty$
 Allora i due integrali hanno lo stesso comportamento.
 
-DIMOSTRAZIONE:
+~={green}DIMOSTRAZIONE=~:
 1. Per $x \to x_{0}$ vale $0 < \frac{l}{2} \leq \frac{f(x)}{g(x)} \leq 2l$, ossia $\frac{1}{2}lg(x) \leq f(x) \leq 2lg(x)$
 2. Se $\int g(x) \, dx$ converge, anche $\int f(x) \, dx$ converge per confronto a destra
 3. Se $\int g(x) \, dx$ diverge, anche $\int f(x) \, dx$ diverge per confronto a sinistra
@@ -39,7 +39,7 @@ Sia $\int_{0}^{+\infty} f(x)g(x) \, dx$ tale che:
 3. $g \to 0$ per $x \to +\infty$
 Allora l'integrale converge.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Integrando per parti $\int_{a}^{A} f(x)g(x) \, dx = [F(x)g(x)]^A_{a} - \int_{a}^{A} F(x)g'(x) \, dx$
 2. $[F(x)g(x)]^A_{a} = F(A)g(A)-F(a)g(a) \to 0$ per le ipotesi
 3. $\int_{a}^{A} |F(x)||g'(x)| \, dx \leq M\int_{a}^{A} |g'(x)| \, dx = -M\int_{a}^{A} g'(x) \, dx = -M(g(A) - g(a)) \to -Mg(a)$
@@ -49,8 +49,8 @@ DIMOSTRAZIONE:
 Siano $M \in \mathbb{N}$ e $f : [M, +\infty) \to \mathbb{R}$ debolmente decrescente.
 Allora per $N>M$ vale $\sum\limits_{k=M+1}^{N} f(k) \leq \int_{M}^{N} f(x) \, dx \leq \sum\limits_{k=M}^{N-1} f(k)$
 
-DIMOSTRAZIONE: Induzione su $N$.
+~={yellow}DIMOSTRAZIONE=~: Induzione su $N$.
 
 Siano $f$ e $M$ come prima. Allora $\int_{M}^{+\infty} f(x) \, dx$ converge $\iff \sum\limits_{k=M}^{\infty} f(k)$
 
-DIMOSTRAZIONE: Teorema precedente.
+~={cyan}DIMOSTRAZIONE=~: Teorema precedente.
