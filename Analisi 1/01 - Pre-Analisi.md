@@ -82,7 +82,7 @@ L'estremo superiore di A, anche detto $\sup A$, è $+\infty$ se non esistono mag
 
 Sia $A \subseteq \mathbb{R}$. Allora inf e sup esistono sempre.
 
-~={orange}DIMOSTRAZIONE=~
+~={cyan}DIMOSTRAZIONE=~:
 - Se non ci sono maggioranti, allora il sup esiste.
 - Se ci sono maggioranti, chiamiamo B il loro insieme. B sta a destra di A, dunque per l'assioma di continuità esiste un c minimo di B, ossia il sup di A.
 

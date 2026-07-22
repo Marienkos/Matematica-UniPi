@@ -122,7 +122,7 @@ Allora $\exists r>0$   $\forall x \in A$   $\exists i \in I$   $[x-r,x+r] \subse
 # Lemma dei distributori ($\varepsilon$-rete)
 Sia $A \subseteq \mathbb{R}$ limitato e $\varepsilon>0$. Allora $\exists \{ x_{1},\dots, x_{n} \} \subseteq A$   $\forall x \in A$   $\exists i \in \{ 1,\dots,n \}$   $|x-x_{i}|\leq \varepsilon$
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Considero la griglia $kr$ con $k \in \mathbb{Z}$ e gli intervalli $[kz, (k+1)z]$
 2. Un numero finito di questi interseca $A$ limitato
 3. In ognuna delle intersezioni non vuote prendo $x_{i}$
@@ -130,16 +130,16 @@ DIMOSTRAZIONE:
 # Equivalenza della compattezza
 In $\mathbb{R}$ le tre nozioni di compattezza sono equivalenti.
 
-DIMOSTRAZIONE (compatto $\implies$ compatto per successioni):
+~={cyan}DIMOSTRAZIONE=~ (compatto $\implies$ compatto per successioni):
 1. Sia $\{ x_{n} \} \subseteq A$ una successione
 2. $A$ limitato $\implies$ $\{ x_{n} \}$ limitata $\implies$ $\exists x_{n_{k}}\to x_{\infty}\in \mathbb{R}$ per Bolzano - Weierstrass
 3. $x_{\infty} \in \text{Clos}(A)=A$ poiché $(x_{\infty}-r,x_{\infty}+r)$ interseca $A$
 
-DIMOSTRAZIONE (compatto per successioni $\implies$ compatto):
+~={red}DIMOSTRAZIONE=~ (compatto per successioni $\implies$ compatto):
 1. Supponiamo $A$ non compatto. Allora $\sup A = +\infty \implies \exists x_{n} \to +\infty \implies \not\exists x_{n_{k}}\to L \in \mathbb{R}$
 2. Supponiamo $A$ non chiuso. Allora $\exists x_{\infty} \in \text{Clos}(A)$   $x_{\infty} \not\in A$   ma allora $\exists x_{n} \to x_{\infty}\not\in A$
 
-DIMOSTRAZIONE (compatto per ricoprimenti  $\implies$ compatto):
+~={orange}DIMOSTRAZIONE=~ (compatto per ricoprimenti  $\implies$ compatto):
 1. ($\implies$ limitato)
 	1. Considero $u_{n} := (-n,n)$ con $n \in \mathbb{N}$ e $n \geq 1$
 	2. $A \subseteq \bigcup\limits_{n\geq 1} u_{n} = \mathbb{R}$
@@ -151,7 +151,7 @@ DIMOSTRAZIONE (compatto per ricoprimenti  $\implies$ compatto):
 	4. $A \subseteq \bigcup\limits_{n\geq 1}^{n_{0}} u_{n} = \mathbb{R} \setminus \left[ x-\frac{1}{n_{0}}, x+\frac{1}{n_{0}} \right]$ definitivamente
 	5. $\left[ x-\frac{1}{2n_{0}}, x+\frac{1}{2n_{0}} \right] \cap A\neq \emptyset \implies x \in \text{Clos}(A)$
 
-DIMOSTRAZIONE (compatto per successioni $\implies$ compatto per ricoprimenti):
+~={cyan}DIMOSTRAZIONE=~ (compatto per successioni $\implies$ compatto per ricoprimenti):
 1. Mi viene dato un ricoprimento $\{ u_{i} \}_{i \in I}$
 2. Prendo il raggio magico $r$ del ricoprimento
 3. Scelgo $x_{1},\dots,x_{n}$ distributori e $u_{i_{1}},\dots,u_{i_{n}}$ tali che $[x_{j}-r,x_{j}+r] \subseteq u_{i_{j}}$   $\forall j=1,\dots,n$
@@ -163,7 +163,7 @@ Sia $A \subseteq \mathbb{R}$ non vuoto e $f : A \to \mathbb{R}$ tali che:
 2. $A$ compatto
 Allora esistono max e min.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. $S := \sup \{ f(x) : x \in A \} \in \mathbb{R} \cup \{ +\infty \}$
 2. $\exists \{ y_{n} \} \subseteq f(A)$   $y_{n}\to S$ per il solito lemma
 3. $y_{n}=f(x_{n})$ con $x_{n} \in A$ per definizione di immagine
@@ -172,7 +172,7 @@ DIMOSTRAZIONE:
 
 Sia $A \subseteq \mathbb{R}$ compatto per successioni e $f:A\to \mathbb{R}$ continua, allora $f(A)$ compatto per successioni.
 
-DIMOSTRAZIONE: $y_{n_{k}} = f(x_{n_{k}}) \to f(x_{\infty}) =: y_{\infty} \in f(A)$
+~={cyan}DIMOSTRAZIONE=~: $y_{n_{k}} = f(x_{n_{k}}) \to f(x_{\infty}) =: y_{\infty} \in f(A)$
 
 # Semicontinuità
 Sia $f : A \to \mathbb{R}$ e $x_{0} \in A$ tali che vale uno tra:
@@ -189,31 +189,41 @@ Sia $f : A \to \mathbb{R}$ tale che:
 2. $A$ compatto non vuoto
 Allora esiste min.
 
-DIMOSTRAZIONE: Esiste l'inf e per il solito lemma sulle successioni è anche min.
+~={cyan}DIMOSTRAZIONE=~: Esiste l'inf e per il solito lemma sulle successioni è anche min.
 
 # Successione di Cauchy
 Una successione $\{ x_{n} \} \subseteq \mathbb{R}$ si dice di Cauchy se $\forall \varepsilon>0$   $|x_{n}-x_{m}|\leq\varepsilon$ definitivamente.
 
 Le successioni con limite reale sono di Cauchy.
 
-DIMOSTRAZIONE:
+~={orange}DIMOSTRAZIONE=~:
 1. Sia $x_{n} \to x_{\infty} \in \mathbb{R}$
 2. Per definizione di limite $\forall\varepsilon>0$   $|x_{n}-x_{\infty}|\leq \frac{1}{2}\varepsilon$ definitivamente
 3. $|x_{n}-x_{m}| \leq |x_{n}-x_{\infty}| + |x_{\infty}-x_{m}| \leq \frac{1}{2}\varepsilon + \frac{1}{2}\varepsilon = \varepsilon$ definitivamente
 
 Le successioni di Cauchy sono limitate.
 
-DIMOSTRAZIONE: Cherry picking di $\varepsilon$.
+~={orange}DIMOSTRAZIONE=~:
+1. Definitivamente $|x_{n}-x_{n_{0}}|\leq\varepsilon$, ossia $x_{n_{0}}-\varepsilon \leq x_{n} \leq x_{n_{0}} +\varepsilon$
+2. $\min\{ x_{n_{0}}-\varepsilon, x_{0}, \dots, x_{n_{0}-1} \} \leq x_{n} \leq \max\{ x_{n_{0}}+\varepsilon, x_{0},\dots,x_{n_{9}-1} \}$
 
 Sia $\{ x_{n} \}\subseteq \mathbb{R}$ di Cauchy tale che $\exists x_{n_{k}}\to x_{\infty} \in \mathbb{R}$. Allora $x_{n}\to x_{\infty}$.
 
-DIMOSTRAZIONE: Definizione di successione di Cauchy con $n_{0} = \max \{ n_{1},n_{k_{0} } \} = n_{k_{0}}$.
+~={orange}DIMOSTRAZIONE=~: Definizione di successione di Cauchy con $n_{0} = \max \{ n_{1},n_{k_{0} } \} = n_{k_{0}}$.
 
 Le successioni di Cauchy hanno limite reale.
 
-DIMOSTRAZIONE: Limitatezza, Bolzano - Weierstrass e tendenza della sottosuccessione.
+~={cyan}DIMOSTRAZIONE=~:
+1. Per quanto detto prima la successione è limitata
+2. Per Bolzano - Weierstrass $\exists x_{n_{k}}\to x_{\infty}$
+3. Per il teorema precedente $x_{n} \to x_{\infty}$
 
-DIMOSTRAZIONE: Limitatezza, liminf $l$ e limsup $L$.
+~={orange}DIMOSTRAZIONE=~:
+1. Per quanto detto prima la successione è limitata
+2. Esistono e sono finiti limsup $L$ e liminf $l$
+3. Essendo di Cauchy vale $|x_{n}-x_{m}| \leq \varepsilon$ definitivamente
+4. Con $m=n_{0}$ vale $x_{n_{0}}-\varepsilon \leq x_{n} \leq x_{n_{0}} + \varepsilon$
+5. Mandando $n\to+\infty$ vale $x_{n_{0}} - \varepsilon \leq l \leq L \leq x_{n_{0}} + \varepsilon$ da cui $L - l \leq 2\varepsilon$
 
 # $\mathbb{Q}$ vs $\mathbb{R}$
 Il fatto che in $\forall r \in \mathbb{R}$   $\exists n \in \mathbb{N}$   $n>r$ è detta proprietà archimedea dei numeri reali.
