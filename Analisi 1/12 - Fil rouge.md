@@ -39,7 +39,7 @@ Sia $f : [a,b] \to \mathbb{R}$ tale che:
 2. $f$ derivabile in $(a,b)$
 Allora $\exists c \in (a,b)$   $\Delta f_{b,a} = f'(c)(b-a)$
 
-~={cyan}DIMOSTRAZIONE=~: Cauchy con $g(x) = x$.
+~={pink}DIMOSTRAZIONE=~: Cauchy con $g(x) = x$.
 
 ~={cyan}DIMOSTRAZIONE=~:
 1. Considero $\varphi(x) = f(x) - mx-q$
@@ -85,7 +85,7 @@ $[x^k]^{(i)} = \frac{k!}{(k-i)!}x^{k-i}$
 
 Sia $Q(x) = a_{0} + \dots + a_{n}x^n$. Allora $Q^{(i)}(0) = a_{i}i$
 
-~={cyan}DIMOSTRAZIONE=~: Derivata del monomio e della somma.
+~={pink}DIMOSTRAZIONE=~: Derivata del monomio e della somma.
 
 Sia $P_{n}(x)$ il polinomio di Taylor di $f$. Allora $P_{n}^{(i)}(0) = i!\frac{f^{(i)}(0)}{i!} = f^{(i)}(0)$
 
@@ -98,7 +98,7 @@ Sia $\varphi : (-r,r) \to \mathbb{R}$ tale che:
 3. $\varphi^{(k)}(0) = 0$
 Allora $\varphi(x) = o(x^n)$ per $x\to 0$
 
-~={cyan}DIMOSTRAZIONE=~:
+~={pink}DIMOSTRAZIONE=~:
 1. Per De L'Hôpital $\lim\limits_{x \to 0} \frac{\varphi(x)}{x^n} = \lim\limits_{x \to 0} \frac{\varphi'(x)}{nx^{n-1}} = \dots = \lim\limits_{x \to 0} \frac{\varphi^{(n-1)}(x)}{n!x}$
 2. Usando la definizione di derivata $\frac{1}{n!}\lim\limits_{x \to 0} \frac{{\varphi^{(n-1)}(x) -\varphi^{(n-1)}(0) }}{x} = \frac{1}{n!}\varphi^n(0)=0$
 
@@ -108,11 +108,11 @@ Sia $\varphi : (-r,r) \to \mathbb{R}$ tale che:
 2. $\varphi^{(k)}(0) = 0$
 Allora $\forall x \in (-r,r)$   $\exists c \in (0,x)$   $\varphi(x) = \frac{\varphi^{(n+1)}(c)}{(n+1)!}x^{n+1}$
 
-~={cyan}DIMOSTRAZIONE=~: Per Cauchy $\frac{\varphi(x)}{x^{n+1}}=\frac{\varphi'(c_{1})}{(n+1)c_{1}^n}=\dots = \frac{\varphi^{(n+1)}(c_{n})}{(n+1)!}$
+~={pink}DIMOSTRAZIONE=~: Per Cauchy $\frac{\varphi(x)}{x^{n+1}}=\frac{\varphi'(c_{1})}{(n+1)c_{1}^n}=\dots = \frac{\varphi^{(n+1)}(c_{n})}{(n+1)!}$
 
 ~={yellow}DIMOSTRAZIONE=~ (Senza puntini): Cauchy e induzione
 
-~={cyan}DIMOSTRAZIONE=~: Rolle.
+~={pink}DIMOSTRAZIONE=~: Rolle.
 
 # Teorema di Cesàro - Stolz
 Siano $a_{n}$ e $b_{n}$ due successioni tali che:

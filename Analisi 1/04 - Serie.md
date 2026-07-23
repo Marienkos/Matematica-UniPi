@@ -122,7 +122,7 @@ Allora $a_{n} \to l$
 Siano $a_{n}$ e $b_{n}$ successioni e $0\leq m <n$.
 Vale $\sum\limits_{k=m}^{n} a_{k+1}(b_{k+1}-b_{k}) = a_{n+1}b_{n+1}-a_{n}b_{m} - \sum\limits_{k=m}^{n} b_{k}(a_{k+1}-a_{k})$
 
-~={cyan}DIMOSTRAZIONE=~: Espansione e telescopicità della serie.
+~={pink}DIMOSTRAZIONE=~: Espansione e telescopicità della serie.
 
 # Criterio di Dirichlet
 Sia $\sum\limits_{n=1}^{\infty} a_nb_{n}$ tale che:

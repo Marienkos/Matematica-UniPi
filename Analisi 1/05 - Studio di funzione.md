@@ -4,12 +4,12 @@ Sia $[a,b] \subseteq \mathbb{R}$ un intervallo, e sia $f : [a,b] \to \mathbb{R}$
 2. $f(a)f(b) < 0$
 Allora $\exists c \in(a,b)$   $f(c) = 0$
 
-~={red}DIMOSTRAZIONE=~ 1:
+~={red}DIMOSTRAZIONE=~:
 1. wlog $f(a) < 0$ e $f(b)>0$
 2. $c := \inf \{ x \in [a,b]:f(x)>0 \} \neq \emptyset$
 3. $f(c) = 0$ per assurdo usando la continuità.
 
-~={cyan}DIMOSTRAZIONE=~ 2:
+~={cyan}DIMOSTRAZIONE=~:
 1. wlog $f(a) < 0$ e $f(b)>0$
 2. $c := \inf \{ x \in [a,b]:f(x)>0 \} \neq \emptyset$
 3. $\forall x \in [a,c)$   $f(x) \leq 0$   di conseguenza   $f(c) = \lim\limits_{x \to c^-} f(x)\leq 0$
@@ -20,7 +20,7 @@ Allora $\exists c \in(a,b)$   $f(c) = 0$
 # Teorema dei valori intermedi
 Sia $[a,b] \subseteq \mathbb{R}$ e $f : [a,b] \to \mathbb{R}$ continua e $\lambda \in \mathbb{R}$ tali che $f(a) <\lambda$ e $f(b) > \lambda$. Allora $\exists c \in (a,b)$   $f(c) = \lambda$
 
-~={cyan}DIMOSTRAZIONE=~: Teorema di esistenza degli zeri applicato a $g(x) = f(x) - \lambda$
+~={pink}DIMOSTRAZIONE=~: Teorema di esistenza degli zeri applicato a $g(x) = f(x) - \lambda$
 
 Sia $A \subseteq \mathbb{R}$ non vuoto e connesso e $f : A \to \mathbb{R}$ continua. Allora $f$ assume in $A$ tutti i valori tra $\inf f$ e $\sup f$.
 
@@ -40,14 +40,14 @@ Sia $x_{0} \in \mathbb{R}$, $r>0$, $f : (x_{0}-r,x_{0}+r) \to \mathbb{R}$ tale c
 - $f(x) > f(x_{0})$   $\forall x \in (x_{0},x_{0}+\delta)$
 - $f(x) < f(x_{0})$   $\forall x \in (x_{0}-\delta,x_{0})$
 
-~={cyan}DIMOSTRAZIONE=~: Definizione di derivata.
+~={pink}DIMOSTRAZIONE=~: Definizione di derivata.
 
 Sia $f : (a,b)\to \mathbb{R}$ derivabile in $(a,b)$. Valgono in tutto $(a,b)$:
 1. $f'(x)\geq 0 \implies f$ debolmente crescente
 2. $f'(x)>0 \implies f$ strettamente crescente
 3. $f$ crescente $\implies f'(x) \geq 0$
 
-~={cyan}DIMOSTRAZIONE=~: Lagrange
+~={pink}DIMOSTRAZIONE=~: Lagrange
 
 Sia $f: (a,b)\to \mathbb{R}$ derivabile ovunque tale che:
 1. $f'(x)\geq 0$   $\forall x \in (a,b)$
@@ -78,15 +78,15 @@ I punti di max e min fanno parte di una delle seguenti categorie:
 # Varianti di Weierstrass
 Sia $f : \mathbb{R} \to \mathbb{R}$ continua e periodica. Allora max e min esistono.
 
-~={cyan}DIMOSTRAZIONE=~: Weierstrass ristretto a un periodo.
+~={pink}DIMOSTRAZIONE=~: Weierstrass ristretto a un periodo.
 
 Sia $f : \mathbb{R} \to \mathbb{R}$ continua e $\lim\limits_{x \to +\infty} f(x) = \lim\limits_{x \to -\infty} f(x) = +\infty$. Allora esiste min.
 
-~={cyan}DIMOSTRAZIONE=~: Weierstrass su un intervallo, maggiore a destra e sinistra.
+~={pink}DIMOSTRAZIONE=~: Weierstrass su un intervallo, maggiore a destra e sinistra.
 
 Sia $f : (0,+\infty) \to \mathbb{R}$ continua e $\lim\limits_{x \to 0^+} f(x) = \lim\limits_{x \to +\infty} f(x) = +\infty$. Allora esiste min.
 
-~={cyan}DIMOSTRAZIONE=~: Come prima.
+~={pink}DIMOSTRAZIONE=~: Come prima.
 
 Sia $D \subseteq \mathbb{R}$ non vuoto e $f: D\to \mathbb{R}$ continua.
 Se $\exists[a,b]\in D$   $\inf \{ f(x): x \in [a,b] \} = \inf \{ f(x): x \in D \}$ allora il min in $[a,b]$ lo è in $D$.
@@ -106,7 +106,7 @@ Sia $f'(x_{0}) = f''(x_{0}) =\dots=f^{(k-1)}(x_{0}) = 0 \neq f^{(k)}(x_{0})$. Va
 - $k$ dispari e $f^{(k)}(x_{0}) > 0 \implies x_{0}$ flesso a tangente orizzontale ascendente
 - $k$ dispari e $f^{(k)}(x_{0}) < 0 \implies x_{0}$ flesso a tangente orizzontale discendente
 
-~={cyan}DIMOSTRAZIONE=~: Taylor.
+~={pink}DIMOSTRAZIONE=~: Taylor.
 
 # Studio globale
 L'ordine di uno studio è il seguente:
@@ -143,12 +143,12 @@ La più piccola $L$ si chiama costante di Lipschitz ed è il $\sup \left\{  \fra
 
 $f$ Lipschitziana $\implies$ $f$ continua
 
-~={cyan}DIMOSTRAZIONE=~: Definizione di continuità
+~={pink}DIMOSTRAZIONE=~: Definizione di continuità
 
 Sia $D \subseteq \mathbb{R}$ un insieme convesso e $f$ derivabile in $D$. Allora:
 - $f$ è Lipschitziana in $D$ $\iff$ $f'$ è limitata in $D$
 - $L = \sup \{ |f'(x)| : x \in D \}$
 
-~={cyan}DIMOSTRAZIONE=~:
+~={pink}DIMOSTRAZIONE=~:
 - ($\impliedby$) Lagrange
 - ($\implies$) Definizione di derivata

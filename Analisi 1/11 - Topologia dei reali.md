@@ -23,7 +23,7 @@ Valgono:
 3. $\text{Clos}(A) = \text{Int}(A) \cup \partial A$ con unione disgiunta
 4. $\text{Clos}(A) = \text{Isol}(A) \cup D(A)$ con unione disgiunta
 
-~={cyan}DIMOSTRAZIONE=~: Definizioni.
+~={pink}DIMOSTRAZIONE=~: Definizioni.
 
 Valgono su intersezioni e unioni finite:
 1. Se $A$ e $B$ sono aperti, allora $A \cap B$ e $A \cup B$ sono aperti
@@ -46,7 +46,7 @@ Sia $A \subseteq \mathbb{R}$ e $x_{0} \in \mathbb{R}$. Allora:
 4. $x_{0} \in \text{Isol}(A) \iff \forall \{ x_{n} \} \subseteq A$   $[x_{n} \to x_{0} \implies x_{n} = x_{0} \text{ definitivamente}]$
 5. $x_{0} \in D(A) \iff \exists \{ x_{n} \} \subseteq A \setminus \{ x_{0} \}$   $x_{n}\to x_{0}$
 
-~={cyan}DIMOSTRAZIONE=~: Definizione di limite.
+~={pink}DIMOSTRAZIONE=~: Definizione di limite.
 
 # Linguaggio topologico relativo
 Sia $A \subseteq B \subseteq \mathbb{R}$. Allora si dice, relativamente a $B$:
@@ -62,7 +62,7 @@ Sia $A \subseteq \mathbb{R}$ e $f : A \to \mathbb{R}$. Sia $x_{0} \in  A$. Allor
 3. (Limiti) $x_{0} \in \text{Isol}(A) \lor [x_{0} \in D(A) \land \lim\limits_{x \to x_{0}} f(x) = f(x_{0})]$
 4. (Aperti) $\forall U \subseteq \mathbb{R}$ aperto con $f(x_{0}) \in U$ vale $x_{0} \in \text{Int}_{A}(f^{-1}(U))$
 
-~={cyan}DIMOSTRAZIONE=~: Definizioni.
+~={pink}DIMOSTRAZIONE=~: Definizioni.
 
 Se $f$ e $g$ sono continue, allora $g \circ f$ è continua.
 

@@ -105,7 +105,7 @@ Siano $f,g : [a,b] \to \mathbb{R}$ integrabili e $\lambda \in \mathbb{R}$. Allor
 - $fg$ integrabile
 - $\max \{ f,g \}$ e $\min \{ f,g \}$ integrabili
 
-~={cyan}DIMOSTRAZIONE=~: Criterio di integrabilità.
+~={pink}DIMOSTRAZIONE=~: Criterio di integrabilità.
 
 # Additività rispetto alla zona d'integrazione
 Sia $a<b<c$ e $f : [a,c] \to \mathbb{R}$ limitata e integrabile in $[a,b]$ e $[b,c]$. Allora:
@@ -135,7 +135,7 @@ $|f(x)| \leq M$   $\forall x \in[a,b] \implies F$ è $M$-Lipschitziana
 
 $\int_{c}^{d} f(x) \, dx = F(d) - F(c)$
 
-~={cyan}DIMOSTRAZIONE=~: Additività rispetto alla zona d'integrazione.
+~={pink}DIMOSTRAZIONE=~: Additività rispetto alla zona d'integrazione.
 
 # Teorema della media integrale
 Sia $f : [a,b] \to \mathbb{R}$ continua. Allora $\exists c \in [a,b]$   $\int_{a}^{b} f(x) \, dx = f(c)(b-a)$
@@ -147,7 +147,7 @@ Sia $f : [a,b] \to \mathbb{R}$ continua. Allora $\exists c \in [a,b]$   $\int_{a
 4. Dividendo per $(b-a)$ si ha $m \leq \frac{1}{b-a}\int_{a}^{b} f(x) \, dx \leq M$
 5. Per continuità di $f$, la funzione assume tutti i valori tra $m$ e $M$
 
-~={cyan}DIMOSTRAZIONE=~ (con Lagrange): si può applicare a $F$
+~={pink}DIMOSTRAZIONE=~ (con Lagrange): Si può applicare a $F$
 
 # Teorema fondamentale del calcolo integrale
 Sia $f:[a,b] \to \mathbb{R}$ continua e $F$ la sua funzione integrale. Allora in tutto $[a,b]$:
@@ -163,7 +163,7 @@ Sia $f:[a,b] \to \mathbb{R}$ continua e $F$ la sua funzione integrale. Allora in
 # Calcolo con le primitive
 Sia $f$ continua e $F_{1},F_{2}$ due primitive. Allora $\exists c \in \mathbb{R}$   $\forall x \in [a,b]$   $F_{1}(x) = F_{2}(x) + c$
 
-~={cyan}DIMOSTRAZIONE=~: Lagrange con la differenza.
+~={pink}DIMOSTRAZIONE=~: Lagrange con la differenza.
 
 Siano $f,F : [a,b] \to \mathbb{R}$ tali che in tutto $[a,b]$:
 1. $f$ continua
@@ -198,7 +198,7 @@ Se $\deg(P) \geq \deg(Q)$, si fa la divisione tra polinomi e $f(x) = A(x) + \fra
 
 Ogni polinomio in $\mathbb{R}$ si può fattorizzare in polinomi in $\mathbb{R}$ di grado 1 o 2.
 
-~={cyan}DIMOSTRAZIONE=~: Teorema fondamentale dell'algebra.
+~={pink}DIMOSTRAZIONE=~: Teorema fondamentale dell'algebra.
 
 Con la decomposizione in fratti semplici, $f$ si separa in frazioni tali che, dato $Q(x) = \prod Q_{i}^{n_{i}}(x)$:
 - i fattori di grado 1 abbiano costanti al numeratore
@@ -213,7 +213,7 @@ Con la decomposizione di Hermite, $f$ si separa in frazioni tali che, dato $Q(x)
 
 La decomposizione è unica.
 
-~={cyan}DIMOSTRAZIONE=~: Bezout.
+~={pink}DIMOSTRAZIONE=~: Bezout.
 
 # Sostituzioni razionalizzanti
 Se nella funzione integranda compare $n^x$, si pone $y = n^x$

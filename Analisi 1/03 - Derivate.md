@@ -38,7 +38,7 @@ Valgono in $\mathbb{R}$:
 - $f$ derivabile in $x_{0}$ $\iff$ $f$ differenziabile in $x_{0}$
 - $\alpha = f'(x_{0})$
 
-~={cyan}DIMOSTRAZIONE=~:
+~={pink}DIMOSTRAZIONE=~:
 - $(\implies)$ Si usa la definizione di differenziabilità
 - $(\impliedby)$ Si usa la definizione di derivabilità
 
@@ -50,7 +50,7 @@ Valgono, sottintendendo gli argomenti:
 - $\left( \frac{f}{g} \right)' = \frac{{f'g - g'f}}{g^{2}}$
 - $[g(f)]' = g'(f)f$
 
-~={cyan}DIMOSTRAZIONE=~: Definizione di derivabilità o differenziabilità.
+~={pink}DIMOSTRAZIONE=~: Definizione di derivabilità o differenziabilità.
 
 Sia $g$ l'inversa di $f$. Sotto certe ipotesi vale $g'(x) = \frac{1}{f'(g(x))}$
 

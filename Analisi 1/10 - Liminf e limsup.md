@@ -60,13 +60,13 @@ Siano $a_{n}$ e $b_{n}$ due successioni. Se $a_{n} \leq b_{n}$ definitivamente, 
 # Confronto a 3
 Siano $a_{n} \leq b_{n} \leq c_{n}$ definitivamente. Allora $\liminf\limits_{n \to +\infty} a_n \leq \liminf\limits_{n \to +\infty} b_{n} \leq \limsup\limits_{n \to +\infty} b_{n} \leq \limsup\limits_{n \to +\infty} c_{n}$
 
-~={cyan}DIMOSTRAZIONE=~: Definizione e confronto.
+~={pink}DIMOSTRAZIONE=~: Definizione e confronto.
 
 # Teorema delle sottosuccessioni
 Sia $a_{n}$ una successione e $a_{n_{k}}$ una sua sottosuccessione.
 Allora $\liminf\limits_{n \to +\infty} a_n \leq \liminf\limits_{n \to +\infty} a_{n_{k}} \leq \limsup\limits_{n \to +\infty} a_{n_{k}} \leq \limsup\limits_{n \to +\infty} a_n$
 
-~={cyan}DIMOSTRAZIONE=~: Definizione e presentazione per maggioranti.
+~={pink}DIMOSTRAZIONE=~: Definizione e presentazione per maggioranti.
 
 # Presentazione via maxlim
 Si pongono $\text{maxlim } a_n$ e $\text{minlim } a_n$ come il massimo e minimo limite possibile per una sottosuccessione di $a_{n}$ in $\overline{\mathbb{R}}$.
@@ -103,7 +103,7 @@ Allora $\liminf\limits_{n \to +\infty} \frac{a_{n+1}}{a_{n}} \leq \liminf\limits
 # Teoremi algebrici
 $\liminf\limits_{n \to +\infty} a_n + \liminf\limits_{n \to +\infty} b_{n} \leq \liminf\limits_{n \to +\infty} (a_n + b_{n}) \leq \limsup\limits_{n \to +\infty} (a_n+b_{n}) \leq \limsup\limits_{n \to +\infty} a_n + \limsup\limits_{n \to +\infty} b_{n}$
 
-~={cyan}DIMOSTRAZIONE=~: Definizione con $S_{n}$ e passaggio al limite.
+~={pink}DIMOSTRAZIONE=~: Definizione con $S_{n}$ e passaggio al limite.
 
 Se $\limsup\limits_{n \to +\infty} a_n$ esiste, allora per ogni successione $b_{n}$ valgono:
 - $\limsup\limits_{n \to +\infty} (a_n+b_{n}) = \lim\limits_{n \to +\infty} a_{n} + \limsup\limits_{n \to +\infty} b_{n}$

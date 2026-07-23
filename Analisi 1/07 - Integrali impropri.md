@@ -53,4 +53,4 @@ Allora per $N>M$ vale $\sum\limits_{k=M+1}^{N} f(k) \leq \int_{M}^{N} f(x) \, dx
 
 Siano $f$ e $M$ come prima. Allora $\int_{M}^{+\infty} f(x) \, dx$ converge $\iff \sum\limits_{k=M}^{\infty} f(k)$
 
-~={cyan}DIMOSTRAZIONE=~: Teorema precedente.
+~={pink}DIMOSTRAZIONE=~: Teorema precedente.
