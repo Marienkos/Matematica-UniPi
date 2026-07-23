@@ -3,7 +3,7 @@ Siano $x,y \in \mathbb{R}$. Una combinazione convessa di $x$ e $y$ è $\lambda x
 
 Al variare di $\lambda$ le combinazioni convesse di $x$ e $y$ descrivono il segmento di estremi $x$ e $y$.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Supponiamo wlog $x < y$
 2. $\lambda x + (1-\lambda)y \leq \lambda y + (1-\lambda)y = y$
 3. $\lambda x + (1-\lambda)y \geq \lambda x + (1-\lambda)x = x$
@@ -20,33 +20,33 @@ Se vale il $<$ allora è strettamente convessa. Analogamente per concava se $-f$
 # Lemma dei 3 rapporti incrementali
 Sia $C \subseteq \mathbb{R}$ convesso e $f : C \to \mathbb{R}$. Allora $f$ convessa $\iff$ $\forall a<b<c \in C$   $r_{b}^{a} f \leq r_{c}^{a} f \leq r_{c}^{b} f$
 
-DIMOSTRAZIONE: Espansione e definizione di convessità.
+~={pink}DIMOSTRAZIONE=~: Espansione e definizione di convessità.
 
 # Lemma dei 2 rapporti incrementali
 Sia $C \subseteq \mathbb{R}$ convesso e $f : C \to \mathbb{R}$. Allora $f$ convessa $\iff$ $\forall a<b<c \in C$   $r_{b}^{a} f \leq r_{c}^{b} f$
 
-DIMOSTRAZIONE: Espansione e definizione di convessità.
+~={pink}DIMOSTRAZIONE=~: Espansione e definizione di convessità.
 
 # Convessità e derivata prima
 Sia $C \subseteq \mathbb{R}$ convesso aperto e $f : C \to \mathbb{R}$ derivabile. Valgono:
 1. $f$ convessa $\iff$ $f'$ debolmente crescente
 2. $f$ strettamente convessa $\iff$ $f'$ strettamente crescente
 
-DIMOSTRAZIONE: Lemmi dei 3 e 2 rapporti incrementali.
+~={pink}DIMOSTRAZIONE=~: Lemmi dei 3 e 2 rapporti incrementali.
 
 # Convessità e derivata seconda
 Sia $C \subseteq \mathbb{R}$ convesso aperto e $f : C \to \mathbb{R}$ derivabile almeno due volte. Valgono:
 1. $f$ convessa $\iff$ $f''\geq 0$ in $C$
 2. $f$ strettamente convessa $\impliedby$ $f''>0$ in $C$
 
-DIMOSTRAZIONE: Teorema precedente e monotonia.
+~={pink}DIMOSTRAZIONE=~: Teorema precedente e monotonia.
 
 # Convessità e continuità
 Sia $C \subseteq \mathbb{R}$ convesso e $f : C \to \mathbb{R}$ convessa. Valgono:
 1. $f$ continua in $\text{Int}(C)$
 2. $f$ localmente Lipschitziana in $\text{Int}(C)$
 
-DIMOSTRAZIONE: Monotonia e definizione di Lipschitzianità.
+~={pink}DIMOSTRAZIONE=~: Monotonia e definizione di Lipschitzianità.
 
 # Derivate di funzioni convesse
 Sia $f : A \to \mathbb{R}$ e $x_{0} \in \text{Int}(A)$. Poniamo:
@@ -59,7 +59,7 @@ Sia $C \subseteq \mathbb{R}$ convesso e $f : C \to \mathbb{R}$ convessa. Valgono
 3. $x \mapsto f'_{+}(x)$ e $x \mapsto f'_{-}(x)$ debolmente crescenti
 4. $f'_{+}(x)$ continua a destra, $f'_{-}(x)$ continua a sinistra
 
-DIMOSTRAZIONE:
+~={pink}DIMOSTRAZIONE=~:
 1. Osservazione sui rapporti incrementali
 2. Osservazione sui rapporti incrementali
 3. Monotonia delle derivate
@@ -72,29 +72,29 @@ Sia $C \subseteq \mathbb{R}$ convesso e $f : C \to \mathbb{R}$. Sono equivalenti
 - $r_{c}^{a} f \leq r_{c}^{b} f$
 - $r_{b}^{a} f \leq r_{c}^{b} f$
 
-DIMOSTRAZIONE: Lemmi precedenti.
+~={pink}DIMOSTRAZIONE=~: Lemmi precedenti.
 
 # Convessità e punti di min
 Sia $x_{0} \in \text{Int}(C)$ un punto di min per $f$ convessa. Allora $x_{0}$ punto di min $\iff$ $f'_{-}(x_{0}) \leq 0 \leq f'_{+}(x_{0})$
 
-DIMOSTRAZIONE: Definizioni.
+~={pink}DIMOSTRAZIONE=~: Definizioni.
 
 # Convessità e retta tangente
 Sia $f : C \to \mathbb{R}$ convessa, $x_{0} \in \text{Int}(C)$ e $m \in [f'_{-}(x_{0}),f'_{+}(x_{0})]$. Allora $f(x) \geq f(x_{0}) + m(x-x_{0})$
 
-DIMOSTRAZIONE: Rapporto incrementale.
+~={pink}DIMOSTRAZIONE=~: Rapporto incrementale.
 
 # Osservazioni su intersezioni convesse
 Siano $f$ e $g$ due funzioni convesse. Allora $m(x):=\max \{ f(x),g(x) \}$ è convesso.
 
-DIMOSTRAZIONE: $m(\lambda x + (1-\lambda)y)$
+~={cyan}DIMOSTRAZIONE=~: $m(\lambda x + (1-\lambda)y)$
 1. $= f(\lambda x + (1-\lambda)y) \impliedby$ wlog
 2. $\leq \lambda f(x) + (1-\lambda)f(y) \impliedby$ convessità di $f$
 3. $\leq \lambda m(x) + (1-\lambda)m(y) \impliedby f \leq m \land \lambda,1-\lambda\geq 0$
 
 Sia $\{ f_{i}(x) \}_{i\in I}$ una famiglia di funzioni convesse. Allora $S(x):= \sup \{ f_{i}(x) : i \in I\}$ è convesso.
 
-DIMOSTRAZIONE: $\forall i \in I$   $f_{i}(\lambda x + (1-\lambda )y) \leq \lambda S(x) + (1-\lambda)S(y)$ e faccio il sup.
+~={cyan}DIMOSTRAZIONE=~: $\forall i \in I$   $f_{i}(\lambda x + (1-\lambda )y) \leq \lambda S(x) + (1-\lambda)S(y)$ e faccio il sup.
 
 In $\mathbb{R}^2$ valgono:
 1. $f$ convessa $\iff$ sopragrafico convesso
@@ -104,28 +104,28 @@ In $\mathbb{R}^2$ valgono:
 # Disuguaglianza di Jensen
 Sia $C \subseteq \mathbb{R}$ convesso e $f : C \to \mathbb{R}$ convessa. Sia $n\geq 2$ intero. Siano $x_{1},\dots,x_{n} \in C$. Siano $\lambda_{1},\dots,\lambda_{n}$ numeri $\geq 0$ tali che $\lambda_{1}+\dots+\lambda_{n} = 1$. Allora $f(\lambda_{1}x_{1}+\dots+\lambda_{n}x_{n}) \leq \lambda_{1}f(x_{1})+\dots+\lambda_{n}f(x_{n})$
 
-DIMOSTRAZIONE: Induzione su $n$.
+~={yellow}DIMOSTRAZIONE=~: Induzione su $n$.
 
-DIMOSTRAZIONE: Applico la retta tangente.
+~={pink}DIMOSTRAZIONE=~: Applico la retta tangente.
 
 # Disuguaglianza di Young
 Siano $a$ e $b$ reali positivi. Siano $p$ e $q$ reali $>1$ tali che $\frac{1}{p} + \frac{1}{q} = 1$. Allora $ab \leq \frac{1}{p}a^p+\frac{1}{q}b^q$.
 
-DIMOSTRAZIONE: $f(x) = \log x$ è concava e strettamente crescente.
+~={green}DIMOSTRAZIONE=~: $f(x) = \log x$ è concava e strettamente crescente.
 
 Vale anche a 3.
 
-DIMOSTRAZIONE: Jensen a 3 per il logaritmo.
+~={pink}DIMOSTRAZIONE=~: Jensen a 3 per il logaritmo.
 
 # Cauchy - Schwarz
 $a_{1}b_{1}+\dots+a_{n}b_{n} \leq [a_{1}^2+\dots+a_{n}^2]^{1/2} [b_{1}^2+\dots+b_{n}^2]^{1/2}$
 
-DIMOSTRAZIONE: Prodotto scalare con vettori di componenti $a_{i}$ e $b_{i}$.
+~={pink}DIMOSTRAZIONE=~: Prodotto scalare con vettori di componenti $a_{i}$ e $b_{i}$.
 
 # Disuguaglianza di Hölder
 $a_{1}b_{1}+\dots+a_{n}b_{n} \leq [a_{1}^p+\dots+a_{n}^p]^{1/p} [b_{1}^q+\dots+b_{n}^q]^{1/q}$
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Disuguaglianza omogenea, dunque studiata wlog con somme $=1$
 2. Su ogni prodotto si usa la disuguaglianza di Young
 
@@ -140,7 +140,7 @@ Valgono:
 3. $\lim\limits_{p \to -\infty} M_{p} = \min$
 4. $\lim\limits_{p \to 0} M_{p} =$ media geometrica
 
-DIMOSTRAZIONE: Studio con il logaritmo.
+~={cyan}DIMOSTRAZIONE=~: Studio con il logaritmo.
 
 # Massimo e minimo
 Sia $f : [a,b] \to \mathbb{R}$ convessa. Allora:
@@ -148,7 +148,7 @@ Sia $f : [a,b] \to \mathbb{R}$ convessa. Allora:
 2. $\exists x_{0} \in (a,b)$   $x_{0}$ punto di min $\implies f'_{-}(x_{0})\leq0 \leq f'_{+}(x_{0})$
 3. almeno uno degli estremi è punto di max
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Max è agli estremi
 	- Se $f(a) = f(b) = c$, allora per convessità $f(x)\leq c$, per cui $a$ e $b$ punti di max
 	- Se $f(a) \neq f(b)$, allora $\max \{ f(a),f(b) \}$ è il max ed è unico
@@ -158,18 +158,18 @@ DIMOSTRAZIONE:
 # Lemma della sotto-sotto
 Sia $\{ x_{n} \} \subseteq \mathbb{R}$ e supponiamo $\exists l \in \overline{\mathbb{R}}$ tale che $\forall x_{n_{k}}$   $\exists x_{n_{k_{i}}}\to l$. Allora $x_{n} \to l$.
 
-DIMOSTRAZIONE (Caso limite reale): Assurdo.
+~={red}DIMOSTRAZIONE=~ (Caso limite reale): Assurdo.
 
 # Proprietà delle funzioni inverse
 Siano $A,B \subseteq \mathbb{R}$ e $f: A \to B$ bigettive. Sia $g : B \to A$ la sua inversa. $f$ monotona $\implies g$ monotona.
 
-DIMOSTRAZIONE (Caso $f$ debolmente crescente):
+~={cyan}DIMOSTRAZIONE=~ (Caso $f$ debolmente crescente):
 1. $f$ strettamente crescente per iniettività
 2. $g$ strettamente crescente per assurdo
 
 Siano $A$ compatto e $f : A \to B$ invertibile e continua. Allora $g$ continua.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Considero $b \in B$ e $a = g(b)$
 2. Pongo $x_{n} = g(y_{n})$. Per compattezza $\exists x_{n_{k_{i}}} \to x_{\infty}$
 3. Per continuità $f(x_{n_{k_{i}}}) \to f(x_{\infty})$ e $b = f(x_{\infty})$
@@ -177,7 +177,7 @@ DIMOSTRAZIONE:
 
 Siano $A \subseteq \mathbb{R}$ convesso e $f : A \to \mathbb{R}$ debolmente monotona. Allora $f$ continua $\iff f(A)$ convesso.
 
-DIMOSTRAZIONE:
+~={pink}DIMOSTRAZIONE=~:
 1. ($\implies$) Teorema dei valori intermedi
 2. ($\impliedby$) wlog $f$ debolmente crescente
 	1. Per continuità $l = \lim\limits_{x \to x_{0}^-} f(x) < \lim\limits_{x \to x_{0}^+} f(x) = L$
@@ -187,15 +187,15 @@ Siano $D \subseteq \mathbb{R}$ e $f : D \to \mathbb{R}$ non monotona. Allora $\e
 - $f(b) > f(a)$ e $f(b) > f(c)$
 - $f(b) < f(a)$ e $f(b) < f(c)$
 
-DIMOSTRAZIONE: Non veloce $\impliedby$ skill issue gobbiniana.
+~={cyan}DIMOSTRAZIONE=~: Non veloce $\impliedby$ skill issue gobbiniana.
 
 Siano $A \subseteq \mathbb{R}$ convesso e $f : A \to \mathbb{R}$ continua e invertibile. Allora $f$ strettamente monotona.
 
-DIMOSTRAZIONE: Assurdo con lemma del triangolino.
+~={red}DIMOSTRAZIONE=~: Assurdo con lemma del triangolino.
 
 Siano $A$ convesso e $f : A \to B$ invertibile e continua. Allora $g$ continua.
 
-DIMOSTRAZIONE:
+~={pink}DIMOSTRAZIONE=~:
 1. Per il lemma precedente $f$ strettamente monotona e $B = f(A)$ convesso
 2. Per la prima proprietà $g : B \to A$ strettamente monotona e $B$ convesso
 3. Per il primo lemma $g$ continua $\iff g(B)$ convesso $\iff A$ convesso
@@ -203,25 +203,25 @@ DIMOSTRAZIONE:
 # Teoremi misteriosi sulle derivate
 Siano $f: A \to B$ invertibile, $x_{0} \in \text{Int}(A)$, $y_{0} = f(x_{0})$ e $\exists f'(x_{0}) \neq 0$. Allora $g'(y_{0}) = \frac{1}{f'(x_{0})}$.
 
-DIMOSTRAZIONE: $\lim\limits_{k \to 0} r_{y_{0}+h}^{y_{0}} g = \lim\limits_{y \to y_{0}} r_{y}^{y_{0}} g = \lim\limits_{x \to x_{0}} (r_{x}^{x_{0}} f)^{-1} = \frac{1}{f'(x_{0})}$
+~={cyan}DIMOSTRAZIONE=~: $\lim\limits_{k \to 0} r_{y_{0}+h}^{y_{0}} g = \lim\limits_{y \to y_{0}} r_{y}^{y_{0}} g = \lim\limits_{x \to x_{0}} (r_{x}^{x_{0}} f)^{-1} = \frac{1}{f'(x_{0})}$
 
 Sia $f : A \to B$ invertibile $C^1$ tale che $f'(x)\neq 0$ in $A$. Allora $g \in C^1$ in $B$ e $g'(x) = \frac{1}{f'(g(x))}$.
 
-DIMOSTRAZIONE: Teorema precedente.
+~={pink}DIMOSTRAZIONE=~: Teorema precedente.
 
 Sia $f : A \to B$ invertibile $C^k$ tale che $f'(x)\neq 0$ in $A$. Allora $g \in C^k$.
 
-DIMOSTRAZIONE: Bootstrap (autoinduzione) con la proposizione precedente.
+~={yellow}DIMOSTRAZIONE=~: Bootstrap (autoinduzione) con la proposizione precedente.
 
 Siano $f,g$ funzioni. Allora $[g(f(x))]' = g'(f(x))f'(x)$.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Considero $x_{n} \to x_{0}$
 2. Se $\exists x_{n_{k}}\to x_{0}$ su cui $f(x_{n_{k}})\neq f(x_{0})$ il conto col rapporto incrementale torna
 3. Se $\exists x_{n_{k}}\to x_{0}$ su cui $f(x_{n_{k}})=f(x_{0})$ sempre, $f'(x_{0})=0$ e $r_{x_{n_{k}}}^{x_{0}} (g\circ f) \to 0$
 # Proprietà di Darboux delle derivate
 Sia $f : (x_{0}-r,x_{0}+r)\to \mathbb{R}$ derivabile ovunque. Allora $\liminf\limits_{x \to x_{0}} f'(x)\leq f'(x_{0})\leq \limsup\limits_{x \to x_{0}} f'(x)$
 
-DIMOSTRAZIONE:
+~={pink}DIMOSTRAZIONE=~:
 1. Per Lagrange $r_{x_{0}+h}^{x_{0}} f = f'(c(h))$ con $x_{0} \leq c(h) \leq x_{0}+h$
 2. Faccio liminf e limsup a destra e sinistra
