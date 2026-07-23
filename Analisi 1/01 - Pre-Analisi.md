@@ -1,7 +1,7 @@
-# Asserzioni
+# Enunciati
 Si dice preposizione una frase avente valore di verità vero o falso.
 
-Le possibili operazioni sono: negazione, and, or, xor, implicazione
+Le possibili operazioni sono: negazione, and, or, xor, implicazione.
 
 Si dice predicato una proposizione parametrizzata tramite quantificatori.
 
