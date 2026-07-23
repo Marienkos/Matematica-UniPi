@@ -12,7 +12,7 @@ Sia $f : [a,b] \to \mathbb{R}$ tale che:
 3. $f(a) = f(b)$
 Allora $\exists c \in (a,b)$   $f'(c) = 0$
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Per Weierstrass esistono max e min
 	- Se uno dei due sta in $(a,b)$, allora è $c$
 	- Se max e min sono al bordo, allora $f$ è costante
@@ -27,7 +27,7 @@ Inoltre se $g'(x) \neq 0$ in tutto $(a,b)$, allora:
 1. $g(b) \neq g(a)$
 2. $\frac{\Delta_{b,a} f}{\Delta_{b,a} g} = \frac{f'(c)}{g'(c)}$
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Considero $\varphi(x) := \Delta_{b,a} f g(x) - \Delta_{b,a} g f(x)$
 2. $\varphi(a) = \varphi(b)$ per sostituzione $\implies \varphi : [a,b] \to \mathbb{R}$ verifica le ipotesi di Rolle
 3. $\exists c \in (a,b)$   $\varphi'(c) = 0 \implies$ prima tesi
@@ -39,9 +39,9 @@ Sia $f : [a,b] \to \mathbb{R}$ tale che:
 2. $f$ derivabile in $(a,b)$
 Allora $\exists c \in (a,b)$   $\Delta f_{b,a} = f'(c)(b-a)$
 
-DIMOSTRAZIONE: Cauchy con $g(x) = x$.
+~={cyan}DIMOSTRAZIONE=~: Cauchy con $g(x) = x$.
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Considero $\varphi(x) = f(x) - mx-q$
 2. $\varphi(a) = \varphi(b) = 0 \implies$ Rolle su $\varphi$
 3. $\varphi'(c) = f'(c) - m \implies$ tesi
@@ -53,7 +53,7 @@ Siano $x_{0} \in \mathbb{R}, r>0, f,g : (x_{0},x_{0}+r) \to  \mathbb{R}$ tali ch
 3. $g'(x) \neq 0$   $\forall x \in (x_{0},x_{0}+r)$
 Allora $g(x) \neq 0$   $\forall x \in (x_{0},x_{0}+r)$   e   $\liminf\limits_{x \to x_{0}^+} \frac{f'(x)}{g'(x)} \leq \liminf\limits_{x \to x_{0}^+} \frac{f(x)}{g(x)} \leq \limsup\limits_{x \to x_{0}^+} \frac{f(x)}{g(x)} \leq \limsup\limits_{x \to x_{0}^+} \frac{f'(x)}{g'(x)}$
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. $g(x) \neq 0$
 	1. Estendo $g$ a $\hat{g} : [x_{0},x_{0}+r) \to \mathbb{R}$ con $\hat{g}(x_{0})=0$
 	2. $\hat{g}$ è continua
@@ -69,7 +69,7 @@ DIMOSTRAZIONE:
 
 Vale anche per limiti nella forma $\frac{*}{\infty}$
 
-DIMOSTRAZIONE:
+~={cyan}DIMOSTRAZIONE=~:
 1. Sia come prima $\frac{f'(x)}{g'(x)} \leq L+\varepsilon$
 2. $\frac{f(x)}{g(x)} = \frac{{f(x)-f(x_{0}+\delta) + f(x_{0}+\delta)}}{g(x)}$
 3. $\frac{\Delta_x^{x_{0}+\delta} f}{\Delta_x^{x_{0}+\delta} g} = \frac{f'(c)}{g'(c)} \leq L + \varepsilon \implies \Delta_x^{x_{0}+\delta} f \leq (L+\varepsilon) \Delta_x^{x_{0}+\delta} g$
@@ -81,11 +81,11 @@ $P_{n}(x)$ è l'unico polinomio di grado $\leq n$ tale $P_{n}^{(k)}(0) = f^{(k)}
 
 $[x^k]^{(i)} = \frac{k!}{(k-i)!}x^{k-i}$
 
-DIMOSTRAZIONE: Induzione su $i$.
+~={yellow}DIMOSTRAZIONE=~: Induzione su $i$.
 
 Sia $Q(x) = a_{0} + \dots + a_{n}x^n$. Allora $Q^{(i)}(0) = a_{i}i$
 
-DIMOSTRAZIONE: Derivata del monomio e della somma.
+~={cyan}DIMOSTRAZIONE=~: Derivata del monomio e della somma.
 
 Sia $P_{n}(x)$ il polinomio di Taylor di $f$. Allora $P_{n}^{(i)}(0) = i!\frac{f^{(i)}(0)}{i!} = f^{(i)}(0)$
 
@@ -98,7 +98,9 @@ Sia $\varphi : (-r,r) \to \mathbb{R}$ tale che:
 3. $\varphi^{(k)}(0) = 0$
 Allora $\varphi(x) = o(x^n)$ per $x\to 0$
 
-DIMOSTRAZIONE: De L'Hôpital e definizione di derivata.
+~={cyan}DIMOSTRAZIONE=~:
+1. Per De L'Hôpital $\lim\limits_{x \to 0} \frac{\varphi(x)}{x^n} = \lim\limits_{x \to 0} \frac{\varphi'(x)}{nx^{n-1}} = \dots = \lim\limits_{x \to 0} \frac{\varphi^{(n-1)}(x)}{n!x}$
+2. Usando la definizione di derivata $\frac{1}{n!}\lim\limits_{x \to 0} \frac{{\varphi^{(n-1)}(x) -\varphi^{(n-1)}(0) }}{x} = \frac{1}{n!}\varphi^n(0)=0$
 
 # Finale di Taylor - Lagrange
 Sia $\varphi : (-r,r) \to \mathbb{R}$ tale che:
@@ -106,7 +108,11 @@ Sia $\varphi : (-r,r) \to \mathbb{R}$ tale che:
 2. $\varphi^{(k)}(0) = 0$
 Allora $\forall x \in (-r,r)$   $\exists c \in (0,x)$   $\varphi(x) = \frac{\varphi^{(n+1)}(c)}{(n+1)!}x^{n+1}$
 
-DIMOSTRAZIONE: Cauchy (o anche Rolle).
+~={cyan}DIMOSTRAZIONE=~: Per Cauchy $\frac{\varphi(x)}{x^{n+1}}=\frac{\varphi'(c_{1})}{(n+1)c_{1}^n}=\dots = \frac{\varphi^{(n+1)}(c_{n})}{(n+1)!}$
+
+~={yellow}DIMOSTRAZIONE=~ (Senza puntini): Cauchy e induzione
+
+~={cyan}DIMOSTRAZIONE=~: Rolle.
 
 # Teorema di Cesàro - Stolz
 Siano $a_{n}$ e $b_{n}$ due successioni tali che:
@@ -114,7 +120,7 @@ Siano $a_{n}$ e $b_{n}$ due successioni tali che:
 2. $b_{n}$ strettamente decrescente
 Allora $\liminf\limits_{n \to +\infty} \frac{\Delta_{n+1}^{n} a}{\Delta_{n+1}^{n} b} \leq \liminf\limits_{n \to +\infty} \frac{a_n}{b_{n}} \leq \limsup\limits_{n \to +\infty} \frac{a_n}{b_{n}} \leq \limsup\limits_{n \to +\infty} \frac{\Delta_{n+1}^{n} a}{\Delta_{n+1}^{n} b}$
 
-DIMOSTRAZIONE:
+~={orange}DIMOSTRAZIONE=~:
 1. Assumiamo $\limsup\limits_{n \to +\infty} \frac{\Delta_{n+1}^{n} a}{\Delta_{n+1}^{n} b} = L \in \mathbb{R}$
 2. Per caratterizzazione $\forall\varepsilon>0$   $\frac{\Delta_{n+1}^{n} a}{\Delta_{n+1}^{n} b} \leq L+\varepsilon$ definitivamente
 3. $\Delta_{n}^{n+1} a \leq (L+\varepsilon)\Delta_{n}^{n+1} b$
@@ -124,7 +130,7 @@ DIMOSTRAZIONE:
 
 Vale anche per limiti nella forma $\frac{*}{\infty}$
 
-DIMOSTRAZIONE:
+~={orange}DIMOSTRAZIONE=~:
 1. Come prima $\frac{\Delta_{n+1}^{n} a}{\Delta_{n+1}^{n} b}\leq L + \varepsilon$ definitivamente
 2. $\frac{a_{n}}{b_{n}} = \frac{{a_{n}-a_{n_{0}}+a_{n_{0}}}}{b_{n}}$
 3. $\Delta_{n}^{n_{0}} a = \sum\limits_{k=n_{0}}^{n-1} \Delta_{k+1}^{k} a \leq (L+\varepsilon)\sum\limits_{k=n_{0}}^{n-1} \Delta_{k+1}^{k} b = (L+\varepsilon)\Delta_{n}^{n_{0}} b$
