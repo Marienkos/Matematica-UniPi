@@ -211,7 +211,7 @@ Con la decomposizione di Hermite, $f$ si separa in frazioni tali che, dato $Q(x)
 - $\forall Q_{i}$ compare una frazione, ignorata la molteplicità, il cui denominatore è $Q_{i}$
 - compare $\left[ \frac{N(x)}{D(x)} \right]'$ con $\deg(N) = \deg(Q)-1$ e $D(x) = \prod Q_{i}^{n_{i}-1}(x)$
 
-La decomposizione è unica.
+Se $Q(x)=Q_{1}(x)Q_{2}(x)$ con $Q_{1}$ e $Q_{2}$ relativamente primi, $\exists P_{1},P_{2}$   $\frac{1}{Q(x)}=\frac{P_{1}(x)}{Q_{1}(x)}+\frac{P_{2}(x)}{Q_{2}(x)}$.
 
 ~={pink}DIMOSTRAZIONE=~: Bezout.
 
