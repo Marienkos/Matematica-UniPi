@@ -122,7 +122,7 @@ Allora $a_{n} \to l$
 Siano $a_{n}$ e $b_{n}$ successioni e $0\leq m <n$.
 Vale $\sum\limits_{k=m}^{n} a_{k+1}(b_{k+1}-b_{k}) = a_{n+1}b_{n+1}-a_{n}b_{m} - \sum\limits_{k=m}^{n} b_{k}(a_{k+1}-a_{k})$
 
-~={pink}DIMOSTRAZIONE=~: Espansione e telescopicità della serie.
+~={cyan}DIMOSTRAZIONE=~: Espansione e telescopicità della serie.
 
 # Criterio di Dirichlet
 Sia $\sum\limits_{n=1}^{\infty} a_nb_{n}$ tale che:
@@ -131,7 +131,7 @@ Sia $\sum\limits_{n=1}^{\infty} a_nb_{n}$ tale che:
 - $b_{n}\to {0}$
 Allora la serie converge.
 
-~={cyan}DIMOSTRAZIONE=~: Lemma di Abel
+~={pink}DIMOSTRAZIONE=~: Lemma di Abel
 
 # Proprietà di riordinamento
 Sia $\sum\limits_{n=0}^{\infty} a_n$ una serie convergente non assolutamente. Allora riordinando i termini si può far assumere alla serie un qualsiasi comportamento.

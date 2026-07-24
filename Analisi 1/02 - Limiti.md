@@ -48,7 +48,7 @@ Allora anche $b_n \to l$.
 # Teorema delle successioni monotone
 Sia $a_{n}$ una successione debolmente crescente. Allora $a_{n} \to \sup\{ a_{n} :n \in \mathbb{N} \}$.
 
-~={green}DIMOSTRAZIONE=~:
+~={orange}DIMOSTRAZIONE=~:
 - Sia $l = +\infty$
 	1. Considero $M$
 	2. Poiché $\sup = +\infty$, per caratterizzazione $\exists n_{0}\in \mathbb{N}$   $a_{n_{0}}\geq M$
