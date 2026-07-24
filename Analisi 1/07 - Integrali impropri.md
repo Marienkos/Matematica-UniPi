@@ -42,7 +42,7 @@ Allora l'integrale converge.
 ~={cyan}DIMOSTRAZIONE=~:
 1. Integrando per parti $\int_{a}^{A} f(x)g(x) \, dx = [F(x)g(x)]^A_{a} - \int_{a}^{A} F(x)g'(x) \, dx$
 2. $[F(x)g(x)]^A_{a} = F(A)g(A)-F(a)g(a) \to 0$ per le ipotesi
-3. $\int_{a}^{A} |F(x)||g'(x)| \, dx \leq M\int_{a}^{A} |g'(x)| \, dx = -M\int_{a}^{A} g'(x) \, dx = -M(g(A) - g(a)) \to -Mg(a)$
+3. $\int_{a}^{A} |F(x)||g'(x)| \, dx \leq M\int_{a}^{A} |g'(x)| \, dx = -M\int_{a}^{A} g'(x) \, dx = -M(g(A) - g(a)) \to Mg(a)$
 4. $\int_{a}^{+\infty} F(x)g'(x) \, dx$ assolutamente integrabile
 
 # Confronto serie - integrali

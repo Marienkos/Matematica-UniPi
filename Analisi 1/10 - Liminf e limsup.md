@@ -111,7 +111,7 @@ Se $\limsup\limits_{n \to +\infty} a_n$ esiste, allora per ogni successione $b_{
 
 ~={cyan}DIMOSTRAZIONE=~:
 - $\leq$ segue dal caso generale
-- $\geq$ basta esibire $n_{n}$ tale che $a_{n_{k}}+b_{n_{k}} \to \lim\limits_{n \to +\infty} a_{n}+\limsup\limits_{n \to +\infty} b_{n}$
+- $\geq$ basta esibire $n_{k}$ tgale che $a_{n_{k}}+b_{n_{k}} \to \lim\limits_{n \to +\infty} a_{n}+\limsup\limits_{n \to +\infty} b_{n}$
 
 Valgono:
 - $\limsup\limits_{n \to +\infty} (-a_n) = -\liminf\limits_{n \to +\infty} a_n$
