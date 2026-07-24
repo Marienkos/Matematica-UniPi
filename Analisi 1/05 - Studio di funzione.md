@@ -63,7 +63,7 @@ Sia $[a,b] \subseteq \mathbb{R}$ e $f : [a,b] \to \mathbb{R}$ continua. Allora m
 
 ~={red}DIMOSTRAZIONE=~:
 1. $\exists I = \inf \{ f(x):x \in [a,b] \}$
-2. $x_{0} = \inf \{ x \in [a,b] : \inf \{ f(t) t \in [a,x] \} = I \}$
+2. $x_{0} = \inf \{ x \in [a,b] : \inf \{ f(t) : t \in [a,x] \} = I \}$
 3. $f(x_{0})\geq I$ in quanto $I$ è l'inf
 4. Supponiamo $f(x_{0}) > I$
 	- $x_{0} = a \implies x_{0}$ non inf per continuità $\implies$ assurdo
