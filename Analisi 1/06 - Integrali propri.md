@@ -29,7 +29,7 @@ Sia $f : [a,b] \to \mathbb{R}$ limitata, si definiscono:
 - integrale superiore $I^+(f) = \inf \left\{  \int_{a}^{b} \psi(x) \, dx : \psi \text{ step function}, \psi(x) \geq f(x) \, \forall x \in [a,b]  \right\}$
 - integrale inferiore $I^-(f) = \sup \left\{  \int_{a}^{b} \psi(x) \, dx : \psi \text{ step function}, \psi(x) \leq f(x) \, \forall x \in [a,b]  \right\}$
 
-Vale $I^+(f) \leq I^-(f)$
+Vale $I^-(f) \leq I^+(f)$
 
 ~={cyan}DIMOSTRAZIONE=~: somme inferiori $\psi^-$ $\leq$ somme superiori $\psi^+$
 
