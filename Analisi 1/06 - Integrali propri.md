@@ -141,7 +141,7 @@ $\int_{c}^{d} f(x) \, dx = F(d) - F(c)$
 Sia $f : [a,b] \to \mathbb{R}$ continua. Allora $\exists c \in [a,b]$   $\int_{a}^{b} f(x) \, dx = f(c)(b-a)$
 
 ~={cyan}DIMOSTRAZIONE=~ (con Weierstrass):
-1. Per Weierstrass $\exists m,M\in[a,b]$   $\forall x \in [a,b$   $m \leq f(x) \leq M$
+1. Per Weierstrass $\exists m,M\in[a,b]$   $\forall x \in [a,b]$   $m \leq f(x) \leq M$
 2. Per monotonia dell'integrale $\int_{a}^{b} m \, dx \leq \int_{a}^{b} f(x) \, dx \leq \int_{a}^{b} M \, dx$
 3. Per il caso banale $m(b-a) \leq \int_{a}^{b} f(x) \, dx \leq M(b-a)$
 4. Dividendo per $(b-a)$ si ha $m \leq \frac{1}{b-a}\int_{a}^{b} f(x) \, dx \leq M$
