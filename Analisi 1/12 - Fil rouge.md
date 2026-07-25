@@ -123,7 +123,7 @@ Allora $\forall x \in (-r,r)$   $\exists c \in (0,x)$   $\varphi(x) = \frac{\var
 
 ~={pink}DIMOSTRAZIONE=~: Per Cauchy $\frac{\varphi(x)}{x^{n+1}}=\frac{\varphi'(c_{1})}{(n+1)c_{1}^n}=\dots = \frac{\varphi^{(n+1)}(c_{n})}{(n+1)!}$
 
-~={yellow}DIMOSTRAZIONE=~ (Senza puntini): Cauchy e induzione
+~={yellow}DIMOSTRAZIONE=~ (Senza puntini): Cauchy e induzione.
 
 ~={pink}DIMOSTRAZIONE=~: Rolle.
 
