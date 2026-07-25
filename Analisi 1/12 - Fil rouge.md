@@ -113,7 +113,7 @@ Allora $\varphi(x) = o(x^n)$ per $x\to 0$
 
 ~={pink}DIMOSTRAZIONE=~:
 1. Per De L'Hôpital $\lim\limits_{x \to 0} \frac{\varphi(x)}{x^n} = \lim\limits_{x \to 0} \frac{\varphi'(x)}{nx^{n-1}} = \dots = \lim\limits_{x \to 0} \frac{\varphi^{(n-1)}(x)}{n!x}$
-2. Usando la definizione di derivata $\frac{1}{n!}\lim\limits_{x \to 0} \frac{{\varphi^{(n-1)}(x) -\varphi^{(n-1)}(0) }}{x} = \frac{1}{n!}\varphi^n(0)=0$
+2. Usando la definizione di derivata $\frac{1}{n!}\lim\limits_{x \to 0} \frac{{\varphi^{(n-1)}(x) -\varphi^{(n-1)}(0) }}{x} = \frac{1}{n!}\varphi^{(n)}(0)=0$
 
 # Finale di Taylor - Lagrange
 Sia $\varphi : (-r,r) \to \mathbb{R}$ tale che:
