@@ -105,7 +105,7 @@ $\liminf\limits_{n \to +\infty} a_n + \liminf\limits_{n \to +\infty} b_{n} \leq 
 
 ~={pink}DIMOSTRAZIONE=~: Definizione con $S_{n}$ e passaggio al limite.
 
-Se $\limsup\limits_{n \to +\infty} a_n$ esiste, allora per ogni successione $b_{n}$ valgono:
+Se $\lim\limits_{n \to +\infty} a_n$ esiste, allora per ogni successione $b_{n}$ valgono:
 - $\limsup\limits_{n \to +\infty} (a_n+b_{n}) = \lim\limits_{n \to +\infty} a_{n} + \limsup\limits_{n \to +\infty} b_{n}$
 - $\liminf\limits_{n \to +\infty} (a_n+b_{n}) = \lim\limits_{n \to +\infty} a_{n} + \liminf\limits_{n \to +\infty} b_{n}$
 
