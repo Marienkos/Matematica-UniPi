@@ -88,7 +88,7 @@ Sia $a \in \mathbb{R}$ e $f : [a,+\infty) \to \mathbb{R}$ UC. Allora $f$ subline
 
 ~={cyan}DIMOSTRAZIONE=~:
 1. Per uniforme continuità con $\varepsilon=1$ trovo $\delta$ tale che $|x-y|\leq \delta \implies |f(x)-f(y)|\leq 1$
-2. Per induzione su $k$ vale la tesi con $A:=\frac{1}{\delta}$ e $B:= \max\{ f(x) : x \in [a, a+\delta] \}$
+2. Per induzione su $k$ in $[a+k\delta, a+(k+1)\delta]$ vale la tesi con $A:=\frac{1}{\delta}$ e $B:= \max\{ f(x) : x \in [a, a+\delta] \}$
 
 $f : [a,+\infty) \to \mathbb{R}$ UC $\implies f(x) = O(x)$ per $x \to +\infty$
 

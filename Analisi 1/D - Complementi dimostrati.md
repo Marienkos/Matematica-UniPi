@@ -19,22 +19,30 @@ $W_{n} := \sum\limits_{k=1}^{n} \frac{2k}{2k-1} \frac{2k}{2k+1} \to \frac{\pi}{2
 # Asintotica di $I_{n}$
 $I_{n} \sim \frac{\sqrt{ 2\pi }}{\sqrt{ n }}$
 
-~={cyan}DIMOSTRAZIONE=~: Si dimostra separatamente sui pari e sui dispari.
+~={cyan}DIMOSTRAZIONE=~:
+1. Si verifica sui pari
+	1. Per induzione $I_{2n}=\frac{(2n)!}{2^{2n}(n!)^2}\pi$
+	2. Moltiplicando per $\sqrt{ 2n }$ e sostituisco con $n! = \frac{n^n}{e^n}\sqrt{ n } \frac{1}{S_{n}}$ (vedi sotto)
+	3. Si ha $\sqrt{ 2n }I_{2n}=2\pi \frac{S_{n}^{2}}{S_{2n}} \to \sqrt{ 2\pi }$
+2. Sui dispari $\sqrt{ 2n+1 }I_{2n+1}=\sqrt{ 2n+1 } \frac{I_{2n+1}}{I_{2n}}I_{2n}\sqrt{ 2n }\frac{1}{\sqrt{ 2n }}\to \hat{R}_{n}\sqrt{ 2\pi } \to \sqrt{ 2\pi }$
 
 # Formula di Stirling
 Valgono $n! \sim \left( \frac{n}{e} \right)^n \sqrt{ 2\pi n }$ e $n! \geq \left( \frac{n}{e} \right) \sqrt{ 2\pi n }$
 
 ~={cyan}DIMOSTRAZIONE=~:
-1. Dato $S_{n} := \frac{n^n}{e^n}\sqrt{ n } \frac{1}{n!}$ la tesi equivale a $S_{n} \to \frac{1}{\sqrt{ 2\pi }}$ e $S_{n} \leq \frac{1}{\sqrt{ 2\pi }}$
-2. Dimostriamo che $S_{n} \to S_{\infty} \in (0,+\infty)$
-	1. Pongo $R_{n}=\frac{S_{n+1}}{S_{n}} = \frac{1}{e}\left( 1+ \frac{1}{n} \right)^{n+ \frac 1 2}$
+1. Sia $S_{n} := \frac{n^n}{e^n}\sqrt{ n } \frac{1}{n!}$
+2. La tesi equivale a $S_{n} \to \frac{1}{\sqrt{ 2\pi }}$ e $S_{n} \leq \frac{1}{\sqrt{ 2\pi }}$
+3. $S_{n} \to S_{\infty} \in (0,+\infty)$
+	1. Sia $R_{n}:=\frac{S_{n+1}}{S_{n}} = \frac{(n+1)^{n+1}}{e^{n+1}}\sqrt{ n+1 } \frac{1}{(n+1)n!} \frac{e^nn!}{n^n\sqrt{ n }} = \frac{1}{e}\left( \frac{{n+1}}{n} \right)^n \sqrt{ \frac{{n+1}}{n} }= \frac{1}{e}\left( 1+\frac{1}{n} \right)^{n + \frac{1}{2}}$
 	2. Osservo che $S_{n}=S_{1} \prod\limits_{k=1}^{n-1} R_{k}$
-	3. $\sum\limits_{k=1}^{\infty} \log R_{k}$ converge per confronto asintotico $\iff \prod\limits_{k=1}^{n-1} R_{k}$ converge
-3. $S_{n}$ crescente $\iff R_{n}>1 \iff \log R_{n}>0 \iff \left( n+\frac{1}{2} \right)\log\left( 1+\frac{1}{n} \right)>0$   $\forall n$
+	3. $S_{n}$ converge $\iff \prod\limits_{k=1}^{\infty} R_{k}$ converge $\iff \sum\limits_{k=1}^{\infty} \log R_{k}$ converge
+	4. $\log R_{n} = \log\left[ \frac{1}{e}\left( 1+\frac{1}{n} \right)^{n+\frac{1}{2}} \right] = \left( n+\frac{1}{2} \right)\log\left( 1+\frac{1}{n} \right)-1 = \frac{1}{12n^2} + o\left( \frac{1}{n^2} \right)$
+	5. La serie converge per confronto asintotico con $\frac{1}{n^2}$
+4. $S_{n}$ crescente $\iff R_{n}>1 \iff \log R_{n}>0 \iff \left( n+\frac{1}{2} \right)\log\left( 1+\frac{1}{n} \right)-1>0$   $\forall n$
 	- Controllo che in funzione di $n$ sia decrescente
 	- Considero $g(x)=\log x$ e stimo l'integrale
-4. $W_{n} = \frac{[2^nn!]^4}{(2n+1)[(2n)!]^2}$ per induzione
-5. Nella formula di Wallis sostituisco con $S_{n}$ e ottengo $S_{\infty}=\frac{1}{\sqrt{ 2\pi }}$
+5. $W_{n} = \frac{[2^nn!]^4}{(2n+1)[(2n)!]^2}$ per induzione
+6. Nella formula di Wallis sostituisco con $S_{n}$ e ottengo $S_{\infty}=\frac{1}{\sqrt{ 2\pi }}$
 
 # Integrale di Gauss
 $\int_{-\infty}^{+\infty} e^{-x^2} \, dx = \sqrt{ \pi }$
