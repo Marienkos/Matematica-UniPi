@@ -5,7 +5,20 @@ A partire dagli assiomi di $\mathbb{R}$ si può, in ordine, dimostrare:
 3. Cauchy $\to$ De L'Hôpital $\to$ Taylor
 4. Lagrange $\to$ monotonia
 
-# Teorema di Rolle
+# Weierstrass
+Sia $A \subseteq \mathbb{R}$ non vuoto e $f : A \to \mathbb{R}$ tali che:
+1. $f$ continua
+2. $A$ compatto
+Allora esistono max e min.
+
+~={cyan}DIMOSTRAZIONE=~:
+1. $S := \sup \{ f(x) : x \in A \} \in \mathbb{R} \cup \{ +\infty \}$
+2. $\exists \{ y_{n} \} \subseteq f(A)$   $y_{n}\to S$ per il solito lemma
+3. $y_{n}=f(x_{n})$ con $x_{n} \in A$ per definizione di immagine
+4. $\{ x_{n} \} \subseteq A$, che è compatto, dunque $\exists x_{n_{k}} \to x_{\infty}$
+5. $f(x_{\infty}) = \lim\limits_{k \to +\infty} f(x_{n_{k}}) = \lim\limits_{k \to +\infty} y_{n_{k}} = \lim\limits_{n \to +\infty} y_{n} = S$
+
+# Rolle
 Sia $f : [a,b] \to \mathbb{R}$ tale che:
 1. $f$ continua in $[a,b]$
 2. $f$ derivabile in $(a,b)$
@@ -17,27 +30,27 @@ Allora $\exists c \in (a,b)$   $f'(c) = 0$
 	- Se uno dei due sta in $(a,b)$, allora è $c$
 	- Se max e min sono al bordo, allora $f$ è costante
 
-# Teorema di Cauchy
+# Cauchy
 Siano $f,g : [a,b] \to \mathbb{R}$ tali che:
 1. $f$ e $g$ continue in $[a,b]$
 2. $f$ e $g$ derivabili in $(a,b)$
-Allora $\exists c \in (a,b)$   $\Delta_{b,a} f g'(c) = \Delta_{b,a} g f'(c)$
+Allora $\exists c \in (a,b)$   $(\Delta^a_{b} f) g'(c) = (\Delta^a_{b} g) f'(c)$
 
 Inoltre se $g'(x) \neq 0$ in tutto $(a,b)$, allora:
 1. $g(b) \neq g(a)$
-2. $\frac{\Delta_{b,a} f}{\Delta_{b,a} g} = \frac{f'(c)}{g'(c)}$
+2. $\frac{\Delta_b^a f}{\Delta_b^a g} = \frac{f'(c)}{g'(c)}$
 
 ~={cyan}DIMOSTRAZIONE=~:
-1. Considero $\varphi(x) := \Delta_{b,a} f g(x) - \Delta_{b,a} g f(x)$
+1. Considero $\varphi(x) := (\Delta_b^a f) g(x) - (\Delta_b^a g) f(x)$
 2. $\varphi(a) = \varphi(b)$ per sostituzione $\implies \varphi : [a,b] \to \mathbb{R}$ verifica le ipotesi di Rolle
 3. $\exists c \in (a,b)$   $\varphi'(c) = 0 \implies$ prima tesi
 4. Se $g$ non verifica le ipotesi di Rolle vale la seconda tesi
 
-# Teorema di Lagrange
+# Lagrange
 Sia $f : [a,b] \to \mathbb{R}$ tale che:
 1. $f$ continua in $[a,b]$
 2. $f$ derivabile in $(a,b)$
-Allora $\exists c \in (a,b)$   $\Delta f_{b,a} = f'(c)(b-a)$
+Allora $\exists c \in (a,b)$   $\Delta_{b}^a f = (b-a)f'(c)$
 
 ~={pink}DIMOSTRAZIONE=~: Cauchy con $g(x) = x$.
 

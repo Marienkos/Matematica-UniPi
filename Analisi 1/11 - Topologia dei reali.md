@@ -13,7 +13,7 @@ Sia $A \subseteq \mathbb{R}$, allora siano:
 - $\text{Isol}(A)$ l'insieme dei punti isolati in $A$
 - $D(A)$ l'insieme dei punti di accumulazione per $A$
 
-$A$ si dice:
+$A$ si dice:De L'Hôpital
 - aperto se $A = \text{Int}(A)$
 - chiuso se $A = \text{Clos}(A)$
 
@@ -107,15 +107,19 @@ Sia $A \subseteq \mathbb{R}$ compatto per ricoprimenti e $f: A \to \mathbb{R}$ c
 3. $A$ è compatto per ricoprimenti, per cui esiste un sottoricoprimento finito
 4. $y \in f(A)$, prendo $x \in A$   $y = f(x)$ e $k \in u_{i_{k}}$ per cui $y \in f(u_{i_{k}}) = V_{i_{k}}$
 
+Sia $A \subseteq \mathbb{R}$ compatto per successioni e $f:A\to \mathbb{R}$ continua. Allora $f(A)$ compatto per successioni.
+
+~={cyan}DIMOSTRAZIONE=~: $y_{n_{k}} = f(x_{n_{k}}) \to f(x_{\infty}) =: y_{\infty} \in f(A)$
+
 # Lemma del raggio magico (numero di Lebesgue)
 Sia $A \subseteq \mathbb{R}$ compatto per successioni e $\{ u_{i} \}_{i \in I}$ un ricoprimento aperto di A.
 Allora $\exists r>0$   $\forall x \in A$   $\exists i \in I$   $[x-r,x+r] \subseteq u_{i}$
 
 ~={red}DIMOSTRAZIONE=~:
 1. Supponiamo la tesi non vera, dunque $\forall r > 0$   $\exists x \in A$   $\forall i \in I$   $[x-r,x+r] \nsubseteq u_{i}$
-2. Si pone $\varepsilon = \frac{1}{n}$ ma va bene qualsiasi $\varepsilon \to 0$
+2. Si pone $r = \frac{1}{n}$ e si trova $x_{n} \in A$   $\forall i \in I$   $\left[ x_{n}-\frac{1}{n}, x_{n}+\frac{1}{n} \right] \nsubseteq u_{i}$ 
 3. Data $\{ x_{n} \}$, per ipotesi $\exists x_{n_{k}}\to x_{\infty} \in A$
-4. Sia $i_{\infty} \in I$ tale che $x_{\infty} \in u_{i_{\infty}}$, vale $\exists r_{\infty}>0$   $(x_{\infty}-r_{\infty},x_{\infty}+r_{\infty}) \subseteq u_{i_{\infty}}$
+4. Sia $i_{\infty} \in I$ tale che $x_{\infty} \in u_{i_{\infty}}$, essendo aperto $\exists r_{\infty}>0$   $(x_{\infty}-r_{\infty},x_{\infty}+r_{\infty}) \subseteq u_{i_{\infty}}$
 5. Per $k$ grande $x_{n_{k}} \in \left[ x_{\infty}-\frac{r_{\infty}}{2}, x_{\infty} + \frac{r_{\infty}}{2} \right]$
 6. Vale $\left[ x_{n_{k}} - \frac{r_{\infty}}{2}, x_{n_{k}} + \frac{r_{\infty}}{2} \right] \subseteq u_{i_{\infty}}$ generando assurdo quando $\frac{1}{n_{k}}< \frac{r_{\infty}}{2}$
 
@@ -136,7 +140,7 @@ In $\mathbb{R}$ le tre nozioni di compattezza sono equivalenti.
 3. $x_{\infty} \in \text{Clos}(A)=A$ poiché $(x_{\infty}-r,x_{\infty}+r)$ interseca $A$
 
 ~={red}DIMOSTRAZIONE=~ (compatto per successioni $\implies$ compatto):
-1. Supponiamo $A$ non compatto. Allora $\sup A = +\infty \implies \exists x_{n} \to +\infty \implies \not\exists x_{n_{k}}\to L \in \mathbb{R}$
+1. Supponiamo $A$ non limitato. Allora $\sup A = +\infty \implies \exists x_{n} \to +\infty \implies \not\exists x_{n_{k}}\to L \in \mathbb{R}$
 2. Supponiamo $A$ non chiuso. Allora $\exists x_{\infty} \in \text{Clos}(A)$   $x_{\infty} \not\in A$   ma allora $\exists x_{n} \to x_{\infty}\not\in A$
 
 ~={orange}DIMOSTRAZIONE=~ (compatto per ricoprimenti  $\implies$ compatto):
@@ -156,23 +160,6 @@ In $\mathbb{R}$ le tre nozioni di compattezza sono equivalenti.
 2. Prendo il raggio magico $r$ del ricoprimento
 3. Scelgo $x_{1},\dots,x_{n}$ distributori e $u_{i_{1}},\dots,u_{i_{n}}$ tali che $[x_{j}-r,x_{j}+r] \subseteq u_{i_{j}}$   $\forall j=1,\dots,n$
 4. $\forall x \in A$   $x \in [x_{j}-r,x_{j}+r]$ e l'ultimo intervallo $\subseteq u_{i_{j}}$ per cui $u_{i_{1}},\dots,u_{i_{n}}$ ricoprono
-
-# Weierstrass
-Sia $A \subseteq \mathbb{R}$ non vuoto e $f : A \to \mathbb{R}$ tali che:
-1. $f$ continua
-2. $A$ compatto
-Allora esistono max e min.
-
-~={cyan}DIMOSTRAZIONE=~:
-1. $S := \sup \{ f(x) : x \in A \} \in \mathbb{R} \cup \{ +\infty \}$
-2. $\exists \{ y_{n} \} \subseteq f(A)$   $y_{n}\to S$ per il solito lemma
-3. $y_{n}=f(x_{n})$ con $x_{n} \in A$ per definizione di immagine
-4. $\{ x_{n} \} \subseteq A$, che è compatto, dunque $\exists x_{n_{k}} \to x_{\infty}$
-5. $f(x_{\infty}) = \lim\limits_{k \to +\infty} f(x_{n_{k}}) = \lim\limits_{k \to +\infty} y_{n_{k}} = \lim\limits_{n \to +\infty} y_{n} = S$
-
-Sia $A \subseteq \mathbb{R}$ compatto per successioni e $f:A\to \mathbb{R}$ continua, allora $f(A)$ compatto per successioni.
-
-~={cyan}DIMOSTRAZIONE=~: $y_{n_{k}} = f(x_{n_{k}}) \to f(x_{\infty}) =: y_{\infty} \in f(A)$
 
 # Semicontinuità
 Sia $f : A \to \mathbb{R}$ e $x_{0} \in A$ tali che vale uno tra:
