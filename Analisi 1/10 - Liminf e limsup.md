@@ -29,7 +29,7 @@ $\limsup\limits_{n \to +\infty} a_n = L \in \mathbb{R} \iff \forall \varepsilon>
 2. $S_{n} \leq L+\varepsilon$ definitivamente $\implies$ $a_{n} \leq L+\varepsilon$ definitivamente
 3. Se $a_{n} \geq L - \varepsilon$ finite volte $\implies$ $S_{n} \leq L - \varepsilon$ definitivamente $\implies$ $\lim\limits_{n \to +\infty} S_{n} \leq L-\varepsilon$
 
-$\limsup\limits_{n \to +\infty} a_n = -\infty \iff \forall M \in \mathbb{R}$   $a_{n} \geq M$   definitivamente $\iff$ $\lim\limits_{n \to +\infty} a_{n} = -\infty$
+$\limsup\limits_{n \to +\infty} a_n = -\infty \iff \forall M \in \mathbb{R}$   $a_{n} \leq M$   definitivamente $\iff$ $\lim\limits_{n \to +\infty} a_{n} = -\infty$
 
 ~={orange}DIMOSTRAZIONE=~: $S_{n} \to -\infty \implies S_{n} \leq M$ definitivamente $\implies a_{n} \leq M$ definitivamente
 
