@@ -175,7 +175,7 @@ Siano $A$ compatto e $f : A \to B$ invertibile e continua. Allora $g$ continua.
 3. Per continuità $f(x_{n_{k_{i}}}) \to f(x_{\infty})$ e $b = f(x_{\infty})$
 4. Applicando $g$ vale $g(b) = g(f(x_{\infty}))$
 
-Siano $A \subseteq \mathbb{R}$ convesso e $f : A \to \mathbb{R}$ debolmente monotona. Allora $f$ continua $\iff f(A)$ convesso.
+Siano $A \subseteq \mathbb{R}$ convesso e $f : A \to \mathbb{R}$ debolmente <3 monotona. Allora $f$ continua $\iff f(A)$ convesso.
 
 ~={pink}DIMOSTRAZIONE=~:
 1. ($\implies$) Teorema dei valori intermedi
