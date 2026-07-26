@@ -130,8 +130,7 @@ Allora $a_{n} \to l$
 ~={orange}DIMOSTRAZIONE=~: Definitivamente comune a entrambe.
 
 # Lemma di Abel
-Siano $a_{n}$ e $b_{n}$ successioni e $0\leq m <n$.
-Vale $\sum\limits_{k=m}^{n} a_{k+1}(b_{k+1}-b_{k}) = a_{n+1}b_{n+1}-a_{n}b_{m} - \sum\limits_{k=m}^{n} b_{k}(a_{k+1}-a_{k})$
+Siano $a_{n}$ e $b_{n}$ successioni e $0\leq m <n$. Vale $\sum\limits_{k=m}^{n} a_{k+1}\Delta_{k+1}^k b = \Delta_{n+1}^m(ab) - \sum\limits_{k=m}^{n} b_{k}\Delta_{k+1}^k a$.
 
 ~={cyan}DIMOSTRAZIONE=~: Espansione e telescopicità della serie.
 
