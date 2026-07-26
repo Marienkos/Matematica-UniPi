@@ -13,7 +13,7 @@ Sia $A \subseteq \mathbb{R}$, allora siano:
 - $\text{Isol}(A)$ l'insieme dei punti isolati in $A$
 - $D(A)$ l'insieme dei punti di accumulazione per $A$
 
-$A$ si dice:De L'Hôpital
+$A$ si dice:
 - aperto se $A = \text{Int}(A)$
 - chiuso se $A = \text{Clos}(A)$
 
