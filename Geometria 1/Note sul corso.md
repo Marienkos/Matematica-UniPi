@@ -1,0 +1,1 @@
+Ho dato lo scritto prima degli appunti, ci sono solo le dimostrazioni.
