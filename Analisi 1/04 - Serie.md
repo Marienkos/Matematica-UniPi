@@ -102,19 +102,8 @@ Allora $\sum\limits_{n=0}^{\infty} b_{n}$ converge
 
 ~={cyan}DIMOSTRAZIONE=~:
 1. $\sum\limits_{n=0}^{\infty} (c_{n}-a_{n})$ converge in quanto differenza di serie convergenti
-2. $\sum\limits_{n=0}^{\infty} (b_{n}-a_{n})$ converge per confronto# Weierstrass
-Sia $A \subseteq \mathbb{R}$ non vuoto e $f : A \to \mathbb{R}$ tali che:
-3. $f$ continua
-4. $A$ compatto
-Allora esistono max e min.
-
-~={cyan}DIMOSTRAZIONE=~:
-1. $S := \sup \{ f(x) : x \in A \} \in \mathbb{R} \cup \{ +\infty \}$
-2. $\exists \{ y_{n} \} \subseteq f(A)$   $y_{n}\to S$ per il solito lemma
-3. $y_{n}=f(x_{n})$ con $x_{n} \in A$ per definizione di immagine
-4. $\{ x_{n} \} \subseteq A$, che è compatto, dunque $\exists x_{n_{k}} \to x_{\infty}$
-5. $f(x_{\infty}) = \lim\limits_{k \to +\infty} f(x_{n_{k}}) = \lim\limits_{k \to +\infty} y_{n_{k}} = \lim\limits_{n \to +\infty} y_{n} = S$
-6. $\sum\limits_{n=0}^{\infty} b_{n}$ converge perché somma di serie convergenti
+2. $\sum\limits_{n=0}^{\infty} (b_{n}-a_{n})$ converge per confronto
+3. $\sum\limits_{n=0}^{\infty} b_{n}$ converge perché somma di serie convergenti
 
 # Criterio di assoluta convergenza
 Una serie $\sum\limits_{n=0}^{\infty} a_n$ si dice assolutamente convergente se $\sum\limits_{n=0}^{\infty} |a_{n}|$ converge. Allora $\sum\limits_{n=0}^{\infty} a_n$ converge.
