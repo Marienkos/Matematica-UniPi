@@ -31,7 +31,7 @@ DIMOSTRAZIONE:
 4. Tramite manipolazione algebrica si ottiene la tesi
 
 DIMOSTRAZIONE (Eulero):
-1. $\binom{p}{i}i!(p-i)! = p!$ e $p | p!$ ma $p \not{|}$  $i!(p-i)!$, ossia $p | \binom{p}{i}$
+1. $\binom{p}{i}i!(p-i)! = p!$ e $p \,| \,p!$ ma $p \not{|}$  $i!(p-i)!$, dunque $p \,|\, \binom{p}{i}$
 2. $(1+a)^p = \sum\limits_{i=0}^{p} \binom{p}{i}a^i \equiv a^p + 1^p \equiv a^p + 1$   $(p)$
 3. $a^p \equiv a$   $(p)$ per induzione
 
@@ -44,3 +44,27 @@ Sia $1<n \in \mathbb{Z}$ tale che $\exists a$   $a^n \not\equiv a$   $(n)$. Allo
 DIMOSTRAZIONE: Contronominale della proposizione precedente.
 
 Si definisce ordine $o = \min \{ x : a^x \equiv 1 \text\}$. 
+
+# Teorema cinese del resto
+Siano:
+1. $x\equiv a$   $(m_{1})$
+2. $x \equiv b$   $(m_{2})$
+Allora:
+- il sistema ha soluzione $\iff (m_{1},m_{2}) \, | \, (b-a)$
+- data una soluzione $x_{0}$ vale $x \equiv x_{0}$   $(\text{mcm}(m_{1},m_{2}))$
+
+DIMOSTRAZIONE: Valutazioni sul passaggio alle diofantee.
+
+Il teorema cinese del resto si può estendere a sistemi di più equazioni.
+
+# $\phi$ di Eulero
+Sia $m$ intero positivo e $a$ intero coprimo con $m$. Allora $a^{\phi(m)}\equiv 1$   $(m)$.
+
+DIMOSTRAZIONE:
+- Se $m=1$ l'enunciato è banale
+- Sia $m\geq 2$
+	1. Le classi di resto sono finite
+	2. Sia $k$ il minimo intero per cui $\exists j<k$   $[a^j] = [a^k]$
+	3. Per assurdo $j=0$, se non lo fosse $[a^{j-1}]=[a^{k-1}]$
+	4. $[a^k] = [a^0]$, ossia $a^k \equiv 1$   $(m)$
+	5. $k \leq \phi(m)$ e $k \, | \, \phi(m)$, da cui $a^{\phi(m)}\equiv a^{kd} \equiv 1^d \equiv 1$   $(m)$
