@@ -68,3 +68,7 @@ DIMOSTRAZIONE:
 	3. Per assurdo $j=0$, se non lo fosse $[a^{j-1}]=[a^{k-1}]$
 	4. $[a^k] = [a^0]$, ossia $a^k \equiv 1$   $(m)$
 	5. $k \leq \phi(m)$ e $k \, | \, \phi(m)$, da cui $a^{\phi(m)}\equiv a^{kd} \equiv 1^d \equiv 1$   $(m)$
+
+Per ogni intero positivo $n$ vale $\sum\limits_{d | n} \phi(d)=n$.
+
+DIMOSTRAZIONE: Giochetto con le frazioni ridotte ai minimi termini.
