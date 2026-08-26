@@ -1,5 +1,5 @@
 # Gruppo
-Un gruppo $G$ è un insieme non vuoto dotato di un'operazione binaria con:
+Un gruppo $G$ è un insieme dotato di un'operazione binaria con:
 1. associatività: $\forall a,b,c  \in G$   $(ab)c=a(bc)$
 2. esistenza di un elemento neutro: $\exists e\in G$   $\forall g \in G$   $eg = ge = g$
 3. esistenza di un inverso rispetto all'operazione: $\forall g \in G$   $\exists g^{-1}\in G$   $gg^{-1}=g^{-1}g=e$

@@ -167,8 +167,10 @@ export default [
 	{trigger: "isol", replacement: "\\text{Isol}(${0:A})", options: "mA"},
 	{trigger: "inf", replacement: "\\inf", options: "mA"},
 	{trigger: "sup", replacement: "\\sup", options: "mA"},
-	{trigger: "dff", replacement: "\\Delta_{${0:a}}^{${1:b}} ${2:f}", options: "mA"},
-	{trigger: "inc", replacement: "r_{${0:a}}^{${1:b}} ${2:f}", options: "mA"},
+	{trigger: "deg", replacement: "\\text{deg}", options: "mA"},
+	{trigger: "orb", replacement: "\\text{Orb}", options: "mA"},
+	{trigger: "ker", replacement: "\\text{Ker}", options: "mA"},
+	{trigger: "imm", replacement: "\\text{Imm}", options: "mA"},
 	
 	{trigger: "+-", replacement: "\\pm", options: "mA"},
 	{trigger: "-+", replacement: "\\mp", options: "mA"},
