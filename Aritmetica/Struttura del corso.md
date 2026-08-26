@@ -6,6 +6,6 @@ Le dispense sono prese dall'E-learning del professor Gaiffi,  anno 2025/26.
 | 2   | Aritmetica intera   | 3        |
 | 3   | Aritmetica modulare | 4-6      |
 | 4   | Gruppi              | 7-11     |
-| 5   | Anelli              | 12-15    |
-| 6   | Anelli euclidei     | 16-18    |
+| 5   | Anelli              | 12-15.3  |
+| 6   | Anelli euclidei     | 15.4-18  |
 | 7   | Campi               | 19-22    |
