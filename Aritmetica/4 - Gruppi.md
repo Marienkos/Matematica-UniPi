@@ -88,9 +88,9 @@ In un gruppo ciclico $G$ con $n$ elementi ci sono esattamente $\phi(n)$ generato
 
 DIMOSTRAZIONE:
 1. Sia $g$ generatore di $G$, gli elementi di $G$ sono nella forma $g^i$
-2. Sia $d=o(g^i)$, per Lagrange $d \, | \, n$
-3. $(g^i)^d=e$, ossia $g^{di}=e$ per cui $n \, | \, di$
-4. Se $(i,n)=1$ allora $n \, | \, d$ e $n=d$, altrimenti $g^i$ non è un generatore 
+2. Sia $d=o(g^i)$, per Lagrange $d \mid n$
+3. $(g^i)^d=e$, ossia $g^{di}=e$ per cui $n \mid di$
+4. Se $(i,n)=1$ allora $n \mid d$ e $n=d$, altrimenti $g^i$ non è un generatore 
 
 Sia $G$ gruppo ciclico e $H < G$, allora $H$ è ciclico.
 
@@ -100,7 +100,7 @@ DIMOSTRAZIONE:
 3. $(g^k)^{-q} g^{qk+r} = (g^k)^{-q} (g^k)^q g^r = g^r \in H$ poiché $H < G$
 4. Essendo $k$ minimo, $r = 0$ e $g^a \in \langle g^k \rangle$
 
-Sia $G$ gruppo ciclico con $n$ elementi. Allora $\forall d \, | \, n$   $\exists!H < G$   $|H| = d$.
+Sia $G$ gruppo ciclico con $n$ elementi. Allora $\forall d \mid n$   $\exists!H < G$   $|H| = d$.
 
 DIMOSTRAZIONE: Osservazioni sui gruppi ciclici.
 
@@ -113,7 +113,7 @@ DIMOSTRAZIONE: $f(e_{G_{1}})=f(e_{G_{1}}e_{G_{1}})=f(e_{G_{1}})f(e_{G_{1}})$ e s
 
 Un omomorfismo tra $G_{1}$ e $G_{2}$ bigettivo è detto isomorfismo e i due gruppi isomorfi $G_{1} \cong G_{2}$.
 
-Siano $G_{1},G_{2}$ gruppi e $\alpha$ omomorfismo. Sia $g \in G$ tale che $o(g)=n$. Allora $o(\alpha(g)) \, | \, n$.
+Siano $G_{1},G_{2}$ gruppi e $\alpha$ omomorfismo. Sia $g \in G$ tale che $o(g)=n$. Allora $o(\alpha(g)) \mid n$.
 
 DIMOSTRAZIONE: $\alpha$ è omomorfismo, quindi $\alpha(g^k)=\alpha(g)^k$, da cui $\alpha(g)^n = e_{G_{2}}$.
 
