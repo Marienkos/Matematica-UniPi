@@ -222,6 +222,7 @@ export default [
 	{trigger: "AA", replacement: "\\mathscr{A}_n(\\mathbb{K})", options: "mA"},
 	{trigger: "BB", replacement: "\\mathscr{B}", options: "mA"},
 	{trigger: "MM", replacement: "\\mathscr{M}_{m,n}(\\mathbb{K})", options: "mA"},
+	{trigger: "FF", replacement: "\\mathscr{F}", options: "mA"},
 
 
     // Handle spaces and backslashes
