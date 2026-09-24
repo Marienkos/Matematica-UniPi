@@ -221,6 +221,7 @@ export default [
 	{trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
 	{trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},
 	{trigger: "KK", replacement: "\\mathbb{K}", options: "mA"},
+	{trigger: "PP", replacement: "\\mathbb{P}", options: "mA"},
 	{trigger: "AA", replacement: "\\mathscr{A}_n(\\mathbb{K})", options: "mA"},
 	{trigger: "BB", replacement: "\\mathscr{B}", options: "mA"},
 	{trigger: "MM", replacement: "\\mathscr{M}_{m,n}(\\mathbb{K})", options: "mA"},
