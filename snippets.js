@@ -200,6 +200,7 @@ export default [
 	{trigger: "=<", replacement: "\\impliedby", options: "mA"},
 
 	{trigger: "and", replacement: "\\cap", options: "mA"},
+	{trigger: "And", replacement: "\\bigcap\\limits_{${0:i \\in I}} ${1:u_{i}}", options: "mA"},
 	{trigger: "orr", replacement: "\\cup", options: "mA"},
 	{trigger: "Orr", replacement: "\\bigcup\\limits_{${0:i \\in I}} ${1:u_{i}}", options: "mA"},
 	{trigger: "inn", replacement: "\\in", options: "mA"},
@@ -212,6 +213,8 @@ export default [
 	{trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
 	{trigger: "flfl", replacement: "\\text{fl}", options: "mA"},
 	{trigger: "smeq", replacement: "\\simeq", options: "mA"},
+	{trigger: "nll", replacement: "\\{ 0 \\}", options: "mA"},
+
 
 	{trigger: "LL", replacement: "\\mathcal{L}", options: "mA"},
 	{trigger: "HH", replacement: "\\mathcal{H}", options: "mA"},
@@ -226,6 +229,8 @@ export default [
 	{trigger: "BB", replacement: "\\mathscr{B}", options: "mA"},
 	{trigger: "MM", replacement: "\\mathscr{M}_{m,n}(\\mathbb{K})", options: "mA"},
 	{trigger: "FF", replacement: "\\mathscr{F}", options: "mA"},
+	{trigger: "RFP", replacement: "\\mathscr{R}", options: "mA"},
+
 
 
     // Handle spaces and backslashes
