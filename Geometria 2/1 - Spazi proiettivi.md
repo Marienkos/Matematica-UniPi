@@ -117,31 +117,3 @@ DIMOSTRAZIONE:
 $\dim S_{1} + \dim S_{2} \geq \dim \mathbb{P}(V) \implies S_{1} \cap S_{2} \neq \emptyset$.
 
 DIMOSTRAZIONE: Grassmann.
-
-# Riferimento proiettivo
-Sia $\mathbb{P}(V)$ uno spazio proiettivo. Dei punti $P_{i}=[v_{i}]$ con $v_{i} \in V$ si dicono indipendenti se i $v_{i}$ sono linearmente indipendenti.
-
-$P_{1},\dots, P_{k}$ indipendenti $\iff \dim L(P_{1},\dots,P_{k})=k-1$.
-
-Sia $\dim \mathbb{P}(V) = n$. Dei punti $P_{i}$ si dicono in posizione generale se ogni suo sottoinsieme di $h\leq n+1$ punti è indipendente.
-
-Un riferimento proiettivo di $\mathbb{P}(V)$ con $\dim \mathbb{P}(V)=n$ è una $(n+2)$-upla ordinata di punti $\mathscr{R}=(P_{0},\dots,P_{n+1})$ in posizione generale.
-
-I punti $P_{0},\dots,P_{n}$ sono detti fondamentali e $P_{n+1}$ è detto d'unità.
-
-Sia $\mathscr{R}$ un riferimento proiettivo di $\mathbb{P}(V)$, si dice base normalizzata di $V$ associata a $\mathscr{R}$ una base $(v_{0},\dots,v_{n})$ di $V$ tale che $[v_{i}]=P_{i}$ e $P_{n+1}=[v_{0}+\dots+v_{n}]$.
-
-Sia $\mathscr{R}$ un riferimento proiettivo di $\mathbb{P}(V)$, allora:
-1. $\exists$ base normalizzata $(v_{0},\dots,v_{n})$ di $V$ rispetto a $\mathscr{R}$
-2. $(v_{0}',\dots,v_{n}')$ base normalizzata di $V$ rispetto a $\mathscr{R} \implies \exists \lambda\neq 0$   $v_{i}' = \lambda v_{i}$
-
-DIMOSTRAZIONE:
-- (1.)
-	1. $v_{0},\dots,v_{n}$ base di $V$ e $P_{n+1}:=[v_{n+1}]$
-	2. $v_{n+1}=a_{0}v_{0}+\dots+a_{n}v_{n}$
-	3. Per assurdo ogni $a_{i} \neq 0$, ci sarebbe una relazione di lineare dipendenza
-	4. Ponendo $w_{i}=a_{i}v_{i}$ vale $(w_{0},\dots,w_{n})$ base normalizzata di $V$ rispetto a $\mathscr{R}$
-- (2.)
-	1. $[v_{i}']=P_{i}=[w_{i}]$ e $[v_{0}'+\dots+v_{n}']=P_{n+1}=[w_{0}+\dots+w_{n}]$
-	2. $v_{i}'=\lambda_{i}w_{i}$ e $\exists \lambda \neq 0$   $v_{0}'+\dots+v_{n}' = \lambda(w_{0}+\dots+w_{n})$
-	3. Dato che $(w_{0},\dots,w_{n})$ è una base, si può porre $\lambda_{i}=\lambda$

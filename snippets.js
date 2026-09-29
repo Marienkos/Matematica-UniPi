@@ -210,6 +210,7 @@ export default [
     {trigger: "sup=", replacement: "\\supseteq", options: "mA"},
 	{trigger: "eset", replacement: "\\emptyset", options: "mA"},
 	{trigger: "set", replacement: "\\{ $0 \\}$1", options: "mA"},
+	{trigger: "gen", replacement: "\\langle $0 \\rangle $1", options: "mA"},
 	{trigger: "e\\xi sts", replacement: "\\exists", options: "mA", priority: 1},
 	{trigger: "flfl", replacement: "\\text{fl}", options: "mA"},
 	{trigger: "smeq", replacement: "\\simeq", options: "mA"},

@@ -1,7 +1,7 @@
 # Teoremi di Gershgorin
 Sia $A \in \mathbb{C}^{n\times n}$ e $\lambda$ un suo autovalore. Se $x_{h}$ è una coordinata di modulo massimo di un autovettore $v$ relativo a $\lambda$, allora $\lambda \in K_{h}$.
 
-DIMOSTRAZIONE: Si pone $Av = \lambda v$ e si sostituiscono i prodotti.
+DIMOSTRAZIONE: Si pone $Av = \lambda v$ e si sostituiscono i prodotti tra matrici.
 
 Se esistono famiglie di cerchi Gershgorin disgiunte, l'unione dei cerchi di ogni famiglia contiene esattamente tanti autovalori quanti i cerchi nella famiglia.
 

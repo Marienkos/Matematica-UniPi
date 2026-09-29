@@ -56,4 +56,6 @@ Sia $(X, d)$ spazio metrico, allora $A \subseteq X$ si dice:
 - aperto se $\forall x \in A$   $\exists r > 0$   $B_{r}(x)\subseteq A$
 - chiuso se $X \setminus A$ aperto
 
-Il linguaggio topologico di Analisi 1 si estende agli spazi metrici con le palle.
+La topologia di Analisi 1 si estende agli spazi metrici con le palle:
+- la compattezza per successioni è detta sequenziale
+- la compattezza per ricoprimenti è detta topologica
