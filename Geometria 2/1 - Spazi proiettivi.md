@@ -10,6 +10,7 @@ La dimensione di $\mathbb{P}(V)$ è definita come $\dim\mathbb{P}(V)=\dim_{\math
 Se $V = \mathbb{K}^n$ si definisce lo spazio proiettivo standard $\mathbb{P}(\mathbb{K}^n)=\mathbb{P}^{n-1}(\mathbb{K})$.
 
 Nel corso si considereranno spazi a dimensione finita.
+
 # Trasformazione proiettiva
 Siano $\mathbb{P}(V)$ e $\mathbb{P}(W)$ spazi proiettivi su $\mathbb{K}$, si dice trasformazione proiettiva una funzione $f : \mathbb{P}(V) \to \mathbb{P}(W)$ tale che $\exists \varphi : V \to W$ lineare   $\forall v \in V$   $f([v]) = [\varphi(w)]$.
 
