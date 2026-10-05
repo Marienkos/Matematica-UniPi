@@ -102,3 +102,34 @@ Sia $S \subseteq \mathbb{P}(V)$ sottospazio proiettivo $S = \mathbb{P}(W)$ con $
 La rappresentazione $W = \{ f_{1}=\dots=f_{n-k}=0 \}$ è detta cartesiana e valgono:
 1. $f_{i}$ sono lineari omogenee
 2. $f_{i}$ descrivono $S$ dentro $\mathbb{P}(V)$, ossia $[v] \in S \iff [v]$ soddisfano $f_{i}$
+
+# Prospettività
+Siano:
+- $\mathbb{P}(V)$ piano proiettivo
+- $r,s \in \mathbb{P}(V)$ rette distinte
+- $A = r \cap s$
+- $O \in \mathbb{P}(V) \setminus (r \cup s)$
+Allora $\pi_{O} : r \to s : P \mapsto L(O,P) \cap s$ si dice prospettività di centro $O$.
+
+$\pi_{O}$ trasformazione proiettiva.
+
+DIMOSTRAZIONE:
+1. Si considera un riferimento dato da $A$, $B \in r$, $C \in s$, $D = O$
+2. In queste coordinate $A=e_{1}$, $B=e_{2}$, $C=e_{3}$, $D = \left(\begin{smallmatrix} 1 \\ 1 \\ 1 \end{smallmatrix}\right)$
+3. Sulle coordinate agisce $\pi_{O}$ come una trasformazione di matrice $\left(\begin{smallmatrix} -1 & 1 \\ 0 & 1 \end{smallmatrix}\right)$
+
+$f$ trasformazione proiettiva è una prospettività $\iff f(A) = A$.
+
+DIMOSTRAZIONE:
+- ($\implies$) Ovvia
+- ($\impliedby$)
+	1. $f(A)=A$ e $B \neq A \in r$, allora $f(B) \in s \setminus \{ A \}$
+	2. Per costruzione di prospettività $O \in L(B,f(B))$
+	3. Sia $B' \neq A \in r$, allora $O = L(B, f(B), L(B', f(B')))$
+	4. $(A, B, B')$ riferimento proiettivo di $r$ e $f = \pi_{O}$
+
+$\pi_{O}$ è la restrizione di $\pi : \mathbb{P}(V) \setminus \{ 0 \} \to s$ detta proiezione da $O$ a $s$.
+
+Sia $\pi = [\varphi]$, allora $\pi$ trasformazione proiettiva degenere dove $\text{Ker}\varphi \neq \{ 0 \}$.
+
+$\varphi : V \to W$ lineare induce $[\varphi] : \mathbb{P}(V) \setminus \mathbb{P}(\text{Ker}\varphi) \to \mathbb{P}(W)$.

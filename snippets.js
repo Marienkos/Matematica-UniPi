@@ -215,6 +215,7 @@ export default [
 	{trigger: "flfl", replacement: "\\text{fl}", options: "mA"},
 	{trigger: "smeq", replacement: "\\simeq", options: "mA"},
 	{trigger: "nll", replacement: "\\{ 0 \\}", options: "mA"},
+	{trigger: "unf", replacement: "{}^{\\longrightarrow}_{\\longrightarrow}", options: "mA"},
 
 
 	{trigger: "LL", replacement: "\\mathcal{L}", options: "mA"},
