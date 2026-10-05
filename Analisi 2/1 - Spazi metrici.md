@@ -279,4 +279,4 @@ DIMOSTRAZIONE:
 2. $C^0([a,b])$ sottospazio vettoriale di $\mathscr{B}([a,b])$
 3. Per il teorema precedente $C^0([a,b])$ chiuso e completo
 
-Per il precedente teorema la norma uniforme è anche chiamata norma $C^0$.g
+Per il precedente teorema la norma uniforme è anche chiamata norma $C^0$.

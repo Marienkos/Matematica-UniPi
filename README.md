@@ -14,8 +14,8 @@ Il file "snippet.js" è una lista di comode scorciatoie del plugin Latex-Suite p
 
 # Stato dei lavori
 Sono di seguito riportate note rilevanti riguardo alle cartelle:
-- Aritmetica: darò lo scritto a settembre, manca roba
-- Fisica 1: darò lo scritto a settembre, c'è tutto ma quel tutto è ancora poco
+- Aritmetica: darò lo scritto a gennaio, manca roba ma sistemerò a tempo debito
+- Fisica 1: darò lo scritto a gennaio, ma mi trovo al momento impossibilitato a prendere degli appunti più completi di quelli già presenti
 
 # Dunque...
 Non ho veramente un'idea di cosa io stia facendo, spero solo di starlo facendo bene :)
