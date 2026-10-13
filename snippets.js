@@ -193,7 +193,7 @@ export default [
     {trigger: "prop", replacement: "\\propto", options: "mA"},
 
 
-    {trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
+    {trigger: "<->", replacement: "\\longleftrightarrow ", options: "mA"},
 	{trigger: "->", replacement: "\\to", options: "mA"},
 	{trigger: "!>", replacement: "\\mapsto", options: "mA"},
     {trigger: "=>", replacement: "\\implies", options: "mA"},

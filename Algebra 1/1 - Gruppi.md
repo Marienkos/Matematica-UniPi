@@ -9,6 +9,10 @@ Valgono unicità dell'elemento neutro, dell'inverso e la legge di cancellazione.
 
 Sia $G$ gruppo e $H \subseteq G$ non vuoto, è sottogruppo se $(H, \circ|_{H \times H})$ gruppo.
 
+Sia $G$ gruppo, si definisce il centralizzatore $C_{G}(x)=\{ g : gxg^{-1}=x \}$.
+
+Sia $G$ gruppo, si definisce il normalizzatore $N_{G}(H)=\{ g : gHg^{-1} = H \}$.
+
 Ogni sottogruppo di un gruppo abeliano è abeliano.
 
 Sia $S \subseteq G$, il sottogruppo $\langle S \rangle$ di $G$ generato da $S$ è il più piccolo sottogruppo di $G$ che contiene $S$.
@@ -170,3 +174,78 @@ DIMOSTRAZIONE:
 I sottogruppi caratteristici di $D_{n}$ sono tutti e soli $\langle \sigma^{n / d} \rangle$.
 
 DIMOSTRAZIONE: Tra i sottogruppi normali, $\varphi_{i,j}(\sigma^{n/d})=\sigma^{nj / d}$ mentre $\varphi_{1,1}(\tau)=\tau \sigma \not\in \langle \sigma^2,\tau \rangle$.
+
+# Gruppo semplice
+Un gruppo $G$ si dice semplice se $\not\exists H \lhd G$   $H \neq \{ e \} \land H \neq G$.
+
+Un gruppo $G$ si può studiare come catena $\{ e \}=H_{0} \lhd \dots \lhd H_{n} = G$ con ogni $H_{i}$ massimale.
+
+Ogni quoziente $H_{i+1} / H_{i}$ è semplice.
+
+# Azione di gruppo
+Siano $G$ gruppo, $X$ insieme, $(S(X) = \{ X \to X \text{ bigettiva} \}, \circ)$ gruppo, allora $\rho : G \to S(X)$ che mappa $g \mapsto \varphi_{g}$ si dice azione di $G$ su $X$ se è omomorfismo di gruppi.
+
+Si può usare $g.x$ per indicare l'azione di $g$ su $x$.
+
+Esempi di azioni sono:
+- banale $G \to S(X) : g \mapsto \text{id}_{X}$
+- di coniugio sugli elementi $G \to S(G) : g \mapsto C_{g}$
+- di coniugio sui sottogruppi $G \to S(\{ H < G \}) : g \mapsto C_{g}$
+
+Siano $G$ gruppo e $X$ insieme, $\text{Orb}(x)=\{ g.x : g \in G \}$ si dice orbita di $x \in X$.
+
+Siano $G$ gruppo e $X$ insieme $\text{Stab}(x)=\{ g \in G : g.x = x \}$ si dice stabilizzatore di $x \in X$.
+
+La relazione data da $x \sim y \iff \exists g \in G$   $y = g.x$ è d'equivalenza.
+
+Sia $\mathscr{R}$ insieme di rappresentanti per le orbite, allora $X = \bigcup\limits_{x \in \mathscr{R}} \text{Orb}(x)$ disgiunta.
+
+Valgono $\text{Orb}(x) < G$ e $\text{Stab}(x) < G$.
+
+# Teorema stabilizzatore - orbita
+Siano $G$ gruppo finito, $X$ insieme, $x \in X$ e $\rho$ fissata, allora $|G| = |\text{Stab}(x)| \cdot |\text{Orb}(x)|$.
+
+DIMOSTRAZIONE:
+- $|G| =|\text{Stab(x)}|\cdot[G : \text{Stab(x)}]$ per Lagrange
+- $|G| =|\text{Stab}(x)|\cdot |G / \text{Stab}(x)|$ in quanto è l'indice
+- $|G| = |\text{Stab}(x)| \cdot |\text{Orb}(x)|$ in quanto $\text{Orb}(x) \to G / \text{Stab}(x)$ bigettiva
+
+Sia $G$ gruppo finito, allora $|G| = |C_{G}(x)| \cdot |\text{Orb}(x)|$.
+
+DIMOSTRAZIONE: Teorema stabilizzatore - orbita con $\varphi_{g}(x)=gxg^{-1}$.
+
+Sia $G$ gruppo finito, allora $|G| = |N_{G}(H)| \cdot |\text{Orb}(H)|$.
+
+DIMOSTRAZIONE: Teorema stabilizzatore - orbita con $\varphi_{g}(H) = gHg^{-1}$.
+
+# Formula o equazione delle classi
+Sia $G$ gruppo finito, allora $|G| = |Z(G)| + \sum\limits_{x \in \mathscr{R}, x \not\in Z(G)} \frac{|G|}{|C_{G}(x)|}$.
+
+DIMOSTRAZIONE: Partizione mediante rappresentanti e teorema stabilizzatore - orbita.
+
+Siano $H < G$ gruppi finiti, allora $|H| = |Z(G) \cap H| + \sum\limits_{x \in \mathscr{R} \cap H, x \not\in Z(G)} \frac{|G|}{|C_{G}(x)|}$.
+
+# Teorema di Cauchy
+Sia $G$ gruppo finito, allora per ogni $p$ primo che divide $o(G)$ esiste un elemento di ordine $p$.
+
+DIMOSTRAZIONE:
+
+Sia $G$ gruppo finito, $H < G$, $p$ minimo primo che divide $o(G)$, allora $[G : H] = p \implies H \lhd G$.
+
+DIMOSTRAZIONE:
+
+# Classificazione dei gruppi finiti
+Sia $G$ gruppo con $p$ elementi con $p$ primo. Allora $G \cong \mathbb{Z}_{p}$.
+
+DIMOSTRAZIONE:
+
+Sia $G$ gruppo con $p^2$ elementi con $p$ primo. Allora $G \cong \mathbb{Z}_{p^2}$ oppure $G \cong \mathbb{Z}_{p} \times \mathbb{Z}_{p}$.
+
+DIMOSTRAZIONE:
+
+Sia $G$ gruppo con $2p$ elementi con $p\neq 2$ primo. Allora $G \cong \mathbb{Z}_{2p}$ oppure $G \cong D_{p}$.
+
+DIMOSTRAZIONE:
+
+# Prodotto diretto e semidiretto
+_- - - Lezioni del 12 e 13 ottobre da recuperare - - -_
