@@ -105,4 +105,23 @@ DIMOSTRAZIONE:
 
 Se $\exists ||\cdot||$ NMI tale che $||A|| < 1$, allora $\det (I+A) \neq 0$ e $||(I+A)^{-1}|| \leq \frac{1}{1 - ||A||}$.
 
-_- - - Lezione del 12 ottobre da recuperare - - -_
+# Numero di condizionamento
+Siano $\delta_{A} \in \mathbb{C}^{n\times n}$ e $\delta_{b} \in \mathbb{C}^n$ perturbazioni su $A$ e $b$ con $A,b \neq 0$:
+- si definiscono $\varepsilon_{b} = \frac{||\delta_{A}||}{||A||}$ e $\varepsilon_A = \frac{||\delta_{b}||}{||b||}$ perturbazioni relative
+- si denota con $x + \delta_{x}$ la soluzione di $(A+\delta_{A})(x+\delta_{x})=b+\delta_{b}$
+- si definisce $\varepsilon_{x} = \frac{||\delta_{x}||}{||x||}$ variazione relativa del risultato
+
+Se $\delta_{A}=0$, si dice numero di condizionamento $\mu(A)=||A||\cdot ||A^{-1}||$ e vale $\frac{||\delta_{x}||}{||x||}\leq \mu(A)\frac{||\delta_{b}||}{||b||}$.
+
+Se $\det A \neq 0$ e $||A^{-1}||\cdot ||\delta_{A}||<1$, allora:
+1. $\det(A+\delta _{A})\neq 0$
+2. $\varepsilon_{x}\leq \frac{||A|| \cdot ||A^{-1}||}{1-\varepsilon_{A}||A||\cdot ||A^{-1}||}(\varepsilon_{b}+\varepsilon_{A})$
+
+DIMOSTRAZIONE:
+1. $Ax = b \land(A + \delta_{A})(x+\delta_{x})=b+\delta_{b} \implies (A+\delta_{A})\delta_{x}=-\delta_{A}x+\delta_{b}$
+2. $A+\delta_{A}=A(I+A^{-1}\delta_{A}) \land ||A^{-1}\delta_{A}||\leq ||A^{-1}||\cdot ||\delta_{A}||<1 \implies I+A^{-1}\delta_{A}$ invertibile
+3. $\delta_{x}=(I+A^{-1}\delta_{A})^{-1}A^{-1}(-\delta_{A}x+\delta_{b})$
+4. $||(I+A^{-1}\delta_{A})^{-1}||\leq \frac{1}{1-||A^{-1}\delta_{A}||}\leq \frac{1}{1 - ||A^{-1}||\cdot ||\delta_{A}||}$
+5. $||\delta_{x}||\leq \frac{||A^{-1}||}{1-||A^{-1}||\cdot ||\delta_{A}||}(||\delta_{A}||\cdot ||x||+||\delta_{b}||)$ e $||b||\leq ||A||\cdot ||x||$ da cui la tesi
+
+Sia $A$ hermitiana definita positiva di autovalori $0<\lambda_{1}\leq \lambda_{2}\leq\dots\leq \lambda_{n}$, allora $||A||_{2} =\lambda_{n}$, $||A^{-1}||_{2}=\lambda_{1}^{-1}$ e $\mu_{2}(A)=||A||_{2}||A^{-1}||_{2}=\frac{\lambda_{n}}{\lambda_{1}}$.

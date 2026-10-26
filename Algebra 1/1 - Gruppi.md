@@ -246,6 +246,3 @@ DIMOSTRAZIONE:
 Sia $G$ gruppo con $2p$ elementi con $p\neq 2$ primo. Allora $G \cong \mathbb{Z}_{2p}$ oppure $G \cong D_{p}$.
 
 DIMOSTRAZIONE:
-
-# Prodotto diretto e semidiretto
-_- - - Lezioni del 12 e 13 ottobre da recuperare - - -_

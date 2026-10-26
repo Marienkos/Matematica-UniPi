@@ -1,4 +1,4 @@
-Le dispense sono prese dall'E-learning del professor Gaiffi,  anno 2025/26.
+Le dispense sono prese dall'E-learning del professor Gaiffi, anno 2025/26.
 
 | ID  | Capitolo            | Dispense |
 | --- | ------------------- | -------- |

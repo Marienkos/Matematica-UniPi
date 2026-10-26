@@ -232,6 +232,7 @@ export default [
 	{trigger: "MM", replacement: "\\mathscr{M}_{m,n}(\\mathbb{K})", options: "mA"},
 	{trigger: "FF", replacement: "\\mathscr{F}", options: "mA"},
 	{trigger: "RFP", replacement: "\\mathscr{R}", options: "mA"},
+	{trigger: "rRr", replacement: "\\mathfrak{R}", options: "mA"},
 
 
 
