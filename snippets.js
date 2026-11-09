@@ -69,7 +69,8 @@ export default [
 
     // More operations
 	{trigger: "([a-zA-Z])hat", replacement: "\\hat{[[0]]}", options: "rmA"},
-    {trigger: "([a-zA-Z])bar", replacement: "\\bar{[[0]]}", options: "rmA"},
+	{trigger: "([a-zA-Z])ring", replacement: "\\mathring{[[0]]}", options: "rmA"},
+	{trigger: "([a-zA-Z])bar", replacement: "\\bar{[[0]]}", options: "rmA"},
 	{trigger: "([a-zA-Z])dot", replacement: "\\dot{[[0]]}", options: "rmA", priority: -1},
 	{trigger: "([a-zA-Z])ddot", replacement: "\\ddot{[[0]]}", options: "rmA", priority: 1},
 	{trigger: "([a-zA-Z])tilde", replacement: "\\tilde{[[0]]}", options: "rmA"},
@@ -154,7 +155,7 @@ export default [
     // Symbols
     {trigger: "ooo", replacement: "\\infty", options: "mA"},
 	{trigger: "sum", replacement: "\\sum\\limits_{${0:k=0}}^{${1:n}} ${2:a_k}", options: "mA"},
-	{trigger: "prod", replacement: "\\prod", options: "mA"},
+	{trigger: "prod", replacement: "\\prod\\limits_{${0:k=0}}^{${1:n}} ${2:a_k}", options: "mA"},
     {trigger: "Sum", replacement: "\\sum\\limits_{n=${0:0}}^{\\infty} ${1:a_n}", options: "mA"},
 	{trigger: "lim", replacement: "\\lim\\limits_{${0:x} \\to ${1:+\\infty}} ${2:f(x)}", options: "mA"},
 	{trigger: "lmsp", replacement: "\\limsup\\limits_{${0:n} \\to ${1:+\\infty}} ${2:a_n}", options: "mA"},
@@ -226,7 +227,7 @@ export default [
 	{trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
 	{trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},
 	{trigger: "KK", replacement: "\\mathbb{K}", options: "mA"},
-	{trigger: "PP", replacement: "\\mathbb{P}", options: "mA"},
+	{trigger: "PP", replacement: "\\mathscr{P}", options: "mA"},
 	{trigger: "AA", replacement: "\\mathscr{A}_n(\\mathbb{K})", options: "mA"},
 	{trigger: "BB", replacement: "\\mathscr{B}", options: "mA"},
 	{trigger: "MM", replacement: "\\mathscr{M}_{m,n}(\\mathbb{K})", options: "mA"},

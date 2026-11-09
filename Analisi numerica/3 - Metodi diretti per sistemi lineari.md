@@ -37,7 +37,7 @@ DIMOSTRAZIONE:
 2. $D$ unitaria e diagonale superiore, da cui $A = QDD^{-1}R = \hat{Q}\hat{R}$ fattorizzata
 3. Infatti $\hat{Q}$ unitaria in quanto prodotto di unitarie e $\hat{R}$ triangolare superiore
 
-Sia $A$ invertibile, allora ha fattorizzazione QR univ^ca a meno di trasformazioni mediante matrici diagonali unitarie.
+Sia $A$ invertibile, allora ha fattorizzazione QR univoca a meno di trasformazioni mediante matrici diagonali unitarie.
 
 DIMOSTRAZIONE:
 1. Sia $A = Q_{1}R_{1}=Q_{2}R_{2}$, per invertibilità $Q_{2}^HQ_{1}=R_{2}R_{1}^{-1}$
@@ -94,8 +94,6 @@ DIMOSTRAZIONE:
 11. Per semplicità si scelgono i segni $-$ e vale $\beta = \frac{1}{||x||_{2}^2 + |x_{1}|\cdot ||x||_{2}}$
 
 # Fattorizzazione con matrici elementari
-QUESTI APPUNTI SONO DA DEDISCORSIVIZZARE
-
 Sia $A_{k} = \left(_{k}a_{i}^j\right)$ con riga $i$ e colonna $j$ successione di matrici definita da:
 1. $A_{1}=A$
 2. $A_{k+1}=M_{k}A_{k}$ 
@@ -105,7 +103,13 @@ Per il teorema precedente $\exists M_{1}$   $M_{1}\cdot{}_{1}a^1={}_{2}a_{1}^1e_
 
 Sia $A_{k}$ fissata, si può costruire $M_{k}$ con $\hat{M}_{k}$ tale che $\hat{M}_{k}\cdot w^1 = \alpha e_{1}$.
 
-QUESTI APPUNTI SONO DA COMPLETARE
+Si pone $M_{k} = \left(\begin{smallmatrix} I_{k-1} & 0 \\ 0 & \hat{M}_{k} \end{smallmatrix}\right)$ e si ha $M_{k}A_{k}=A_{k+1}$ dove $A_{k+1}$ ha la stessa struttura e $M_{k}$ è elementare.
+
+Dopo $n-1$ passi si ha $A_{n}=M_{n-1}\dots M_{1}A$ con $A_{n}$ triangolare superiore.
+
+Se $\hat{M}_{k}$ è di HH, allora anche $M_{k}$ è di HH e si ottiene una fattorizzazione QR.
+
+Se $\hat{M}_{k}$ è di Gauss, allora anche $M_{k}$ è di Gauss e si ottiene una fattorizzazione LU.
 
 # Complemento di Schur
 Sia $A = \left(\begin{smallmatrix} A_{1,1} & A_{1,2} \\ A_{2,1} & A_{2,2} \end{smallmatrix}\right)$ con $A_{1,1} \in \mathscr{M}_{k}(\mathbb{K})$ invertibile. Si dice complemento di Schur di $A_{2,2}$ in $A$ la matrice $S=A_{2,2} - A_{2,1}A_{1,1}^{-1}A_{1,2}$.
@@ -113,4 +117,26 @@ Sia $A = \left(\begin{smallmatrix} A_{1,1} & A_{1,2} \\ A_{2,1} & A_{2,2} \end{s
 Valgono $A = \left(\begin{smallmatrix} I & 0 \\ A_{2,1}A_{1,1}^{-1} & I \end{smallmatrix}\right) \left(\begin{smallmatrix} A_{1,1} & A_{1,2} \\ 0 & S \end{smallmatrix}\right)$ e $\det A = \det A_{1,1}\det S$.
 
 # Eliminazione Gaussiana
-QUESTI APPUNTI SONO DA COMPLETARE
+Sia $A_{k}$ successione di matrici tale che $M_{k}=\left( _{k}m_{i}^j \right)$ con $_{k}m_{i}^j$ pari a:
+- $1$ se $i=j$
+- $- \frac{_ka_{i}^k}{_{k}a_{k}^k}$ se $j= k$ e $i>k$
+- $0$ altrimenti
+
+$A_{k+1}=M_{k}A_{k}$ si può riscrivere per componenti come $_{k+1}a_{i}^j$ pari a:
+- $_{k}a_{i}^j$ se $j<k$ o $i\leq k$
+- $0$ se $j=k$ e $i>k$
+- $_{k}a_{i}^j + _km_{i}^k {}_ka_{k}^j$ se $i>k$ e $j>k$
+
+Applicando l'algoritmo di calcolo con i due procedimenti precedenti si ottiene una fattorizzazione LU.
+
+L'eliminazione Gaussiana costa $\frac{2}{3}n^3$ operazioni.
+
+Sia $A \in \mathscr{M}_{n}(\mathbb{K})$ con sottomatrici principali di testa fino all'ordine di $n-1$ invertibili per cui esiste una fattorizzazione LU. Se $\tilde{L}$ e $\tilde{U}$ sono le matrici calcolate in aritmetica float con precisione di macchina $u$, allora:
+1. $A + \Delta_A = \tilde{L}\tilde{U}$
+2. $|\Delta_{A}| \leq 2nu(|A|+|\tilde{L}||\tilde{U}|)+O(u^{2})$
+
+Siano $\tilde{y}$ soluzione di $\tilde{L}y=b$ e $\tilde{x}$ soluzione di $\tilde{U}x=\tilde{y}$ con sostituzione all'indietro, allora:
+1. $(A+\Delta_{A})\tilde{x}=b$
+2. $|\hat{\Delta}_{A}|\leq 4 n u (|A|+|\tilde{L}||\tilde{U}|)+O(u^{2})$
+
+# Metodo di Householder

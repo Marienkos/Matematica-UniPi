@@ -147,3 +147,8 @@ Ogni conica non degenere in $\mathbb{P}^2(\mathbb{K})$ è duale di un'unica coni
 DIMOSTRAZIONE: $C = [M] \implies C^* = [M^{-1}]$ ha come conica duale $C$.
 
 DIMOSTRAZIONE: Esiste l'isomorfismo naturale $\mathbb{P}^2(\mathbb{K}) \cong \mathbb{P}^2(\mathbb{K})^{**}$ da cui $C = C^{* *}$.
+
+# Sistema di coniche
+Un sistema lineare di coniche in $\mathbb{P}^2(\mathbb{K})$ è un sottospazio proiettivo $S \subseteq \mathbb{P}(\mathbb{K}[x_{0},x_{1},x_{2}]_{2})$.
+
+Se $\dim S = 1$ il sistema si dice fascio.
