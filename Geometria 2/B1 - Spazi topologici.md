@@ -19,6 +19,8 @@ DIMOSTRAZIONE:
 2. Sia $y \in X \setminus \{ x_{0} \}$, allora $B(y,d(x_{0},y)) \subseteq X \setminus \{ x_{0} \}$
 3. $x_{0} \not\in B(y,d(x_{0},y))$ poiché $d(x_{0},y) \geq d(x_{0},y)$
 
+Si dice cofinita la topologia dove i chiusi sono $X$ e i sottoinsiemi finiti di $X$.
+
 # Continuità
 Siano $X,Y$ topologici, allora $f : X \to Y$ si dice continua se $\forall A \subseteq Y$ aperto   $f^{-1}(A) \subseteq X$ aperto.
 
@@ -33,7 +35,7 @@ DIMOSTRAZIONE:
 Un omeomorfismo è una funzione continua e invertibile con inversa continua.
 
 # Confronto tra topologie
-Siano $\tau_{1}, \tau_{2}$ topologie su $X$, si dice che $\tau_{1}$ è meno fine di $\tau_{2}$ se $\tau_{1} \subseteq \tau_{2}$.
+Siano $\tau_{1}, \tau_{2}$ topologie su $X$, si dice che $\tau_{1}$ è meno fine di $\tau_{2}$ se $\tau_{1} \subseteq \tau_{2}$ e si denota con $\tau_{1} < \tau_{2}$.
 
 $\tau_{1}$ meno fine di $\tau_{2} \iff \text{id} : (X,\tau_{2}) \to (X,\tau_{1})$ continua.
 

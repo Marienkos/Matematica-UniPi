@@ -69,6 +69,91 @@ DIMOSTRAZIONE:
 11. $\psi$ surgettiva per i calcoli precedenti
 12. $\psi$ iniettiva per ragionamenti sull'identità
 
+# Rapporto semplice
+Siano $A$ retta affine e $P_{1},P_{2},P_{3} \in A$ con $P_{1} \neq P_{2}$. Si definisce il rapporto semplice $[P_{1},P_{2},P_{3}]$ dato da $\psi(P_{3}) \in \mathbb{K}$ dove $\psi : A \to \mathbb{K}$ è l'unica affinità tale che $\psi(P_{1})=0$ e $\psi(P_{2}) = 1$.
+
+Fissati $P_{1},P_{2} \in A$ distinti, la mappa $[P_{1},P_{2},\cdot] : A \to \mathbb{K}$ è una bigezione.
+
+Sia $\alpha : A \to B$ affinità tra rette, allora preserva il rapporto semplice.
+
+DIMOSTRAZIONE: Se $\psi(\alpha(P_{1}))=0$ e $\psi(\alpha(P_{2}))=1$ allora $[P_{1},P_{2},P_{3}]$ è preservato.
+
+Sia $A = \mathbb{K}$ con la struttura affine standard, allora $[P_{1},P_{2},P_{3}] = \frac{{P_{3}-P_{1}}}{P_{2}-P_{1}}$.
+
+DIMOSTRAZIONE:
+1. Le affinità sono della forma $aP+b$, per cui $\frac{{(aP_{3}+b)-(aP_{1}+b)}}{(aP_{2}+b)-(aP_{1}+b)} = \frac{a(P_{3}-P_{1})}{a(P_{2}-P_{1})} = \frac{{P_{3}-P_{1}}}{P_{2}-P_{1}}$
+2. Se $P_{1} = 0$ e $P_{2} = 1$, allora $\psi = \text{id}$ e $[P_{1},P_{2},P_{3}]=P_{3}$
+
+# Birapporto
+Siano $A$ retta proiettiva, $P_{1},P_{2},P_{3} \in A$ distinti e $P_{4} \in \mathbb{P}(V)$. Si definisce il birapporto $\beta(P_{1},P_{2},P_{3},P_{4})$ che manda $P_{1}$ in $[1,0]$, $P_{2}$ in $[0,1]$, $P_{3}$ in $[1,1]$ e $P_{4}$ nelle coordinate omogenee $[\lambda:\mu]$ di $P_{4}$ nel riferimento $P_{1},P_{2},P_{3}$.
+
+$\beta(P_{1},P_{2},P_{3},P_{4}) = \frac{\mu}{\lambda} \in \mathbb{K} \cup \{ \infty \}$ dove $\frac{\mu}{0} = \infty$.
+
+Fissati $P_{1},P_{2},P_{3}$ distinti, $\psi : P \mapsto \beta(P_{1},P_{2},P_{3},P)$ è una bigezione.
+
+DIMOSTRAZIONE:
+1. Sia $f : \mathbb{P}(V) \to \mathbb{P}^1(\mathbb{K})$ associato a $P_{1},P_{2},P_{3}$
+2. Sia $h : \mathbb{P}'(\mathbb{K})\to \mathbb{K} \cup \{ \infty \}$ che manda in $j_{0}^{-1}(P)$ se $P \in U_{0}$, altrimenti in $\infty$
+3. $\psi = h \circ f$, da cui la tesi in quanto $h$ e $f$ sono bigezioni
+
+$\exists!f : \mathbb{P}'(V) \to \mathbb{P}'(W)$ isomorfismo   $f(P_{i}) = Q_{i}$ $\iff \beta(P_{1},P_{2},P_{3},P_{4})=\beta(Q_{1},Q_{2},Q_{3},Q_{4})$.
+
+DIMOSTRAZIONE:
+1. Sia $g : \mathbb{P}(V) \to \mathbb{P}'(\mathbb{K})$ isomorfismo proiettivo associato a $P_{1},P_{2},P_{3}$
+2. Sia $h : \mathbb{P}(W) \to \mathbb{P}'(\mathbb{K})$ isomorfismo proiettivo associato a $Q_{1},Q_{2},Q_{3}$
+3. $\exists!$ isomorfismo proiettivo $f:\mathbb{P}(V)\to \mathbb{P}(W)$   $f(P_{i})=Q_{i}$   $\forall i = 1,2,3$
+4. $f \circ h = g \circ \text{id}_{\mathbb{P}'(\mathbb{K})}$, per cui la parte destra della tesi si verifica $\iff f(P_{4}) = Q_{4}$
+5. Di conseguenza $f \circ h = g$
+
+Siano 4 punti $P_{i} = [\lambda_{i}:\mu_{i}] \in \mathbb{P}'(\mathbb{K})$ con $P_{1},P_{2},P_{3}$ distinti. Allora $\beta(P_{1},P_{2},P_{3},P_{4})= \frac{\left|\begin{smallmatrix} \lambda_{1} & \lambda_{4} \\ \mu_{1} & \mu_{4} \end{smallmatrix}\right| \cdot \left|\begin{smallmatrix} \lambda_{2} & \lambda_{3} \\ \mu_{2} & \mu_{3} \end{smallmatrix}\right|}{\left|\begin{smallmatrix} \lambda_{1} & \lambda_{3} \\ \mu_{1} & \mu_{3} \end{smallmatrix}\right| \cdot \left|\begin{smallmatrix} \lambda_{2} & \lambda_{4} \\ \mu_{2} & \mu_{4} \end{smallmatrix}\right|}$.
+
+DIMOSTRAZIONE:
+1. Le quantità a sinistra e destra sono invarianti per proiettività di $\mathbb{P}'(\mathbb{K})$
+2. L'uguaglianza è verificata per $\bar{P_{1}}, \bar{P_{2}}, \bar{P_{3}}, P$ fissati
+3. Dati $P_{1},P_{2},P_{3}$ esiste una proiettività che li porta in $\bar{P_{1}},\bar{P_{2}},\bar{P_{3}}$
+
+Se $P_{i} \in U_{0}$ e si identifica $P_{i}$ con $j_{0}^{-1}(P_{i}) \in K$, allora $\beta(P_{1},P_{2},P_{3},P_{4}) = \frac{(P_{4}-P_{1})(P_{3}-P_{2})}{(P_{3}-P_{1})(P_{4}-P_{2})}$.
+
+# Simmetrie del birapporto
+Siano $P_{1},P_{2},P_{3},P_{4} \in \mathbb{P}(V)$ retta proiettiva distinti e $\delta \in S_{4}$.
+
+Se $\delta=(1 \, 2)$ o $\delta = (3 \, 4)$, allora $\beta = \frac{1}{\beta}$.
+
+Le permutazioni $(1 \, 2) (3 \, 4)$, $(1 \, 3)(2 \, 4)$, $(1 \, 4)(2 \, 3)$ lasciano invariate il birapporto.
+
+L'insieme $S(\beta) = \{ \beta(P_{\delta(1)}, P_{\delta(2)}, P_{\delta(3)}, P_{\delta(4)} ) : \delta \in S_{4}\}$ assume al massimo 6 valori.
+
+# Prospettività
+Siano:
+- $\mathbb{P}(V)$ piano proiettivo
+- $r,s \in \mathbb{P}(V)$ rette distinte
+- $A = r \cap s$
+- $O \in \mathbb{P}(V) \setminus (r \cup s)$
+Allora $\pi_{O} : r \to s : P \mapsto L(O,P) \cap s$ si dice prospettività di centro $O$.
+
+$\pi_{O}$ trasformazione proiettiva.
+
+DIMOSTRAZIONE:
+1. Si considera un riferimento dato da $A$, $B \in r$, $C \in s$, $D = O$
+2. In queste coordinate $A=e_{1}$, $B=e_{2}$, $C=e_{3}$, $D = \left(\begin{smallmatrix} 1 \\ 1 \\ 1 \end{smallmatrix}\right)$
+3. Sulle coordinate agisce $\pi_{O}$ come una trasformazione di matrice $\left(\begin{smallmatrix} -1 & 1 \\ 0 & 1 \end{smallmatrix}\right)$
+
+$f$ trasformazione proiettiva è una prospettività $\iff f(A) = A$.
+
+DIMOSTRAZIONE:
+- ($\implies$) Ovvia
+- ($\impliedby$)
+	1. $f(A)=A$ e $B \neq A \in r$, allora $f(B) \in s \setminus \{ A \}$
+	2. Per costruzione di prospettività $O \in L(B,f(B))$
+	3. Sia $B' \neq A \in r$, allora $O = L(B, f(B), L(B', f(B')))$
+	4. $(A, B, B')$ riferimento proiettivo di $r$ e $f = \pi_{O}$
+
+$\pi_{O}$ è la restrizione di $\pi : \mathbb{P}(V) \setminus \{ 0 \} \to s$ detta proiezione da $O$ a $s$.
+
+Sia $\pi = [\varphi]$, allora $\pi$ trasformazione proiettiva degenere dove $\text{Ker}\varphi \neq \{ 0 \}$.
+
+$\varphi : V \to W$ lineare induce $[\varphi] : \mathbb{P}(V) \setminus \mathbb{P}(\text{Ker}\varphi) \to \mathbb{P}(W)$.
+
 # Dualità
 Dato $\mathbb{P}(V)$ si definisce il suo proiettivo duale $\mathbb{P}(V)^* := \mathbb{P}(V^*)$.
 
@@ -130,57 +215,3 @@ DIMOSTRAZIONE:
 4. $f^*(H)=f^*([\alpha])=[\varphi^*(\alpha)]=\mathbb{P}(\text{Ker}\varphi^*(\alpha))=\mathbb{P}(\varphi^{-1}(\text{Ker}\alpha))=f^{-1}(\mathbb{P}(\text{Ker}\alpha))=f^{-1}_{ip}(H)$
 
 Le matrici associate a $f$ e $f^*$ sono una la trasposta dell'altra.
-
-# Rapporto semplice
-Siano $A$ retta affine e $P_{1},P_{2},P_{3} \in A$ con $P_{1} \neq P_{2}$. Si definisce il rapporto semplice $[P_{1},P_{2},P_{3}]$ dato da $\psi(P_{3}) \in \mathbb{K}$ dove $\psi : A \to \mathbb{K}$ è l'unica affinità tale che $\psi(P_{1})=0$ e $\psi(P_{2}) = 1$.
-
-Fissati $P_{1},P_{2} \in A$ distinti, la mappa $[P_{1},P_{2},\cdot] : A \to \mathbb{K}$ è una bigezione.
-
-Sia $\alpha : A \to B$ affinità tra rette, allora preserva il rapporto semplice.
-
-DIMOSTRAZIONE: Se $\psi(\alpha(P_{1}))=0$ e $\psi(\alpha(P_{2}))=1$ allora $[P_{1},P_{2},P_{3}]$ è preservato.
-
-Sia $A = \mathbb{K}$ con la struttura affine standard, allora $[P_{1},P_{2},P_{3}] = \frac{{P_{3}-P_{1}}}{P_{2}-P_{1}}$.
-
-DIMOSTRAZIONE:
-1. Le affinità sono della forma $aP+b$, per cui $\frac{{(aP_{3}+b)-(aP_{1}+b)}}{(aP_{2}+b)-(aP_{1}+b)} = \frac{a(P_{3}-P_{1})}{a(P_{2}-P_{1})} = \frac{{P_{3}-P_{1}}}{P_{2}-P_{1}}$
-2. Se $P_{1} = 0$ e $P_{2} = 1$, allora $\psi = \text{id}$ e $[P_{1},P_{2},P_{3}]=P_{3}$
-
-# Birapporto
-Siano $A$ retta proiettiva, $P_{1},P_{2},P_{3} \in A$ distinti e $P_{4} \in \mathbb{P}(V)$. Si definisce il birapporto $\beta(P_{1},P_{2},P_{3},P_{4})$ che manda $P_{1}$ in $[1,0]$, $P_{2}$ in $[0,1]$, $P_{3}$ in $[1,1]$ e $P_{4}$ nelle coordinate omogenee $[\lambda:\mu]$ di $P_{4}$ nel riferimento $P_{1},P_{2},P_{3}$.
-
-$\beta(P_{1},P_{2},P_{3},P_{4}) = \frac{\mu}{\lambda} \in \mathbb{K} \cup \{ \infty \}$ dove $\frac{\mu}{0} = \infty$.
-
-Fissati $P_{1},P_{2},P_{3}$ distinti, $\psi : P \mapsto \beta(P_{1},P_{2},P_{3},P)$ è una bigezione.
-
-DIMOSTRAZIONE:
-1. Sia $f : \mathbb{P}(V) \to \mathbb{P}^1(\mathbb{K})$ associato a $P_{1},P_{2},P_{3}$
-2. Sia $h : \mathbb{P}'(\mathbb{K})\to \mathbb{K} \cup \{ \infty \}$ che manda in $j_{0}^{-1}(P)$ se $P \in U_{0}$, altrimenti in $\infty$
-3. $\psi = h \circ f$, da cui la tesi in quanto $h$ e $f$ sono bigezioni
-
-$\exists!f : \mathbb{P}'(V) \to \mathbb{P}'(W)$ isomorfismo   $f(P_{i}) = Q_{i}$ $\iff \beta(P_{1},P_{2},P_{3},P_{4})=\beta(Q_{1},Q_{2},Q_{3},Q_{4})$.
-
-DIMOSTRAZIONE:
-1. Sia $g : \mathbb{P}(V) \to \mathbb{P}'(\mathbb{K})$ isomorfismo proiettivo associato a $P_{1},P_{2},P_{3}$
-2. Sia $h : \mathbb{P}(W) \to \mathbb{P}'(\mathbb{K})$ isomorfismo proiettivo associato a $Q_{1},Q_{2},Q_{3}$
-3. $\exists!$ isomorfismo proiettivo $f:\mathbb{P}(V)\to \mathbb{P}(W)$   $f(P_{i})=Q_{i}$   $\forall i = 1,2,3$
-4. $f \circ h = g \circ \text{id}_{\mathbb{P}'(\mathbb{K})}$, per cui la parte destra della tesi si verifica $\iff f(P_{4}) = Q_{4}$
-5. Di conseguenza $f \circ h = g$
-
-Siano 4 punti $P_{i} = [\lambda_{i}:\mu_{i}] \in \mathbb{P}'(\mathbb{K})$ con $P_{1},P_{2},P_{3}$ distinti. Allora $\beta(P_{1},P_{2},P_{3},P_{4})= \frac{\left|\begin{smallmatrix} \lambda_{1} & \lambda_{4} \\ \mu_{1} & \mu_{4} \end{smallmatrix}\right| \cdot \left|\begin{smallmatrix} \lambda_{2} & \lambda_{3} \\ \mu_{2} & \mu_{3} \end{smallmatrix}\right|}{\left|\begin{smallmatrix} \lambda_{1} & \lambda_{3} \\ \mu_{1} & \mu_{3} \end{smallmatrix}\right| \cdot \left|\begin{smallmatrix} \lambda_{2} & \lambda_{4} \\ \mu_{2} & \mu_{4} \end{smallmatrix}\right|}$.
-
-DIMOSTRAZIONE:
-1. Le quantità a sinistra e destra sono invarianti per proiettività di $\mathbb{P}'(\mathbb{K})$
-2. L'uguaglianza è verificata per $\bar{P_{1}}, \bar{P_{2}}, \bar{P_{3}}, P$ fissati
-3. Dati $P_{1},P_{2},P_{3}$ esiste una proiettività che li porta in $\bar{P_{1}},\bar{P_{2}},\bar{P_{3}}$
-
-Se $P_{i} \in U_{0}$ e si identifica $P_{i}$ con $j_{0}^{-1}(P_{i}) \in K$, allora $\beta(P_{1},P_{2},P_{3},P_{4}) = \frac{(P_{4}-P_{1})(P_{3}-P_{2})}{(P_{3}-P_{1})(P_{4}-P_{2})}$.
-
-# Simmetrie del birapporto
-Siano $P_{1},P_{2},P_{3},P_{4} \in \mathbb{P}(V)$ retta proiettiva distinti e $\delta \in S_{4}$.
-
-Se $\delta=(1 \, 2)$ o $\delta = (3 \, 4)$, allora $\beta = \frac{1}{\beta}$.
-
-Le permutazioni $(1 \, 2) (3 \, 4)$, $(1 \, 3)(2 \, 4)$, $(1 \, 4)(2 \, 3)$ lasciano invariate il birapporto.
-
-L'insieme $S(\beta) = \{ \beta(P_{\delta(1)}, P_{\delta(2)}, P_{\delta(3)}, P_{\delta(4)} ) : \delta \in S_{4}\}$ assume al massimo 6 valori.

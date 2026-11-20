@@ -1,5 +1,3 @@
-_"La Matematica è ovunque. PRAISE THE LORD." semicit. Grande Fabio, Emanazione n.2_
-
 # Teorema di rappresentazione in base
 Sia $B \in \mathbb{N}$ con $B\geq 2$, allora $\forall x \in \mathbb{R}^n \setminus \{ 0 \}$ esistono unici
 1. $p \in \mathbb{Z}$

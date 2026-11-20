@@ -199,6 +199,7 @@ export default [
 	{trigger: "!>", replacement: "\\mapsto", options: "mA"},
     {trigger: "=>", replacement: "\\implies", options: "mA"},
 	{trigger: "=<", replacement: "\\impliedby", options: "mA"},
+	{trigger: "inj", replacement: "\\hookrightarrow", options: "mA"},
 
 	{trigger: "and", replacement: "\\cap", options: "mA"},
 	{trigger: "And", replacement: "\\bigcap\\limits_{${0:i \\in I}} ${1:u_{i}}", options: "mA"},
@@ -221,6 +222,7 @@ export default [
 
 	{trigger: "LL", replacement: "\\mathcal{L}", options: "mA"},
 	{trigger: "HH", replacement: "\\mathcal{H}", options: "mA"},
+	{trigger: "kKk", replacement: "\\mathcal{K}", options: "mA"},
 	{trigger: "CC", replacement: "\\mathbb{C}", options: "mA"},
 	{trigger: "RR", replacement: "\\mathbb{R}", options: "mA"},
     {trigger: "ER", replacement: "\\overline{\\mathbb{R}}", options: "mA"},

@@ -34,3 +34,14 @@ DIMOSTRAZIONE:
 3. $g \in C^{n+1}$, dunque $g^{(n+1)}(x)$ ha uno zero in $(a,b)$
 4. Sa $\xi_{x}$ tale che $g^{(n+1)}(\xi_{x}) = 0$, allora $g^{(n+1)}(x)=f^{(n+1)}(x)-p^{(n+1)}(x)-(n+1)! \frac{r(x)}{\prod\limits_{i=0}^{n} (x-x_{i})}$
 5. $r(\xi_{x})=$ tesi
+
+# Trasformata di Fourier discreta
+Da completare
+
+# Applicazioni di DFT
+Siano $a(t),b(t) \in \mathbb{K}_{\leq p}[x]$ e $c(t)=a(t)b(t)$ di cui calcolare i coefficienti.
+
+Sia $n = 2^q$ massima potenza di $2$ maggiore di $\text{deg}(c)$, allora si usa la procedura:
+1. Valutazione nelle radici dell'unità (IDFT): $r_{j} = a(\omega_{n}^j)$ e $s_{j}=b(\omega_{n}^j)$ con $j=0,\dots,n-1$
+2. Convoluzione: si calcola $y_{j}=r_{j}s_{j}$
+3. Interpolazione nelle radici dell'unità (DFT): si calcolano i coefficienti di $c(t)$

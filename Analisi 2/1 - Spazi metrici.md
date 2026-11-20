@@ -239,3 +239,57 @@ DIMOSTRAZIONE:
 	2. $\exists \rho>0$   $\not\exists\{ B_{\rho}(x) \}$ finito che ricopre $X$
 	3. Si può costruire una successione a distanza $> \rho$ senza estratte convergenti
 3. (sequenzialmente compatto $\implies$ compatto) Numero di Lebesgue come in Analisi 1
+
+# Distanza di Hausdorff
+Siano $A,B \subseteq \mathbb{R}^n$ non vuoti, si definisce la distanza di Hausdorff
+- $d_{\mathcal{K}}(A,B) = \max \left\{  \sup\limits_{a \in A}\inf\limits_{b \in B}|a-b|, \sup\limits_{b \in B}\inf\limits_{a \in A}|a-b|  \right\}$
+
+Si definisce $\mathcal{K}(\mathbb{R}^n) = \{ A \subseteq \mathbb{R}^n : A \text{ chiuso limitato non vuoto} \}$.
+
+Siano $A,B$ compatti di $\mathbb{R}^n$, allora $\forall r \in \mathbb{R}$   $d_{\mathcal{K}}(A,B) \leq r$ se e solo se:
+1. $\forall a \in A$   $\exists b \in B$   $|a-b| \leq r$
+2. $\forall b \in B$   $\exists a \in A$   $|a-b| \leq r$
+
+DIMOSTRAZIONE:
+1. $\forall A$ compatto non vuoto   $\forall x \in \mathbb{R}^n$   $\exists d(x,A) = \min\limits_{a \in A}|x-a|$
+2. $x \mapsto d(x,A)$ 1-Lipschitziana, da cui $d_{\mathcal{K}}(A,B) = \max \left\{  \max\limits_{a \in A}d(a,B), \max\limits_{b \in B}d(b,A)  \right\}$
+3. $d_{\mathcal{K}}(A,B) \leq r \implies d(a,B) \leq r$   $\forall a \in A$   $\land$   $d(b,A) \leq r$   $\forall b \in B \implies$ tesi
+
+$d_{\mathcal{K}}$ è una distanza su $\mathcal{K}(\mathbb{R}^n)$.
+
+DIMOSTRAZIONE:
+1. $A, B$ non vuoti $\implies 0 \leq d_{\mathcal{K}}(A,B) < +\infty$
+2. $d_{\mathcal{K}}(A,B) = 0 \implies \forall a \in A$   $\exists b \in B$   $|a-b| = 0 \implies a = b \implies A \subseteq B \implies A = B$
+3. $d_{\mathcal{K}}(A,B) = d_{\mathcal{K}}(B,A)$ per simmetricità della definizione
+4. Siano $A,B,C$ compatti non vuoti
+5. $\forall a \in A$   $\exists b \in B$   $|a-b| \leq d_{\mathcal{K}}(A,B)$   $\exists c \in C$   $|b-c| \leq d_{\mathcal{K}}(B,C)$
+6. $\forall a \in A$   $\exists c \in C$   $|a-c| \leq |a-b| + |b-c| \leq d_{\mathcal{K}}(A,B) + d_{\mathcal{K}}(B,C)$
+7. Per simmetricità $d_{\mathcal{K}}(A,C) \leq d_{\mathcal{K}}(A,B) + d_{\mathcal{K}}(B,C)$
+
+$\mathcal{K}(\mathbb{R}^n)$ è uno spazio metrico completo.
+
+DIMOSTRAZIONE:
+1. Sia $A_{k} \in \mathcal{K}(\mathbb{R}^n)$ successione di Cauchy, wlog $d_{\mathcal{K}}(A_{k},A_{k+1}) \leq \frac{1}{2}$
+2. Sia $A = \{ x \in \mathbb{R}^n : \exists x_{k} \in A_{k} : x_{k} \to x \}$
+3. $A$ non è vuoto
+	1. Sia $a_{0} \in A_{0}$, allora $\exists a_{1} \in A_{1}$   $|a_{0}-a_{1}| = d_{\mathcal{K}}(A_{0},A_{1})$
+	2. $\exists a_{k} \in A_{k}$ successione di punti   $|a_{k}-a_{k+1}| \leq d_{\mathcal{K}}(A_{k},A_{k+1}) \leq \frac{1}{2^k}$
+	3. $a_{k}$ di Cauchy in $\mathbb{R}^n$ e per completezza $a_{k} \to a \in A$
+4. $d_{\mathcal{K}}(A_{k},A_{n}) \leq \sum\limits_{j = k}^{n-1} d_{\mathcal{K}}(A_{j},A_{j+1}) \leq \frac{2}{2^k}$ se $n > k$
+5. $\forall a \in A$   $\forall k \in \mathbb{N}$   $\exists a_{k} \in A_{k}$   $|a-a_{k}|\leq \frac{4}{2^k}$, da cui $\sup\limits_{a \in A}\inf\limits_{b \in A_{k}} |a-b| \leq \frac{4}{2^k} \to 0$
+6. Si può costruire una successione $a_{j} \in A_{j}$ con $j>k$ tale che $d(a_{j+1},a_{j}) \leq \frac{1}{2^j}$
+7. $A_{j}$ di Cauchy $\implies a_{j} \to a \in A$ e $|a-p| \leq \sum\limits_{j = k}^{\infty} |a_{j}-a_{j+1}| \leq \sum\limits_{j=k}^{\infty} \frac{1}{2^j} \leq \frac{2}{2^k}$
+8. $\sup\limits_{b \in A_{k}} \inf\limits_{a \in A} |a-b| \leq \frac{2}{2^k} \to 0$, da cui $d_{\mathcal{K}}(A_{k},A) \to 0$
+9. $A$ chiuso
+	1. Sia $x_{k} \in A$ successione convergente $x_{k} \to x$
+	2. $\forall x_{k} \in A$   $\exists a_{k} \in A_{k}$   $|a_{k}-x_{k}| \leq \frac{4}{2^k}$, da cui $a_{k} \to a \in A$
+
+# Frattale autosimile
+Siano $\varphi_{1},\dots,\varphi_{N} : \mathbb{R}^n \to \mathbb{R}^n$ contrazioni, allora $\exists!C \subseteq \mathbb{R}^n$ compatto   $C = \bigcup\limits_{k = 1}^N \varphi_{k}(C)$.
+
+DIMOSTRAZIONE:
+1. $T : \mathcal{K}(\mathbb{R}^n) \to \mathcal{K}(\mathbb{R}^n) : A \mapsto \bigcup\limits_{k = 1}^n \varphi_{k}(C)$ è una contrazione
+	1. Siano $A,B \in \mathcal{K}(\mathbb{R}^n)$ e $d = d_{\mathcal{K}}(A,B)$
+	2. $\forall a' \in T(A)$   $\exists k$   $a' \in \varphi_{k}(A)$   cioè $a' = \varphi_{k}(a)$ con $a \in A$
+	3. $\exists b \in B$   $|a-b| \leq d$, da cui $b' = \varphi_{k}(b) \in T(B)$
+2. Per completezza di $\mathcal{K}(\mathbb{R}^n)$, la tesi deriva da Banach - Caccioppoli
